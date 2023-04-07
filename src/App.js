@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
+import Header from "./components/Banner/Header"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Container>
+    <Banner>
+      <Header />
+    </Banner>
+   </Container>
   );
 }
 
 export default App;
+
+const Container = styled.div``
+const Banner = styled.div`
+  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+`
+
