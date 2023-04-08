@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 import Header from "./components/Banner/Header"
+import ProfComponent from './components/Banner/ProfComponent';
 
 function App() {
   return (
    <Container>
     <Banner>
       <Header />
+      <ProfComponent />
     </Banner>
    </Container>
   );
