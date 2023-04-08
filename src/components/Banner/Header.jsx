@@ -4,18 +4,20 @@ import styled from 'styled-components'
 const Header = () => {
     const [bar, setBar] = useState(false)
     return (
-        <Container>
+        <Container bar={bar}>
             <Logo>
                 <h1>Portfolio</h1>
             </Logo>
-            <Nav>
+            <Nav bar={bar}>
                 <span><a href="#">Home</a></span>
                 <span><a href="#">Services</a></span>
                 <span><a href="#">Projects</a></span>
                 <span><a href="#">Testimonials</a></span>
                 <span><a href="#">Portfolio</a></span>
             </Nav>
-            <div className="bars">
+            <div 
+            onClick={() => setBar(!bar)}
+            className="bars">
                 <div className="bar"></div>
             </div>
         </Container>
@@ -32,8 +34,13 @@ const Container = styled.div`
     width: 80%;
     margin: 0 auto;
     padding: 1.5rem 0;
+    position: relative;
+    animation: header 500ms ease-in-out;
     @media(max-width: 763px){
         width: 90%;
+    }
+    .bars{
+        display: none;
     }
     @media(max-width: 640px){
         .bars {
@@ -43,11 +50,14 @@ const Container = styled.div`
             display: flex;
             align-items: center;
             justify-content: center;
-            .bar {
+            padding: 0.5rem;
+            z-index: 100;
+            .bar{
                 position: absolute;
                 width: 100%;
                 height: 2px;
-                background-color: white;
+                background-color: ${props => props.bar ? "transparent" : "#fff"};
+                transition: all 400ms ease-in-out;
                 :before, :after{
                     content: "";
                     width: 100%;
@@ -57,11 +67,12 @@ const Container = styled.div`
                 }
 
                 :before{
-                    transform: translateY(10px)
+                    transform: ${props => props.bar ? "rotate(45deg)" : "translateY(10px)"};
+                    transition: all 400ms ease-in-out;
                 }
-
                 :after{
-                    transform: translateY(-10px)
+                    transform: ${props => props.bar ? "rotate(-45deg)" : "translateY(-10px)"};
+                    transition: all 400ms ease-in-out;
                 }
             }
         }
@@ -82,31 +93,30 @@ const Logo = styled.div`
     }
 `
 const Nav = styled.div`
-    @media(max-width: 640px) {
-        position: absolute;
+    @media(max-width:640px){
+        position: fixed;
         display: flex;
         flex-direction: column;
         background-color: #01be96;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
+        inset: 0;
         justify-content: center;
         align-items: center;
         font-size: 2rem;
         gap: 2rem;
         font-weight: 700;
-        height: 0;
+        height: ${props => props.bar ? "100vh" : 0};
+        transition: height 400ms ease-in-out;
         overflow: hidden;
+        z-index: 100;
     }
-    span {
+    span{
         margin-left: 1rem;
-        a {
+        a{
+            color: #fff;
             text-decoration: none;
             font-weight: 400;
-            color: #fff;
             position: relative;
-            :before {
+            :before{
                 content: "";
                 position: absolute;
                 left: 0;
@@ -118,11 +128,11 @@ const Nav = styled.div`
                 transform-origin: right;
                 transition: transform 400ms ease-in-out;
             }
-            :hover:before {
+            :hover:before{
                 transform: scale(1);
                 transform-origin: left;
             }
-            :hover {
+            :hover{
                 opacity: 0.7;
             }
         }
