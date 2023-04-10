@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Header from "./components/Banner/Header"
 import ProfComponent from './components/Banner/ProfComponent';
+import Services from './components/Service/Services'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <ProfComponent />
     </Banner>
+    <Services />
    </Container>
   );
 }
