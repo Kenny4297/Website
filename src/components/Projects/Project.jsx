@@ -1,19 +1,20 @@
 import styled from 'styled-components'
 
-const Project = () => {
-    return (
-        <Container>
-            <img src="https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png" alt="project" />
-            <div className="disc">
-                <h1>Description</h1>
-                <p>--Description of projects--
-                <a href='#'>demo</a>
-                </p>
-                
-            </div>
-        </Container>
-    )
+const Project = (props) => {
+    const { img, disc } = props.item;
+  return (
+    <Container className='project'>
+        <img src={img} alt="project" />
+        <div className="disc">
+            <h1>Description</h1>
+            <p>{disc}
+            <a href="/">demo</a>
+            </p>
+        </div>
+    </Container>
+  )
 }
+
 export default Project;
 
 const Container = styled.div`

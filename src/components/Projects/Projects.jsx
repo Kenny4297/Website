@@ -22,6 +22,10 @@ const Container = styled.div`
     padding: 3rem 0;
     text-align: center;
 
+    @media(max-width: 840px) {
+        width: 90%;
+    }
+
     h1 {
         font-size: 1.9rem;
     }
@@ -31,6 +35,9 @@ const Container = styled.div`
         margin: 0 auto;
         padding: rem 0;
         font-size: 0.9rem;
+        @media(max-width: 500px) {
+            width: 90%;
+        }
     }
 `
 
