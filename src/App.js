@@ -3,6 +3,7 @@ import Header from "./components/Banner/Header"
 import ProfComponent from './components/Banner/ProfComponent';
 import Services from './components/Service/Services'
 import Projects from './components/Projects/Projects'
+import Clients from './components/Clients/Clients';
 
 function App() {
 	return (
@@ -14,7 +15,9 @@ function App() {
 			<Services />
 			<Project>
 				<Projects />
+				<Clients />
 			</Project>
+			
 		</Container>
 	);
 }

@@ -27,7 +27,7 @@ let data = [
     },
 ];
 
-var settings = {
+let settings = {
     className: "center",
     centerMode: true,
     dots: false,
