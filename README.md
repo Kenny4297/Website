@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Kedgard Cordero's Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Screenshot coming soon!
 
-## Available Scripts
+## Table of Contents
+- [License](#license)
+- [Description](#description)
+- [Motivation](#motivation)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Deployment](#Deployment)
+- [Troubleshooting](#troubleshooting)
 
-In the project directory, you can run:
+## License
+This project is licensed under the MIT license.
 
-### `npm start`
+## Description
+Kedgard Cordero's personal website! Learn more about me, and contact me if you wish!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Motivation
+I wanted to push myself and create a better personal website, other than the website that they have you do in the Minnesota Coding Bootcamp. There were many restrictions on that portfolio, and I knew that I could do better! 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies
+Styled-components:
+Styled-components is a popular CSS-in-JS library for React that allows you to write CSS code directly in your JavaScript code. It provides a more intuitive and component-based way of styling React components, allowing you to keep your styles closely tied to your components. This makes it easier to maintain and refactor your code, and allows for greater flexibility and dynamic styling.
 
-### `npm test`
+React-icons:
+React-icons is a library of popular icons that can be easily integrated into your React projects. It provides a collection of over 1,000 icons from popular icon sets such as Font Awesome, Material Icons, and Ionicons, all of which can be easily used in your React components. This library can save time and effort in finding and integrating icons into your projects, and helps ensure consistency across your UI.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React-Slick:
+React-Slick is a popular carousel component for React that allows you to easily create a responsive carousel or slider for your website. It provides a number of useful features, such as lazy loading, infinite scrolling, and touch swipe support, and can be easily customized to fit your design needs. Compared to the carousel component from react-bootstrap, React-Slick is more flexible and customizable, and provides a wider range of features.
 
-### `npm run build`
+## Features
+Visitors can view my previous work, see recommendations made by others, can contact me through email if they wish.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deployment
+--Comming soon--
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Troubleshooting
+So far the project has been coming along smoothly! This is my first time using 'styled-components', and it is difficult to spot errors in the CSS section, due to the styling being a string, and not actual CSS.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Testing
+My goal is to use jest for testing, in the following ways:
+EmailJS Integration, Website Layout, Load Time, Accessibility, and error Error Handling.
 
-### `npm run eject`
+If you have any thoughts on how to make this better, please let me know!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
