@@ -15,9 +15,8 @@ function App() {
 			<Services />
 			<Project>
 				<Projects />
-				<Clients />
 			</Project>
-			
+				<Clients />
 		</Container>
 	);
 }

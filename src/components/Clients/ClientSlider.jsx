@@ -9,13 +9,13 @@ const ClientSlider = (props) => {
         <Container>
             <Header>
                 <span className="quote"><IoIosQuote/></span>
-                <span className = 'star'>
-                    <AiOutlineStar/>
-                    <AiOutlineStar/>
-                    <AiOutlineStar/>
-                    <AiOutlineStar/>
-                    <AiOutlineStar/>
-                </span>
+                    <div className='stars'>
+                        {Array(stars).fill().map((_, i) => (
+                            <span className='star' key={i}>
+                                <AiOutlineStar />
+                            </span>
+                        ))}
+                    </div>
             </Header>
             <Body>
                 {disc}
@@ -39,19 +39,23 @@ const Container = styled.div`
     margin: 0 1rem;
 `;
 const Header = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    
     .quote {
         font-size: 3rem;
         color: #01be96;
         opacity: 0.7;
     }
 
+    .stars {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .star {
         color: #ffcd3c;
         font-size:1.3rem;
+        display: flex;
+        justify-content: flex-end;
     }
 `;
 const Body = styled.p`
