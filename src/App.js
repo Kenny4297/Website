@@ -4,6 +4,7 @@ import ProfComponent from './components/Banner/ProfComponent';
 import Services from './components/Service/Services'
 import Projects from './components/Projects/Projects'
 import Clients from './components/Clients/Clients';
+import Footer from './components/Footer/Footer'
 
 function App() {
 	return (
@@ -13,10 +14,13 @@ function App() {
 				<ProfComponent />
 			</Banner>
 			<Services />
-			<Project>
+			<LightColor>
 				<Projects />
-			</Project>
+			</LightColor>
 				<Clients />
+				<LightColor>
+					<Footer />
+				</LightColor>
 		</Container>
 	);
 }
@@ -32,7 +36,7 @@ const Banner = styled.div`
 		padding-bottom: 1rem;
   	}
 `
-const Project = styled.div`
+const LightColor = styled.div`
   	background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
 `
 

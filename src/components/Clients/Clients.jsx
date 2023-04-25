@@ -105,6 +105,10 @@ const Container = styled.div`
     margin: 0 auto;
     padding: 4rem 0;
 
+    @media(max-width: 840px) {
+        width: 90%;
+    }
+
     span {
         font-weight: 700;
         text-transform: uppercase;

@@ -58,26 +58,38 @@ const Header = styled.div`
         justify-content: flex-end;
     }
 `;
+
 const Body = styled.p`
     font-size: 0.8rem;
     margin-bottom: 1.5rem;
 `;
+
 const Footer = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
-        img {
-            width: 4rem;
-            border-radius: 50px;
+    img {
+        width: 4rem;
+        border-radius: 50px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        @media(max-width: 580px) {
+            font-size: 1rem;
         }
 
-        h1 {
-            font-size: 1.2rem;
-            font-weight: 700;
+        @media(max-width: 538px) {
+            font-size: 0.9rem;
         }
+    }
 
-        p {
-            font-size: 0.8rem;
-            color: rgba(255,255,255,0.500);
+    p {
+        font-size: 0.8rem;
+        color: rgba(255,255,255,0.500);
+        @media(max-width: 538px) {
+            font-size: 0.6rem;
         }
+    }
 `
