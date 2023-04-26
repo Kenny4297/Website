@@ -81,7 +81,7 @@ const Clients = () => {
         <ClientSlider item={item} key={i} />
     ))
     return (
-        <Container> 
+        <Container id='client'> 
             <span className='green'>testimonials</span>  
             <h1>what clients say</h1> 
             <Testimonials>

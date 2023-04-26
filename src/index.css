@@ -9,6 +9,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
@@ -64,3 +68,24 @@ body {
       pointer-events: all;
     }
 }
+
+/* scroll bar style  */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: grey;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 50px;
+}
+  
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */

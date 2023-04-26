@@ -9,11 +9,11 @@ const Header = () => {
                 <h1>Portfolio</h1>
             </Logo>
             <Nav bar={bar}>
-                <span><a href="#">Home</a></span>
-                <span><a href="#">Services</a></span>
-                <span><a href="#">Projects</a></span>
-                <span><a href="#">Testimonials</a></span>
-                <span><a href="#">Portfolio</a></span>
+                <span><a href="#home">Home</a></span>
+                <span><a href="#services">Services</a></span>
+                <span><a href="#projects">Projects</a></span>
+                <span><a href="#client">Testimonials</a></span>
+                <span><a href="#footer">Portfolio</a></span>
             </Nav>
             <div 
             onClick={() => setBar(!bar)}

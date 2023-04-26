@@ -7,8 +7,15 @@ import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
 const Footer = () => {
+    const scrollUp = () => {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        
+        })
+    }
     return (
-        <Container>
+        <Container id="footer">
             <Profile>
                 <h1>Portfolio</h1>
                 <div className='address'>
@@ -33,7 +40,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <ArrowUp><AiOutlineArrowUp /></ArrowUp>
+                <ArrowUp onClick={scrollUp}><AiOutlineArrowUp /></ArrowUp>
 
             </Profile>
             <Form>
@@ -53,8 +60,9 @@ const Footer = () => {
                         <span className="messageIcon"><FiMail /></span>
                         <textArea cols='30' rows='10' placeholder='Message...' />
                     </div>
-
-                    <button>Submit</button>
+                    <div className="button-div">
+                        <button>Submit</button>
+                    </div>
                 </form>
 
 
@@ -78,10 +86,17 @@ const Container = styled.div`
     @media(max-width: 840px) {
         width: 90%;
     }
+
+    @media(max-width: 650px) {
+        flex-direction: column;
+        gap: 3rem;
+
+    }
 `;
 
 const Profile = styled.div`
-
+    width: 50%;
+    margin-left: 15px;
     .address{
         padding: 1rem 0;
         h1 {
@@ -91,6 +106,9 @@ const Profile = styled.div`
         p {
             width: 60%;
             padding-top: 0.5rem;
+            @media(max-width: 650px) {
+               width: 100%;
+            }
         }
     }
 
@@ -115,6 +133,7 @@ const Profile = styled.div`
     }
 
     .profile {
+        flex: 1;
         h1 {
             font-size: 1.2rem;
             padding: 1rem 0;
@@ -148,7 +167,7 @@ const Profile = styled.div`
 `;
 
 const Form = styled.div`
-
+    width: 50%;
     flex: 1;
     h1 {
         font-size: 1.3rem;
@@ -158,6 +177,9 @@ const Form = styled.div`
     form {
         background-color: #191923;
         padding: 0.8rem;
+        margin-top: 1.2rem;
+        position: relative;
+        right: .9rem;
         border-radius: 5px;
         .name, .email, .message {
             display: flex;
@@ -185,6 +207,23 @@ const Form = styled.div`
                 padding-top: .5rem;
             }
         }
+
+        .button-div {
+            text-align: center;
+        }
+
+        button {
+            width: 5rem;
+            height: 1.8rem;
+            background-color: #01be96;
+            border: none;
+            border-radius: 5px;
+            filter: drop-shadow(0px 4px 5px #01be9);
+            cursor: pointer;
+            :hover {
+                filter: drop-shadow(0px 6px 9px #01be9);
+            }
+        }
     }
 `;
 
@@ -199,4 +238,9 @@ const ArrowUp = styled.div`
     font-size: 1.3rem;
     font-weight: 700;
     margin-top: 2rem;
+    @media(max-width: 650px) {
+        position: absolute;
+        right: 3rem;
+        top: 16rem;
+    }
 `;

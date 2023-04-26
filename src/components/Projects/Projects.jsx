@@ -3,7 +3,7 @@ import SliderComp from './Slider';
 
 const Projects = () => {
     return (
-        <Container>
+        <Container id="projects">
             <h1>Recent <span className='green'>Projects</span></h1>
             <p>---Description of projects here---</p>
             <Slide>

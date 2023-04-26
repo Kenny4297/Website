@@ -30,6 +30,9 @@ React-icons is a library of popular icons that can be easily integrated into you
 React-Slick:
 React-Slick is a popular carousel component for React that allows you to easily create a responsive carousel or slider for your website. It provides a number of useful features, such as lazy loading, infinite scrolling, and touch swipe support, and can be easily customized to fit your design needs. Compared to the carousel component from react-bootstrap, React-Slick is more flexible and customizable, and provides a wider range of features.
 
+React-Reveal:
+React Reveal is a React library for creating animations on web pages. It allows you to add animation effects to your React components easily and without writing complex CSS animations. I have used this library in previous projects and decided to use it again here because of its clean animations.
+
 ## Features
 Visitors can view my previous work, see recommendations made by others, can contact me through email if they wish.
 
@@ -37,11 +40,11 @@ Visitors can view my previous work, see recommendations made by others, can cont
 --Comming soon--
 
 ## Troubleshooting
-So far the project has been coming along smoothly! This is my first time using 'styled-components', and it is difficult to spot errors in the CSS section, due to the styling being a string, and not actual CSS.
+So far the project has been coming along smoothly! This is my first time using 'styled-components', and it is difficult to spot errors in the CSS section, due to the styling being a string, and not actual CSS. I resolved this by installing the extension 'vscode-styled-components', and extension that turns the original text into color coordinated CSS styling. This makes it easier for me to spot mistakes and results in cleaner code.
 
 ## Testing
 My goal is to use jest for testing, in the following ways:
-EmailJS Integration, Website Layout, Load Time, Accessibility, and error Error Handling.
+EmailJS Integration, Website Layout, Load Time, Accessibility, and error Error Handling. These may change throughout the development process.
 
-If you have any thoughts on how to make this better, please let me know!
+If you have any suggestions for improvement, please feel free to share them with me.
 

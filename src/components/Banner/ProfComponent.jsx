@@ -3,27 +3,34 @@ import styled from 'styled-components';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import ProfNoBack from './assets/ProfNoBack.png'
+import { Slide } from 'react-awesome-reveal';
 
 const ProfComponent = () => {
     return (
-        <Container>
-            <Texts>
-                <h4>Hello, <span className='green'>I'm</span></h4>
-                <h1 className="green">Kedgard</h1>
-                <h3>Web Developer</h3>
-                <p>--Description of who I am here--</p>
-                <button>Let's Create Something</button>
-                <Social>
-                    <p>Check out my</p>
-                    <div className="social-icons">
-                        <span><a href="#"><FaLinkedinIn/></a></span>
-                        <span><a href="#"><FaGithub/></a></span>
+        <Container id='home'>
+            <Slide direction="left">
+                <Texts>
+                    <h4>Hello, <span className='green'>I'm</span></h4>
+                    <h1 className="green">Kedgard</h1>
+                    <h3>Web Developer</h3>
+                    <p>--Description of who I am here--</p>
+                    <button>Let's Create Something</button>
+                    <Social>
+                        <p>Check out my</p>
+                        <div className="social-icons">
+                            <span><a href="#"><FaLinkedinIn/></a></span>
+                            <span><a href="#"><FaGithub/></a></span>
+                        </div>
+                    </Social>
+                </Texts>
+            </Slide>
+            <Slide direction="right">
+                <Profile>
+                    <div className='img-container'>
+                        <img src={ProfNoBack} alt="Kedgard Cordero" />
                     </div>
-                </Social>
-            </Texts>
-            <Profile>
-                <img src={ProfNoBack} alt="Kedgard Cordero" />
-            </Profile>
+                </Profile>
+            </Slide>
         </Container>
     )
 }
@@ -35,9 +42,11 @@ const Container = styled.div`
     gap: 2rem;
     padding-top: 3rem;
     width: 80%;
+    height: 70vh;
     max-width: 1280px;
     margin: 0 auto;
     z-index: 1;
+    border: 1px solid red;
     @media (max-width: 840px) {
         width: 90%;
     }
@@ -50,14 +59,15 @@ const Texts = styled.div`
     h4 {
         padding: 1rem 0;
         font-weight: 400;
+        font-size: 2rem;
     }
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         letter-spacing: 2px;
     }
     h3 {
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 2.2rem;
         padding-bottom: 1.2rem;
         text-transform: capitalize;
     }
@@ -115,7 +125,8 @@ const Social = styled.div`
 `;
 const Profile = styled.div`
     img {
-        width: 25rem;
+        width: 20rem;
+        margin-left: 30rem;
         filter: drop-shadow(0px 10px 10px #01be9570);
         transition: transform 400ms ease-in-out;
         @media (max-width: 790px) {
