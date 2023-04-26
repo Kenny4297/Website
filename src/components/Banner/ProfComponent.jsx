@@ -3,12 +3,11 @@ import styled from 'styled-components';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import ProfNoBack from './assets/ProfNoBack.png'
-import { Slide } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const ProfComponent = () => {
     return (
-        <Container id='home'>
-            <Slide direction="left">
+            <Container id='home'>
                 <Texts>
                     <h4>Hello, <span className='green'>I'm</span></h4>
                     <h1 className="green">Kedgard</h1>
@@ -23,15 +22,12 @@ const ProfComponent = () => {
                         </div>
                     </Social>
                 </Texts>
-            </Slide>
-            <Slide direction="right">
                 <Profile>
                     <div className='img-container'>
                         <img src={ProfNoBack} alt="Kedgard Cordero" />
                     </div>
                 </Profile>
-            </Slide>
-        </Container>
+            </Container>
     )
 }
 
@@ -50,9 +46,9 @@ const Container = styled.div`
     @media (max-width: 840px) {
         width: 90%;
     }
-    @media (max-width: 640px) {
+    /* @media (max-width: 640px) {
         flex-direction: column;
-    }
+    } */
 `;
 const Texts = styled.div`
     flex: 1;
@@ -125,18 +121,29 @@ const Social = styled.div`
 `;
 const Profile = styled.div`
     img {
-        width: 20rem;
-        margin-left: 30rem;
+        width: 25rem;
+        margin-left: 21rem;
         filter: drop-shadow(0px 10px 10px #01be9570);
         transition: transform 400ms ease-in-out;
+        @media (max-width: 1100px) {
+            margin-left: 10rem;
+        }
+        @media(max-width: 970px) {
+            margin-left: 8rem;
+        }
         @media (max-width: 790px) {
         width: 20rem;
+        margin-left: 5rem;
+
         }
-        @media (max-width: 660px) {
+        /* @media (max-width: 661px) {
         width: 18rem;
-        }
-        @media (max-width: 640px) {
-        width: 100%;
+        margin-left: 4rem;
+
+        } */
+        @media (max-width: 650px) {
+           display: none
+
         }
     }
     :hover img {

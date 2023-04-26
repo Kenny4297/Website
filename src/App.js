@@ -9,22 +9,22 @@ import { Fade } from 'react-awesome-reveal'
 
 function App() {
 	return (
-		<Container>
-			<Banner>
-				<Fade>
+		<Fade duration={3000}>
+			<Container>
+				<Banner>
 					<Header />
 					<ProfComponent />
-				</Fade>
-			</Banner>
-			<Services />
-			<LightColor>
-				<Projects />
-			</LightColor>
-				<Clients />
+				</Banner>
+				<Services />
 				<LightColor>
-					<Footer />
+					<Projects />
 				</LightColor>
-		</Container>
+					<Clients />
+					<LightColor>
+						<Footer />
+					</LightColor>
+			</Container>
+		</Fade>
 	);
 }
 
