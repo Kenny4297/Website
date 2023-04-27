@@ -7,8 +7,7 @@ import Card from "./Card";
 const Services = () => {
     return (
         <Container id="services">
-            <h4>My <span className='green'>services</span></h4>
-            <h1>What I Do</h1>
+            <h1 className="blue">What I Do</h1>
             <Cards>
                 <Card
                 Icon={MdDesignServices} 

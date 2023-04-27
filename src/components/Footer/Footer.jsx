@@ -17,7 +17,7 @@ const Footer = () => {
     return (
         <Container id="footer">
             <Profile>
-                <h1>Portfolio</h1>
+                <h1 className='blue'>Portfolio</h1>
                 <div className='address'>
                     <h1>Address:</h1>
                     <p>--Enter Address here--</p>
@@ -215,7 +215,7 @@ const Form = styled.div`
         button {
             width: 5rem;
             height: 1.8rem;
-            background-color: #01be96;
+            background-color: #0077b3;
             border: none;
             border-radius: 5px;
             filter: drop-shadow(0px 4px 5px #01be9);
@@ -230,7 +230,7 @@ const Form = styled.div`
 const ArrowUp = styled.div`
     width: 2rem;
     height: 2rem;
-    background-color: #01be96;
+    background-color: #0077b3;
     display: flex;
     align-items: center;
     justify-content: center;

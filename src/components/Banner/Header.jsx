@@ -12,7 +12,7 @@ const Header = () => {
                 <span><a href="#home">Home</a></span>
                 <span><a href="#services">Services</a></span>
                 <span><a href="#projects">Projects</a></span>
-                <span><a href="#client">Testimonials</a></span>
+                <span><a href="#recommendation">Recommendations</a></span>
                 <span><a href="#footer">Portfolio</a></span>
             </Nav>
             <div 
@@ -97,7 +97,7 @@ const Nav = styled.div`
         position: fixed;
         display: flex;
         flex-direction: column;
-        background-color: #01be96;
+        background-color: #0077b3;
         inset: 0;
         justify-content: center;
         align-items: center;

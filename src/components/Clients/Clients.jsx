@@ -7,36 +7,31 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 let clients = [
     {
-        name : "John Michel",
+        name : "Olu Akinyemi",
         position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 3,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+
+        // img : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+        disc : `Ked is an exceptional programmer because he cares about learning and is always striving to get better. Ked's technical acumen, flexibility, and team spirit shone throughout our time together in the same cohort. Ked's eagerness to help others, facility with articulating intricate ideas, and commitment to development make him an invaluable team member. His leadership skills, which include planning ahead, prioritizing tasks, and actively listening, have helped him succeed in a wide range of team contexts. Ked is a rare find and an asset to any entity looking to hire a committed, skilled, and adaptable programmer. I have no doubt that he will keep growing to new heights.`
     },
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 4,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+        name : "Gary Ahlmes",
+        position : "University of Minnesota Boot Camp Instructor",
+        // img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+        disc : `I had the pleasure of being Ked's instructor for an intensive 12-week MERN stack bootcamp taught through the University of Minnesota. The course was full-time, and required 5+ hours per day of in-class time, plus a great deal of evening and weekend work. Lessons were fast-paced and students had to be able to learn at a brisk pace and adapt quickly.
+
+        Ked is one of the brightest students I've ever taught, and he had no trouble absorbing most of the material at a very fast pace. When he had questions, they were insightful and showed an active mind. He also went above and beyond during the group project work, showing skills far beyond most developers at this stage. He's also an outstanding group member, and was always ready to help other students. He would be a fantastic addition to any dev team.`
     },
     {
-        name : "John Michel",
+        name : "Clay Andemar",
         position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 5,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+        // img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+        disc : `During my time at the University of Minnesota Coding Boot camp, I was very fortunate to work with Ked. We were assigned into the same group for our second project. Ked was willing to step up and be the voice of our group. He kept the group organized and set an attainable goal for our app. Our group members were all at different levels of skill. Ked was able to get his own work done on time while helping other members with their tasks. Overall, Ked is an amazing teammate and I'm proud to say that I learned a lot from him in our short time of working together!`
     },
     {
-        name : "John Michel",
+        name : "Maxwell Walters",
         position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 5,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+        // img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+        disc : `Ked is a committed and skilled collaborator who was an absolute pleasure to work with on our group project. His exceptional communication skills and ability to think creatively and problem-solve in innovative ways were instrumental in our success. Ked consistently went above and beyond what was expected of him and showed exceptional dedication and work ethic. I highly recommend him to anyone seeking a skilled and committed team member.`
     },
 ]
 let settings = {
@@ -81,9 +76,8 @@ const Clients = () => {
         <ClientSlider item={item} key={i} />
     ))
     return (
-        <Container id='client'> 
-            <span className='green'>testimonials</span>  
-            <h1>what clients say</h1> 
+        <Container id='recommendation'>  
+            <h1 className='blue'>recommendations</h1> 
             <Testimonials>
                 <Slider ref={arrowRef} {...settings}>
                     {clientDisc}
@@ -142,7 +136,7 @@ const Container = styled.div`
     }
 
     .slick-dots li.slick-active button {
-        background: #01be96;
+        background: #0077b3;
         width: 15px;
     }
 
@@ -163,7 +157,7 @@ const Buttons = styled.div`
         background-color: transparent;
         margin-left: 0.5rem;
         border: none;
-        color: #01be96;
+        color: #0077b3;
         cursor: pointer;
         font-size: 1.1rem;
     }

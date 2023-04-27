@@ -4,7 +4,7 @@ const Card = (props) => {
     const {Icon, disc, title} = props;
     return (
         <Container>
-            <span className='green'><Icon/></span>
+            <span className='blue'><Icon/></span>
             <h1>{title}</h1>
             <p>{disc}</p>
         </Container>
