@@ -77,8 +77,9 @@ export default Footer;
 const Container = styled.div`
     margin-top: 2rem;
     position: relative;
-    padding: 2rem 0;
+    padding: 5rem 0;
     width: 80%;
+    height: 74vh;
     max-width: 1280px;
     margin: 0 auto;
     display: flex;

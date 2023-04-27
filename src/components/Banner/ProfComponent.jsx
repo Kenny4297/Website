@@ -9,18 +9,21 @@ const ProfComponent = () => {
     return (
             <Container id='home'>
                 <Texts>
-                    <h4>Hi, I'm</h4>
+                    <h3>Hi, I'm</h3>
                     <h1 className="blue">Kedgard Cordero</h1>
                     <h3>Full Stack Web Developer</h3>
-                    <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. I threw everything down, and pursued my passion by graduating from the University of Minnesota Coding Boot Camp.</p> 
+                    <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. Throwing everything down, I pursued my passion by graduating from the University of Minnesota Coding Boot Camp.</p> 
                     
                     <p>This is what I was meant to do, and I love every second of it.</p>
-                    <button>Let's Create Something</button>
+                    <a href="#footer">
+                        <button>Let's Create Something</button>
+                    </a>
+                    
                     <Social>
                         <p>Check out my</p>
                         <div className="social-icons">
-                            <span><a href="#"><FaLinkedinIn/></a></span>
-                            <span><a href="#"><FaGithub/></a></span>
+                            <span><a href="https://www.linkedin.com/in/kedgard-cordero/" rel="noreferrer" target="_blank"><FaLinkedinIn/></a></span>
+                            <span><a href="https://github.com/Kenny4297" rel="noreferrer" target="_blank"><FaGithub/></a></span>
                         </div>
                     </Social>
                 </Texts>
@@ -59,7 +62,7 @@ const Texts = styled.div`
         font-size: 1rem;
     }
     h1 {
-        font-size: 1rem;
+        font-size: 1.7rem;
         letter-spacing: 2px;
     }
     h3 {
