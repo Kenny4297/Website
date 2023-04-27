@@ -64,7 +64,68 @@ const Texts = styled.div`
     h1 {
         font-size: 1.7rem;
         letter-spacing: 2px;
+        cursor: pointer;
     }
+
+    h1 {
+        color: #0077b3;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        :before{
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+            height: 2px;
+            background-color: #fff;
+            transform: scale(0);
+            transform-origin: right;
+            transition: transform 400ms ease-in-out;
+        }
+        :hover:before{
+            transform: scale(1);
+            transform-origin: left;
+        }
+        :hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    h1:hover {
+        /* opacity: 0.7; */
+        color: green;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
     h3 {
         font-weight: 500;
         font-size: 1.1rem;
