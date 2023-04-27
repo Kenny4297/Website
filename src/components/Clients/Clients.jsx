@@ -1,36 +1,38 @@
 import styled from 'styled-components';
-// import Slider from '../Projects/Slider'
 import { useRef } from 'react';
 import Slider from 'react-slick'
 import ClientSlider from './ClientSlider';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import Clay from '../Banner/assets/Clay.jpeg';
+import Olu from '../Banner/assets/Olu.jpeg';
+import Gary from '../Banner/assets/Gary.jpeg'
+import Max from '../Banner/assets/Max.jpeg';
 
 let clients = [
     {
         name : "Olu Akinyemi",
-        position : "web developer",
-
-        // img : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+        position : "Web Developer",
+        img : Olu,
         disc : `Ked is an exceptional programmer because he cares about learning and is always striving to get better. Ked's technical acumen, flexibility, and team spirit shone throughout our time together in the same cohort. Ked's eagerness to help others, facility with articulating intricate ideas, and commitment to development make him an invaluable team member. His leadership skills, which include planning ahead, prioritizing tasks, and actively listening, have helped him succeed in a wide range of team contexts. Ked is a rare find and an asset to any entity looking to hire a committed, skilled, and adaptable programmer. I have no doubt that he will keep growing to new heights.`
     },
     {
         name : "Gary Ahlmes",
         position : "University of Minnesota Boot Camp Instructor",
-        // img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+        img: Gary,
         disc : `I had the pleasure of being Ked's instructor for an intensive 12-week MERN stack bootcamp taught through the University of Minnesota. The course was full-time, and required 5+ hours per day of in-class time, plus a great deal of evening and weekend work. Lessons were fast-paced and students had to be able to learn at a brisk pace and adapt quickly.
 
         Ked is one of the brightest students I've ever taught, and he had no trouble absorbing most of the material at a very fast pace. When he had questions, they were insightful and showed an active mind. He also went above and beyond during the group project work, showing skills far beyond most developers at this stage. He's also an outstanding group member, and was always ready to help other students. He would be a fantastic addition to any dev team.`
     },
     {
         name : "Clay Andemar",
-        position : "web developer",
-        // img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+        position : "Web Developer",
+        img: Clay,
         disc : `During my time at the University of Minnesota Coding Boot camp, I was very fortunate to work with Ked. We were assigned into the same group for our second project. Ked was willing to step up and be the voice of our group. He kept the group organized and set an attainable goal for our app. Our group members were all at different levels of skill. Ked was able to get his own work done on time while helping other members with their tasks. Overall, Ked is an amazing teammate and I'm proud to say that I learned a lot from him in our short time of working together!`
     },
     {
         name : "Maxwell Walters",
-        position : "web developer",
-        // img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
+        position : "Web Developer",
+        img: Max,
         disc : `Ked is a committed and skilled collaborator who was an absolute pleasure to work with on our group project. His exceptional communication skills and ability to think creatively and problem-solve in innovative ways were instrumental in our success. Ked consistently went above and beyond what was expected of him and showed exceptional dedication and work ethic. I highly recommend him to anyone seeking a skilled and committed team member.`
     },
 ]
@@ -38,7 +40,7 @@ let settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows : false,
@@ -147,6 +149,8 @@ const Container = styled.div`
 const Testimonials = styled.div`
     margin-top: 2rem;
     position: relative;
+    /* color: pink; */
+    font-size: 3rem;
 `
 
 const Buttons = styled.div`

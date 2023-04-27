@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {IoIosQuote} from "react-icons/io";
-import {AiOutlineStar} from "react-icons/ai";
+import Clay from '../Banner/assets/Clay.jpeg'
 
 const ClientSlider = (props) => {
     const {name, position, img, disc} = props.item;
@@ -14,9 +14,8 @@ const ClientSlider = (props) => {
                 {disc}
             </Body>
             <Footer>
-                { img && (
-                    <img src={img} alt={name} />
-                )}
+                {console.log(img)}
+                <img src={img} alt={name} />
                 <div className="details">
                     <h1>{name}</h1>
                     <p>{position}</p>
@@ -29,7 +28,9 @@ const ClientSlider = (props) => {
 export default ClientSlider;
 
 const Container = styled.div`
-    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+    /* background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%); */
+    background: #191923;
+
     padding: 0.5rem 1rem 1rem 1rem;
     margin: 0 1rem;
 `;
@@ -55,7 +56,7 @@ const Header = styled.div`
 `;
 
 const Body = styled.p`
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     margin-bottom: 1.5rem;
 `;
 

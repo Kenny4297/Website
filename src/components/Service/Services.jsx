@@ -12,19 +12,19 @@ const Services = () => {
                 <Card
                 Icon={MdDesignServices} 
                 title={"Full Stack React developer"}
-                disc={"--Put description here--"}
+                disc={"I thoroughly enjoy the development process, building scalable and user-friendly web applications. My expertise in React, HTML, CSS, and JavaScript enables me to create intuitive applications that are easy to maintain and update."}
                 />
 
                 <Card
                 Icon={FiCodesandbox} 
                 title={"UX/UI designer"}
-                disc={"--Put description here--"}
+                disc={"I am passionate about creating visually appealing and user-centered designs. I enjoy leveraging my knowledge of user psychology to develop interfaces that are engaging and intuitive. Information architecture, usability testing, and visual design are key to bringing ideas to life."}
                 />
 
                 <Card
                 Icon={CgWebsite} 
                 title={"Backend Developer"}
-                disc={"--Put description here--"}
+                disc={"I enjoy building scalable and secure web applications that can handle high traffic and user demand. I enjoy staying up-to-date with the latest trends in backend development, and you'll find me continuously optimizing and troubleshooting to ensure the backend runs smoothly and efficiently."}
                 />
             </Cards>
         </Container>

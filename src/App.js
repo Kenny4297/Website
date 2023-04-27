@@ -17,12 +17,14 @@ function App() {
 				</Banner>
 				<Services />
 				<LightColor>
-					<Projects />
+					{/* <Projects /> */}
 				</LightColor>
+				<LightColor>
 					<Clients />
-					<LightColor>
+				</LightColor>
+					{/* <LightColor> */}
 						<Footer />
-					</LightColor>
+					{/* </LightColor> */}
 			</Container>
 		</Fade>
 	);

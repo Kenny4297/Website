@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import ProfNoBack from './assets/ProfNoBack.png'
-import { Fade } from 'react-awesome-reveal';
 
 const ProfComponent = () => {
     return (
@@ -80,7 +79,7 @@ const Texts = styled.div`
             right: 0;
             bottom: -5px;
             height: 2px;
-            background-color: #fff;
+            background-color: #0077b3;
             transform: scale(0);
             transform-origin: right;
             transition: transform 400ms ease-in-out;
@@ -90,33 +89,16 @@ const Texts = styled.div`
             transform-origin: left;
         }
         :hover{
-            opacity: 0.7;
+            /* opacity: 0.7; */
             cursor: pointer;
+            color: white;
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    h1:hover {
-        /* opacity: 0.7; */
+    /* h1:hover {
         color: green;
         cursor: pointer;
-    }
+    } */
 
 
 

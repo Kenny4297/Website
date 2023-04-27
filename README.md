@@ -37,10 +37,10 @@ React Reveal is a React library for creating animations on web pages. It allows 
 Visitors can view my previous work, see recommendations made by others, can contact me through email if they wish.
 
 ## Deployment
---Comming soon--
+Due to this portfolio being a SPA, I have decided to simply use GitPages for the deployment. You can view the site [here](https://kenny4297.github.io/Website/).
 
 ## Troubleshooting
-So far the project has been coming along smoothly! This is my first time using 'styled-components', and it is difficult to spot errors in the CSS section, due to the styling being a string, and not actual CSS. I resolved this by installing the extension 'vscode-styled-components', and extension that turns the original text into color coordinated CSS styling. This makes it easier for me to spot mistakes and results in cleaner code.
+This was my first time using 'styled-components', and it was difficult to spot errors in the CSS section, due to the styling being a string, and not actual CSS. I resolved this by installing the extension 'vscode-styled-components', an extension that turns the original text into color coordinated CSS styling. This makes it easier for me to spot mistakes and results in cleaner code.
 
 ## Testing
 My goal is to use jest for testing, in the following ways:

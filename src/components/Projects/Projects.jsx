@@ -4,8 +4,8 @@ import SliderComp from './Slider';
 const Projects = () => {
     return (
         <Container id="projects">
-            <h1>Recent <span className='blue'>Projects</span></h1>
-            <p>---Description of projects here---</p>
+            <h1>Featured <span className='blue'>Projects</span></h1>
+            <p>My next steps are to recreate the projects I completed in the boot camp, since I have learned much since graduation. </p>
             <Slide>
                 <SliderComp />
             </Slide>
