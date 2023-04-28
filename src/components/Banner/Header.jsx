@@ -152,17 +152,15 @@ const Nav = styled.div`
 `;
 
 const colorPulse = keyframes`
-  0% {
-    fill: white;
-  }
-  50% {
-    fill: #0077b3;
-    /* fill: 0077b3; */
-
-  }
-  100% {
-    fill: white;
-  }
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #0077b3;
+    }
+    100% {
+        fill: white;
+    }
 `;
 
 const RotatingReact = styled(FaReact)`
