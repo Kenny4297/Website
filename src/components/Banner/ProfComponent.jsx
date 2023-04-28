@@ -1,10 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import ProfNoBack from './assets/ProfNoBack.png'
 
 const ProfComponent = () => {
+
     return (
             <Container id='home'>
                 <Texts>
@@ -53,6 +54,19 @@ const Container = styled.div`
         flex-direction: column;
     } */
 `;
+
+const pulse = keyframes`
+    0% {
+        background-color: blue;
+    }
+    50% {
+        background-color: #0077b3;
+    }
+    100% {
+        background-color: blue;
+    }
+`;
+
 const Texts = styled.div`
     flex: 1;
     h4 {
@@ -94,20 +108,6 @@ const Texts = styled.div`
             color: white;
         }
     }
-
-    /* h1:hover {
-        color: green;
-        cursor: pointer;
-    } */
-
-
-
-
-
-
-
-
-
     h3 {
         font-weight: 500;
         font-size: 1.1rem;
@@ -125,12 +125,15 @@ const Texts = styled.div`
         border: none;
         color: white;
         font-weight: 500;
+        animation: ${pulse} 3s linear infinite;
         filter: drop-shadow(0px 10px 10px #01be9551);
         :hover {
             filter: drop-shadow(0px 10px 10px #01be9570);
         }
     }
 `
+
+
 const Social = styled.div`
     margin-top: 3rem;
     display: flex;

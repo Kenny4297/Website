@@ -1,32 +1,38 @@
-import React, {useState} from 'react'
-import styled from 'styled-components'
-import { FaReact } from 'react-icons/fa';
+import React, { useState } from "react";
+import styled, { keyframes } from "styled-components";
+import { FaReact } from "react-icons/fa";
 
 const Header = () => {
-    const [bar, setBar] = useState(false)
+    const [bar, setBar] = useState(false);
     return (
         <Container bar={bar}>
             <Logo>
-                <FaReact size={30}/>
+                <RotatingReact size={30} />
                 <h1>Portfolio</h1>
             </Logo>
             <Nav bar={bar}>
-                <span><a href="#home">Home</a></span>
-                <span><a href="#services">Services</a></span>
+                <span>
+                    <a href="#home">Home</a>
+                </span>
+                <span>
+                    <a href="#services">Services</a>
+                </span>
                 {/* <span><a href="#projects">Projects</a></span> */}
-                <span><a href="#recommendation">Recommendations</a></span>
-                <span><a href="#footer">Connect</a></span>
+                <span>
+                    <a href="#recommendation">Recommendations</a>
+                </span>
+                <span>
+                    <a href="#footer">Connect</a>
+                </span>
             </Nav>
-            <div 
-            onClick={() => setBar(!bar)}
-            className="bars">
+            <div onClick={() => setBar(!bar)} className="bars">
                 <div className="bar"></div>
             </div>
         </Container>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;
 
 const Container = styled.div`
     display: flex;
@@ -38,13 +44,13 @@ const Container = styled.div`
     padding: 1.5rem 0;
     position: relative;
     animation: header 500ms ease-in-out;
-    @media(max-width: 763px){
+    @media (max-width: 763px) {
         width: 90%;
     }
-    .bars{
+    .bars {
         display: none;
     }
-    @media(max-width: 640px){
+    @media (max-width: 640px) {
         .bars {
             width: 40px;
             height: 40px;
@@ -54,13 +60,15 @@ const Container = styled.div`
             justify-content: center;
             padding: 0.5rem;
             z-index: 100;
-            .bar{
+            .bar {
                 position: absolute;
                 width: 100%;
                 height: 2px;
-                background-color: ${props => props.bar ? "transparent" : "#fff"};
+                background-color: ${(props) =>
+                    props.bar ? "transparent" : "#fff"};
                 transition: all 400ms ease-in-out;
-                :before, :after{
+                :before,
+                :after {
                     content: "";
                     width: 100%;
                     height: 2px;
@@ -68,34 +76,36 @@ const Container = styled.div`
                     position: absolute;
                 }
 
-                :before{
-                    transform: ${props => props.bar ? "rotate(45deg)" : "translateY(10px)"};
+                :before {
+                    transform: ${(props) =>
+                        props.bar ? "rotate(45deg)" : "translateY(10px)"};
                     transition: all 400ms ease-in-out;
                 }
-                :after{
-                    transform: ${props => props.bar ? "rotate(-45deg)" : "translateY(-10px)"};
+                :after {
+                    transform: ${(props) =>
+                        props.bar ? "rotate(-45deg)" : "translateY(-10px)"};
                     transition: all 400ms ease-in-out;
                 }
             }
         }
     }
-`
+`;
 const Logo = styled.div`
     display: flex;
     align-items: center;
-    gap: .5rem;   
+    gap: 0.5rem;
     span {
         font-size: 1.8rem;
         color: ;
-    } 
+    }
     h1 {
         font-weight: 600;
         font-size: 1.8rem;
         color: white;
     }
-`
+`;
 const Nav = styled.div`
-    @media(max-width:640px){
+    @media (max-width: 640px) {
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -106,19 +116,19 @@ const Nav = styled.div`
         font-size: 2rem;
         gap: 2rem;
         font-weight: 700;
-        height: ${props => props.bar ? "100vh" : 0};
+        height: ${(props) => (props.bar ? "100vh" : 0)};
         transition: height 400ms ease-in-out;
         overflow: hidden;
         z-index: 100;
     }
-    span{
+    span {
         margin-left: 1rem;
-        a{
+        a {
             color: #fff;
             text-decoration: none;
             font-weight: 400;
             position: relative;
-            :before{
+            :before {
                 content: "";
                 position: absolute;
                 left: 0;
@@ -130,14 +140,47 @@ const Nav = styled.div`
                 transform-origin: right;
                 transition: transform 400ms ease-in-out;
             }
-            :hover:before{
+            :hover:before {
                 transform: scale(1);
                 transform-origin: left;
             }
-            :hover{
+            :hover {
                 opacity: 0.7;
             }
         }
     }
-`
+`;
 
+const colorPulse = keyframes`
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: #0077b3;
+    /* fill: 0077b3; */
+
+  }
+  100% {
+    fill: white;
+  }
+`;
+
+const RotatingReact = styled(FaReact)`
+    animation: 3s linear infinite, spin 10s linear infinite;
+    &.react-icons-spin {
+        display: inline-block;
+        animation: 3s linear infinite, spin 3s linear infinite;
+    }
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    & path:nth-of-type(1) {
+        stroke: white;
+        animation: ${colorPulse} 8s linear infinite;
+    }
+`;
