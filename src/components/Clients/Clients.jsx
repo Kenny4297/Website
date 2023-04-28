@@ -27,7 +27,7 @@ let clients = [
         name : "Clay Andemar",
         position : "Web Developer",
         img: Clay,
-        disc : `During my time at the University of Minnesota Coding Boot camp, I was very fortunate to work with Ked. We were assigned into the same group for our second project. Ked was willing to step up and be the voice of our group. He kept the group organized and set an attainable goal for our app. Our group members were all at different levels of skill. Ked was able to get his own work done on time while helping other members with their tasks. Overall, Ked is an amazing teammate and I'm proud to say that I learned a lot from him in our short time of working together!`
+        disc : `During my time at the University of Minnesota Coding Boot Camp, I was very fortunate to work with Ked. We were assigned into the same group for our second project. Ked was willing to step up and be the voice of our group. He kept the group organized and set an attainable goal for our app. Our group members were all at different levels of skill. Ked was able to get his own work done on time while helping other members with their tasks. Overall, Ked is an amazing teammate and I'm proud to say that I learned a lot from him in our short time of working together!`
     },
     {
         name : "Maxwell Walters",
@@ -99,7 +99,9 @@ const Container = styled.div`
     width: 80%;
     max-width: 1270px;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding-bottom: 5rem;
+    height: 100%;
+    /* padding: 1rem 0; */
 
     @media(max-width: 840px) {
         width: 90%;

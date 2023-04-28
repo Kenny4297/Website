@@ -11,9 +11,9 @@ const Header = () => {
             <Nav bar={bar}>
                 <span><a href="#home">Home</a></span>
                 <span><a href="#services">Services</a></span>
-                <span><a href="#projects">Projects</a></span>
+                {/* <span><a href="#projects">Projects</a></span> */}
                 <span><a href="#recommendation">Recommendations</a></span>
-                <span><a href="#footer">Portfolio</a></span>
+                <span><a href="#footer">Connect</a></span>
             </Nav>
             <div 
             onClick={() => setBar(!bar)}

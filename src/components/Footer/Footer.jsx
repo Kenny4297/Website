@@ -3,40 +3,54 @@ import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
+import emailjs from '@emailjs/browser';
 import { FiMail, FiPhoneCall } from "react-icons/fi";
-import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import { useRef, useState } from 'react'
 
 const Footer = () => {
     const scrollUp = () => {
         window.scroll({
             top: 0,
             behavior: "smooth"
-        
         })
     }
+
+    const form = useRef();
+
+    const [showConfirmation, setShowConfirmation] = useState(false);
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            form.current,
+            process.env.REACT_APP_EMAILJS_USER_ID
+        );
+
+        setShowConfirmation(true);
+            form.current.reset();
+            setTimeout(() => {
+            setShowConfirmation(false);
+        }, 20000);
+    
+        // Clear the input fields after the email is sent
+        form.current.elements.from_name.value = "";
+        form.current.elements.reply_to.value = "";
+        form.current.elements.message.value = "";
+    };
     return (
         <Container id="footer">
             <Profile>
-                <h1 className='blue'>Portfolio</h1>
-                <div className='address'>
-                    <h1>Address:</h1>
-                    <p>--Enter Address here--</p>
-
-                </div>
-
+                <h1 className='blue'>Connect</h1>
                 <div className="links">
-                    <h1>Contact me directly: </h1>
+                    <h1>Based in </h1>
                     <div>
-                        <span><FiPhoneCall/></span>
-                        <p>Skip phone section</p>
-                    </div>
-                    <div>
-                        <span><HiOutlineMailOpen/></span>
-                        <a href="mailto:geckob4i@gmail.com">geckob4i@gmail.com</a>
+                        <p>Minneapolis, Minnesota</p>
                     </div>
                     <div className="profiles">
-                        <span className="icons"><a href="#"><AiFillGithub/></a></span>
-                        <span className="icons"><a href="#"><AiFillLinkedin/></a></span>
+                        <span className="icons"><a href="https://github.com/Kenny4297" rel="noreferrer" target="_blank"><AiFillGithub size={50}/></a></span>
+                        <span className="icons"><a href="https://www.linkedin.com/in/kedgard-cordero/" rel="noreferrer" target="_blank"><AiFillLinkedin size={50} /></a></span>
                     </div>
 
                 </div>
@@ -45,28 +59,31 @@ const Footer = () => {
             </Profile>
             <Form>
 
-                <form>
+                <form onSubmit={onSubmit} ref={form}>
                     <div className="name">
                         <span><CgProfile /></span>
-                        <input type='text' placeholder='Fullname...' />
+                        <input type='text' name="from_name" placeholder='Fullname...' />
                     </div>
 
                     <div className="email">
                         <span><MdAlternateEmail /></span>
-                        <input type='email' placeholder='Email...' />
+                        <input type='email' name="reply_to" placeholder='Your Email...' />
                     </div>
 
                     <div className="message">
                         <span className="messageIcon"><FiMail /></span>
-                        <textArea cols='30' rows='10' placeholder='Message...' />
+                        <textarea name="message" cols='30' rows='10' placeholder='Message...' />
                     </div>
-                    <div className="button-div">
-                        <button>Submit</button>
-                    </div>
+                    {showConfirmation ? (
+                        <div className="button-div">
+                            <p className="blue">Thanks for reaching out! You'll hear back as soon as possible!</p>
+                        </div>
+                        ) : (
+                        <div className="button-div">
+                            <button type="submit">Submit</button>
+                        </div>
+                    )}
                 </form>
-
-
-
             </Form>
         </Container>
     )
@@ -125,7 +142,8 @@ const Profile = styled.div`
             gap: 0.5rem;
             a {
                 text-decoration: none;
-                color: lightgray;
+                color: white;
+                width: 100px;
                 :hover {
                     color: orange;
                 }
@@ -149,18 +167,15 @@ const Profile = styled.div`
                 align-items: center;
                 justify-content: center;
                 background-color: #000;
-                width: 2rem;
-                height: 2rem;
                 margin-right: 0.5rem;
                 border-radius: 50px;
-
                 :hover {
                     background-color: orange;
                 }
 
                 a {
                     margin-top: 0.2rem;
-                    color: white;
+                    color: blue;
                 }
             }
         }

@@ -35,9 +35,10 @@ export default Services;
 
 const Container = styled.div`
     width: 80%;
+    height: 100vh;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 3rem 0;
+    padding: 1rem 0;
     @media (max-width: 840px) {
         width: 90%;
     }
@@ -48,6 +49,6 @@ const Container = styled.div`
 const Cards = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-top: 4rem;
+    margin-top: 2rem;
     gap: 1rem;
 `;
