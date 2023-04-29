@@ -5,7 +5,6 @@ import { FaGithub } from 'react-icons/fa'
 import ProfNoBack from './assets/ProfNoBack.png'
 
 const ProfComponent = () => {
-
     return (
             <Container id='home'>
                 <Texts>
@@ -22,8 +21,8 @@ const ProfComponent = () => {
                     <Social>
                         <p>Check out my</p>
                         <div className="social-icons">
-                            <span><a href="https://www.linkedin.com/in/kedgard-cordero/" rel="noreferrer" target="_blank"><FaLinkedinIn/></a></span>
-                            <span><a href="https://github.com/Kenny4297" rel="noreferrer" target="_blank"><FaGithub/></a></span>
+                            <span><a href="https://www.linkedin.com/in/kedgard-cordero/" rel="noreferrer" target="_blank" title="LinkedIn"><FaLinkedinIn/></a></span>
+                            <span><a href="https://github.com/Kenny4297" rel="noreferrer" target="_blank" title="GitHub"><FaGithub/></a></span>
                         </div>
                     </Social>
                 </Texts>

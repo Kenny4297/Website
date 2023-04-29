@@ -7,15 +7,15 @@ const Header = () => {
     return (
         <Container bar={bar}>
             <Logo>
-                <RotatingReact size={30} />
+                <RotatingReact data-testid="rotating-react" size={30} />
                 <h1>Portfolio</h1>
             </Logo>
             <Nav bar={bar}>
-                <span>
+                {/* <span>
                     <a href="#home">Home</a>
-                </span>
+                </span> */}
                 <span>
-                    <a href="#services">Services</a>
+                    <a href="#services" data-testid="services-link">Services</a>
                 </span>
                 {/* <span><a href="#projects">Projects</a></span> */}
                 <span>
