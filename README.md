@@ -43,8 +43,13 @@ Due to this portfolio being a SPA, I have decided to simply use GitPages for the
 This was my first time using 'styled-components', and it was difficult to spot errors in the CSS section, due to the styling being a string, and not actual CSS. I resolved this by installing the extension 'vscode-styled-components', an extension that turns the original text into color coordinated CSS styling. This makes it easier for me to spot mistakes and results in cleaner code.
 
 ## Testing
+In the root folder, enter 'npm test' to run the tests.
+
+My focus on testing was making sure all the key parts of the website were functional: navigation, UI (such as the spinning react logo and the glowing button), and making sure the user entered correct information in the Contact section.
+
 My goal is to use jest for testing, in the following ways:
 EmailJS Integration, Website Layout, Load Time, Accessibility, and error Error Handling. These may change throughout the development process.
+
 
 If you have any suggestions for improvement, please feel free to share them with me.
 

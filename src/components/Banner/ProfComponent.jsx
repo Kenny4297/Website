@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import ProfNoBack from './assets/ProfNoBack.png'
@@ -14,7 +14,7 @@ const ProfComponent = () => {
                     <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. Throwing everything down, I pursued my passion by graduating from the University of Minnesota Coding Boot Camp.</p> 
                     
                     <p>This is what I was meant to do, and I love every second of it.</p>
-                    <a href="#footer">
+                    <a href="#footer" data-testid="footer-link">
                         <button>Let's Create Something</button>
                     </a>
                     
@@ -124,14 +124,16 @@ const Texts = styled.div`
         border: none;
         color: white;
         font-weight: 500;
-        animation: ${pulse} 3s linear infinite;
+        animation-name: ${pulse};
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
         filter: drop-shadow(0px 10px 10px #01be9551);
         :hover {
             filter: drop-shadow(0px 10px 10px #01be9570);
         }
     }
 `
-
 
 const Social = styled.div`
     margin-top: 3rem;
@@ -168,6 +170,7 @@ const Social = styled.div`
         }
     }
 `;
+
 const Profile = styled.div`
     img {
         width: 20rem;
