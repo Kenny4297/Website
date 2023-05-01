@@ -30,9 +30,6 @@ React-icons is a library of popular icons that can be easily integrated into you
 React-Slick:
 React-Slick is a popular carousel component for React that allows you to easily create a responsive carousel or slider for your website. It provides a number of useful features, such as lazy loading, infinite scrolling, and touch swipe support, and can be easily customized to fit your design needs. Compared to the carousel component from react-bootstrap, React-Slick is more flexible and customizable, and provides a wider range of features.
 
-React-Reveal:
-React Reveal is a React library for creating animations on web pages. It allows you to add animation effects to your React components easily and without writing complex CSS animations. I have used this library in previous projects and decided to use it again here because of its clean animations.
-
 ## Features
 Visitors can see recommendations made by others, can contact me through email if they wish.
 
@@ -41,6 +38,8 @@ Due to this portfolio being a SPA, I have decided to simply use GitPages for the
 
 ## Troubleshooting
 This was my first time using 'styled-components', and it was difficult to spot errors in the CSS section, due to the styling being a string, and not actual CSS. I resolved this by installing the extension 'vscode-styled-components', an extension that turns the original text into color coordinated CSS styling. This makes it easier for me to spot mistakes and results in cleaner code.
+
+I was using react-awesome-reveal for loading the entire website with the `<Fade/ >` animation. When the page loaded, for a split second you could see the entire DOM how it should look, and *then* the `<Fade />` animation kicked in. I was not able to find anything on Google about this issue, so I decided to ditch it, and create the Fade animation with CSS. This ended up working perfectly, as there was no 'split second DOM' occurring before the Fade animation.
 
 ## Testing
 In the root folder, enter 'npm test' to run the tests.

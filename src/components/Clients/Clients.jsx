@@ -40,7 +40,7 @@ let settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows : false,
@@ -100,8 +100,7 @@ const Container = styled.div`
     max-width: 1270px;
     margin: 0 auto;
     padding-bottom: 5rem;
-    height: 100%;
-    /* padding: 1rem 0; */
+    height: 100vh;
 
     @media(max-width: 840px) {
         width: 90%;
@@ -113,7 +112,7 @@ const Container = styled.div`
     }
 
     h1 {
-        padding-top: 1rem;
+        padding-top: 2.5rem;
         text-transform: capitalize;
     }
 
