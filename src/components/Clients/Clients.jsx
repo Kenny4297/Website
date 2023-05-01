@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useRef } from 'react';
+import React, { useRef } from 'react';
 import Slider from 'react-slick'
 import ClientSlider from './ClientSlider';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -85,8 +85,8 @@ const Clients = () => {
                     {clientDisc}
                 </Slider>
                 <Buttons>
-                    <button onClick={() => arrowRef.current.slickPrev()}><IoIosArrowBack/></button>
-                    <button onClick={() => arrowRef.current.slickNext()}><IoIosArrowForward/></button>
+                    <button data-testid="back-button" onClick={() => arrowRef.current.slickPrev()}><IoIosArrowBack/></button>
+                    <button data-testid="forward-button" onClick={() => arrowRef.current.slickNext()}><IoIosArrowForward/></button>
                 </Buttons>
             </Testimonials>
          </Container>

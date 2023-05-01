@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {IoIosQuote} from "react-icons/io";
-import Clay from '../Banner/assets/Clay.jpeg'
+import React from 'react';
 
 const ClientSlider = (props) => {
     const {name, position, img, disc} = props.item;
