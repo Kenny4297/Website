@@ -1,6 +1,6 @@
 # Kedgard Cordero's Website
 
-Screenshot coming soon!
+![Screenshot](./src/components/Banner/assets/websiteSnapshot.png)
 
 ## Table of Contents
 - [License](#license)
@@ -18,7 +18,7 @@ This project is licensed under the MIT license.
 Kedgard Cordero's personal website! Learn more about me, and contact me if you wish!
 
 ## Motivation
-I wanted to push myself and create a better personal website, other than the website that they have you do in the Minnesota Coding Bootcamp. There were many restrictions on that portfolio, and I knew that I could do better! 
+I wanted to push myself and create a better personal website, other than the website that was required in the Minnesota Coding Bootcamp. There were many restrictions on that portfolio, and I knew that I could do better! 
 
 ## Technologies
 Styled-components:
@@ -34,7 +34,7 @@ React-Reveal:
 React Reveal is a React library for creating animations on web pages. It allows you to add animation effects to your React components easily and without writing complex CSS animations. I have used this library in previous projects and decided to use it again here because of its clean animations.
 
 ## Features
-Visitors can view my previous work, see recommendations made by others, can contact me through email if they wish.
+Visitors can see recommendations made by others, can contact me through email if they wish.
 
 ## Deployment
 Due to this portfolio being a SPA, I have decided to simply use GitPages for the deployment. You can view the site [here](https://kenny4297.github.io/Website/).
@@ -49,7 +49,6 @@ My focus on testing was making sure all the key parts of the website were functi
 
 My goal is to use jest for testing, in the following ways:
 EmailJS Integration, Website Layout, Load Time, Accessibility, and error Error Handling. These may change throughout the development process.
-
 
 If you have any suggestions for improvement, please feel free to share them with me.
 
