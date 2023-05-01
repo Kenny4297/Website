@@ -4,6 +4,7 @@ import { CgProfile } from "react-icons/cg";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
 import { FiMail} from "react-icons/fi";
+import { FaComment } from 'react-icons/fa'
 import React, { useRef, useState } from "react";
 
 const Footer = () => {
@@ -104,7 +105,7 @@ const Footer = () => {
 
                     <div className="email">
                         <span>
-                            <MdAlternateEmail />
+                            <FaComment/>
                         </span>
                         <input
                             type="email"
