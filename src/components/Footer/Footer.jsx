@@ -1,26 +1,39 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
-import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import emailjs from '@emailjs/browser';
-import { FiMail, FiPhoneCall } from "react-icons/fi";
-import { useRef, useState } from 'react'
+import emailjs from "@emailjs/browser";
+import { FiMail} from "react-icons/fi";
+import React, { useRef, useState } from "react";
 
 const Footer = () => {
     const scrollUp = () => {
         window.scroll({
             top: 0,
-            behavior: "smooth"
-        })
-    }
+            behavior: "smooth",
+        });
+    };
 
     const form = useRef();
 
     const [showConfirmation, setShowConfirmation] = useState(false);
 
-    const onSubmit = (e) => {
-        e.preventDefault();
+    const [formData, setFormData] = useState({
+        from_name: "",
+        reply_to: "",
+        message: "",
+    });
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+    const onSubmit = (event) => {
+        event.preventDefault();
         emailjs.sendForm(
             process.env.REACT_APP_EMAILJS_SERVICE_ID,
             process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
@@ -29,11 +42,11 @@ const Footer = () => {
         );
 
         setShowConfirmation(true);
-            form.current.reset();
-            setTimeout(() => {
+        form.current.reset();
+        setTimeout(() => {
             setShowConfirmation(false);
         }, 20000);
-    
+
         // Clear the input fields after the email is sent
         form.current.elements.from_name.value = "";
         form.current.elements.reply_to.value = "";
@@ -42,52 +55,103 @@ const Footer = () => {
     return (
         <Container id="footer">
             <Profile>
-                <h1 className='blue'>Connect</h1>
+                <h1 className="blue">Connect</h1>
                 <div className="links">
                     <h1>Based in </h1>
                     <div>
                         <p>Minneapolis, Minnesota</p>
                     </div>
                     <div className="profiles">
-                        <span className="icons"><a href="https://github.com/Kenny4297" rel="noreferrer" target="_blank"><AiFillGithub size={50}/></a></span>
-                        <span className="icons"><a href="https://www.linkedin.com/in/kedgard-cordero/" rel="noreferrer" target="_blank"><AiFillLinkedin size={50} /></a></span>
+                        <span className="icons">
+                            <a
+                                href="https://github.com/Kenny4297"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <AiFillGithub size={50} />
+                            </a>
+                        </span>
+                        <span className="icons">
+                            <a
+                                href="https://www.linkedin.com/in/kedgard-cordero/"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <AiFillLinkedin size={50} />
+                            </a>
+                        </span>
                     </div>
-
                 </div>
-                <ArrowUp onClick={scrollUp}><AiOutlineArrowUp /></ArrowUp>
-
+                <ArrowUp onClick={scrollUp}>
+                    <AiOutlineArrowUp />
+                </ArrowUp>
             </Profile>
             <Form>
-
                 <form onSubmit={onSubmit} ref={form}>
                     <div className="name">
-                        <span><CgProfile /></span>
-                        <input type='text' name="from_name" placeholder='Fullname...' />
+                        <span>
+                            <CgProfile />
+                        </span>
+                        <input
+                            type="text"
+                            name="from_name"
+                            value={formData.from_name}
+                            data-testid="name-input"
+                            onChange={handleChange}
+                            placeholder="Fullname..."
+                        />
                     </div>
 
                     <div className="email">
-                        <span><MdAlternateEmail /></span>
-                        <input type='email' name="reply_to" placeholder='Your Email...' />
+                        <span>
+                            <MdAlternateEmail />
+                        </span>
+                        <input
+                            type="email"
+                            name="reply_to"
+                            data-testid="email-input"
+                            value={formData.reply_to}
+                            onChange={handleChange}
+                            placeholder="Email or Phone..."
+                        />
                     </div>
 
                     <div className="message">
-                        <span className="messageIcon"><FiMail /></span>
-                        <textarea name="message" cols='30' rows='10' placeholder='Message...' />
+                        <span className="messageIcon">
+                            <FiMail />
+                        </span>
+                        <textarea
+                            name="message"
+                            cols="30"
+                            data-testid="message-input"
+                            value={formData.message}
+                            onChange={handleChange}
+                            rows="10"
+                            placeholder="Message..."
+                        />
                     </div>
                     {showConfirmation ? (
                         <div className="button-div">
-                            <p className="blue">Thanks for reaching out! You'll hear back as soon as possible!</p>
+                            <p className="blue">
+                                Thanks for reaching out! You'll hear back as
+                                soon as possible!
+                            </p>
                         </div>
-                        ) : (
+                    ) : (
                         <div className="button-div">
-                            <button type="submit">Submit</button>
+                            <button
+                                type="submit"
+                                data-testid="submit-button"
+                            >
+                                Submit
+                            </button>
                         </div>
                     )}
                 </form>
             </Form>
         </Container>
-    )
-}
+    );
+};
 
 export default Footer;
 
@@ -101,21 +165,20 @@ const Container = styled.div`
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    @media(max-width: 840px) {
+    @media (max-width: 840px) {
         width: 90%;
     }
 
-    @media(max-width: 650px) {
+    @media (max-width: 650px) {
         flex-direction: column;
         gap: 3rem;
-
     }
 `;
 
 const Profile = styled.div`
     width: 50%;
     margin-left: 15px;
-    .address{
+    .address {
         padding: 1rem 0;
         h1 {
             font-size: 1.2rem;
@@ -124,8 +187,8 @@ const Profile = styled.div`
         p {
             width: 60%;
             padding-top: 0.5rem;
-            @media(max-width: 650px) {
-               width: 100%;
+            @media (max-width: 650px) {
+                width: 100%;
             }
         }
     }
@@ -133,10 +196,10 @@ const Profile = styled.div`
     .links {
         h1 {
             font-size: 1.2rem;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
         }
 
-        div{
+        div {
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -158,7 +221,7 @@ const Profile = styled.div`
             padding: 1rem 0;
         }
 
-        .icons{
+        .icons {
             display: flex;
             align-items: center;
 
@@ -195,20 +258,22 @@ const Form = styled.div`
         padding: 0.8rem;
         margin-top: 1.2rem;
         position: relative;
-        right: .9rem;
+        right: 0.9rem;
         border-radius: 5px;
-        .name, .email, .message {
+        .name,
+        .email,
+        .message {
             display: flex;
             border: 1px solid gray;
-            margin-bottom: .5rem;
-            input, textarea {
+            margin-bottom: 0.5rem;
+            input,
+            textarea {
                 border: none;
                 width: 100%;
                 outline: none;
                 color: #fff;
                 background-color: transparent;
                 padding: 1rem;
-
             }
 
             span {
@@ -220,7 +285,7 @@ const Form = styled.div`
             }
             .messageIcon {
                 align-items: flex-start;
-                padding-top: .5rem;
+                padding-top: 0.5rem;
             }
         }
 
@@ -254,7 +319,7 @@ const ArrowUp = styled.div`
     font-size: 1.3rem;
     font-weight: 700;
     margin-top: 2rem;
-    @media(max-width: 650px) {
+    @media (max-width: 650px) {
         position: absolute;
         right: 3rem;
         top: 16rem;
