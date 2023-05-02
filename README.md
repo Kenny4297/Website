@@ -30,8 +30,11 @@ React-icons is a library of popular icons that can be easily integrated into you
 React-Slick:
 React-Slick is a popular carousel component for React that allows you to easily create a responsive carousel or slider for your website. It provides a number of useful features, such as lazy loading, infinite scrolling, and touch swipe support, and can be easily customized to fit your design needs. Compared to the carousel component from react-bootstrap, React-Slick is more flexible and customizable, and provides a wider range of features.
 
+EmailJS:
+EmailJS is a cloud-based email delivery service that allows developers to send emails directly from their web applications using JavaScript. With EmailJS, developers can easily integrate email functionality into their applications without the need for a server-side email infrastructure. EmailJS supports a variety of email providers, including Gmail, Yahoo, and Outlook, and offers a range of features, such as email templates, attachments, and custom data variables.
+
 ## Features
-Visitors can see recommendations made by others, can contact me through email if they wish.
+Users can learn about me, what I offer, view recommendations, and contact me through email. 
 
 ## Deployment
 Due to this portfolio being a SPA, I have decided to simply use GitPages for the deployment. You can view the site [here](https://kenny4297.github.io/Website/).
@@ -44,10 +47,7 @@ I was using react-awesome-reveal for loading the entire website with the `<Fade/
 ## Testing
 In the root folder, enter 'npm test' to run the tests.
 
-My focus on testing was making sure all the key parts of the website were functional: navigation, UI (such as the spinning react logo and the glowing button), and making sure the user entered correct information in the Contact section.
+My focus on testing was making sure all the key parts of the website were functional: navigation, UI (such as the spinning react logo and the glowing button), and making sure the users message was successfully send to my email with EmailJS.
 
-My goal is to use jest for testing, in the following ways:
-EmailJS Integration, Website Layout, Load Time, Accessibility, and error Error Handling. These may change throughout the development process.
-
-If you have any suggestions for improvement, please feel free to share them with me.
+If you have any suggestions for improvement, please feel free to share them with me! Thanks for viewing this README!
 
