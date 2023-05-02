@@ -45,10 +45,45 @@ const Container = styled.div`
     h1 {
         padding-top: 1rem;
     }
+    @media (max-width: 978px) {
+        padding-bottom: 15rem;
+    }
+    @media (max-width: 763px) {
+        padding-bottom: 20rem;
+    }
+    @media (max-width: 680px) {
+        padding-bottom: 23rem;
+    }
+    @media (max-width: 650px) {
+        padding-bottom: 25rem;
+    }
+    @media (max-width: 596px) {
+        padding-bottom: 28rem;
+    }
+    @media (max-width: 572px) {
+        padding-bottom: 35rem;
+    }
+    @media (max-width: 506px) {
+        padding-bottom: 37rem;
+    }
+    @media (max-width: 495px) {
+        padding-bottom: 40rem;
+    }
+    @media (max-width: 426px) {
+        padding-bottom: 41rem;
+    }
+    @media (max-width: 424px) {
+        padding-bottom: 45rem;
+    }
 `;
 const Cards = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 2rem;
     gap: 1rem;
+
+    /* @media (max-width: 762px) {
+        width: 90%;
+        height: 100vh;
+    } */
 `;

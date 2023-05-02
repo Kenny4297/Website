@@ -48,7 +48,7 @@ let settings = {
       {
         breakpoint: 990,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true
@@ -57,7 +57,7 @@ let settings = {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2
         }
@@ -66,7 +66,8 @@ let settings = {
         breakpoint: 530,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: false
         }
       }
     ]}
@@ -106,6 +107,16 @@ const Container = styled.div`
         width: 90%;
     }
 
+    @media(max-width: 626px) {
+        width: 90%;
+        padding-bottom: 10rem;
+    }
+
+    @media(max-width: 362px) {
+        width: 90%;
+        padding-bottom: 12rem;
+    }
+
     span {
         font-weight: 700;
         text-transform: uppercase;
@@ -118,6 +129,9 @@ const Container = styled.div`
 
     .slick-list, .slick-slider, .slick-track {
         padding: 0;
+        @media (max-width:526px) {
+            margin-right: -.9rem;
+        }
     }
 
     .slick-dots {
@@ -144,7 +158,9 @@ const Container = styled.div`
     }
 
     .slick-dots li {
-    margin: 0;}
+    margin: 0;
+    }
+
 `
 
 const Testimonials = styled.div`
@@ -152,6 +168,13 @@ const Testimonials = styled.div`
     position: relative;
     /* color: pink; */
     font-size: 3rem;
+    @media (max-width: 527px) {
+        /* border: 2px solid red; */
+        width: 100%;
+        position: relative;
+        right: 1.7rem;
+        margin-right: 0rem;
+    }
 `
 
 const Buttons = styled.div`

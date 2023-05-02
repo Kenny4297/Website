@@ -83,7 +83,7 @@ const Footer = () => {
                         </span>
                     </div>
                 </div>
-                <ArrowUp onClick={scrollUp}>
+                <ArrowUp className="scroll-up-arrow" onClick={scrollUp}>
                     <AiOutlineArrowUp />
                 </ArrowUp>
             </Profile>
@@ -173,6 +173,16 @@ const Container = styled.div`
     @media (max-width: 650px) {
         flex-direction: column;
         gap: 3rem;
+        align-items: center;
+        margin-right: 0rem;
+        padding-right: 2rem;
+        @media (max-width: 500px) {
+            marin-right: 0rem;
+            padding-right: -1rem;
+        }
+        .scroll-up-arrow {
+            display: none;
+        }
     }
 `;
 
@@ -261,6 +271,20 @@ const Form = styled.div`
         position: relative;
         right: 0.9rem;
         border-radius: 5px;
+        @media (max-width: 650px) {
+            width: 60vw;
+            text-align: left;
+            padding: 0;
+            margin: 0 auto;
+            margin-right: -10rem;
+            margin-right: 10px;
+
+            /* right: 6.5rem; */
+            /* border: 2px solid red; */
+        }
+        /* @media (max-width: 500px) {
+            width: 70vw;
+        } */
         .name,
         .email,
         .message {

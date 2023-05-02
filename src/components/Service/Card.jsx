@@ -30,4 +30,8 @@ const Container = styled.div`
         font-size: 1.1rem;
         color: #c7d8e6;
     }
+
+    @media (max-width: 400px) {
+        margin-right: .5rem;
+    }
 `

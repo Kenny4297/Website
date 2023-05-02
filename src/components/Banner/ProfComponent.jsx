@@ -42,7 +42,7 @@ const Container = styled.div`
     gap: 2rem;
     padding-top: 1rem;
     width: 80%;
-    height: 70vh;
+    height: 1000px;
     max-width: 1280px;
     margin: 0 auto;
     z-index: 1;
@@ -181,11 +181,11 @@ const Profile = styled.div`
             margin-left: 10rem;
         }
         @media(max-width: 970px) {
-            margin-left: 8rem;
+            margin-left: 5rem;
         }
         @media (max-width: 790px) {
-        width: 20rem;
-        margin-left: 5rem;
+        width: 15rem;
+        margin-left: 3rem;
 
         }
         /* @media (max-width: 661px) {
