@@ -46,34 +46,34 @@ const Container = styled.div`
         padding-top: 1rem;
     }
     @media (max-width: 978px) {
-        padding-bottom: 15rem;
-    }
-    @media (max-width: 763px) {
         padding-bottom: 20rem;
     }
-    @media (max-width: 680px) {
-        padding-bottom: 23rem;
-    }
-    @media (max-width: 650px) {
+    @media (max-width: 763px) {
         padding-bottom: 25rem;
     }
+    @media (max-width: 680px) {
+        padding-bottom: 25rem;
+    }
+    @media (max-width: 650px) {
+        padding-bottom: 30rem;
+    }
     @media (max-width: 596px) {
-        padding-bottom: 28rem;
+        padding-bottom: 30rem;
     }
     @media (max-width: 572px) {
-        padding-bottom: 35rem;
-    }
-    @media (max-width: 506px) {
-        padding-bottom: 37rem;
-    }
-    @media (max-width: 495px) {
         padding-bottom: 40rem;
     }
+    @media (max-width: 506px) {
+        padding-bottom: 40rem;
+    }
+    @media (max-width: 495px) {
+        padding-bottom: 45rem;
+    }
     @media (max-width: 426px) {
-        padding-bottom: 41rem;
+        padding-bottom: 45rem;
     }
     @media (max-width: 424px) {
-        padding-bottom: 45rem;
+        padding-bottom: 50rem;
     }
 `;
 const Cards = styled.div`

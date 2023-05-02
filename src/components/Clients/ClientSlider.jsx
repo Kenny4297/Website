@@ -33,7 +33,6 @@ const Container = styled.div`
     width: 90%;
     margin: 0 1rem;
     @media (max-width: 626px) {
-        border: 2px solid red;
         /* margin-bottom: 10rem; */
     }
 `;

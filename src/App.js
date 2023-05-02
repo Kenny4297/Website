@@ -46,27 +46,27 @@ const Banner = styled.div`
     );
     height: 100vh;
     @media (max-width: 1100px) {
-        height: 110vh;
+        height: 115vh;
     }
     @media (max-width: 1006px) {
-        height: 113vh;
+        height: 115vh;
     }
     @media (max-width: 868px) {
-        height: 120vh;
-    }
-    @media (max-width: 850px) {
         height: 125vh;
     }
+    @media (max-width: 850px) {
+        height: 130vh;
+    }
     @media (max-width: 650px) {
-        height: 100vh;
+        height: 110vh;
         padding-bottom: 1rem;
     }
     @media (max-width: 482px) {
-        height: 110vh;
+        height: 120vh;
         padding-bottom: 1rem;
     }
     @media (max-width: 330px) {
-        height: 115vh;
+        height: 120vh;
         padding-bottom: 1rem;
     }
 `;

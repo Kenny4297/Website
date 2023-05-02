@@ -109,12 +109,12 @@ const Container = styled.div`
 
     @media(max-width: 626px) {
         width: 90%;
-        padding-bottom: 10rem;
+        padding-bottom: 13rem;
     }
 
     @media(max-width: 362px) {
         width: 90%;
-        padding-bottom: 12rem;
+        padding-bottom: 15rem;
     }
 
     span {
@@ -169,7 +169,6 @@ const Testimonials = styled.div`
     /* color: pink; */
     font-size: 3rem;
     @media (max-width: 527px) {
-        /* border: 2px solid red; */
         width: 100%;
         position: relative;
         right: 1.7rem;
