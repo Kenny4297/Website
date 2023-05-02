@@ -166,8 +166,14 @@ const Container = styled.div`
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 913px) {
+        height: 30vh;
+    }
     @media (max-width: 840px) {
         width: 90%;
+    }
+    @media (max-width: 821px) {
+        height: 30vh;
     }
 
     @media (max-width: 650px) {
@@ -176,14 +182,24 @@ const Container = styled.div`
         align-items: center;
         margin-right: 0rem;
         padding-right: 2rem;
-        @media (max-width: 500px) {
-            marin-right: 0rem;
-            padding-right: -1rem;
-        }
-        .scroll-up-arrow {
-            display: none;
-        }
     }
+    @media (max-width: 500px) {
+        marin-right: 0rem;
+        padding-right: -1rem;
+        .scroll-up-arrow {
+        display: none;
+    }
+    }
+    @media (max-width: 541px) {
+        margin-bottom: 25rem;
+        .scroll-up-arrow {
+        display: none;
+    }
+    @media (max-width: 376px) {
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+
 `;
 
 const Profile = styled.div`

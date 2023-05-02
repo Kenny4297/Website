@@ -51,20 +51,33 @@ const Banner = styled.div`
     @media (max-width: 1006px) {
         height: 115vh;
     }
+    @media (max-width: 913px) {
+        height: 60vh;
+    }
     @media (max-width: 868px) {
         height: 125vh;
     }
     @media (max-width: 850px) {
         height: 130vh;
     }
+    @media (max-width: 821px) {
+        height: 60vh;
+    }
+    @media (max-width: 769px) {
+        height: 70vh;
+    }
     @media (max-width: 650px) {
         height: 110vh;
         padding-bottom: 1rem;
     }
     @media (max-width: 482px) {
-        height: 120vh;
-        padding-bottom: 1rem;
-    }
+        height: 80vh;
+        padding-bottom: 1rem; 
+    } 
+    @media (max-width: 376px) {
+        height: 100vh;
+        padding-bottom: 1rem; 
+    } 
     @media (max-width: 330px) {
         height: 120vh;
         padding-bottom: 1rem;

@@ -103,18 +103,40 @@ const Container = styled.div`
     padding-bottom: 5rem;
     height: 100vh;
 
+    @media (max-width: 913px) {
+        height: 60vh;
+    }
     @media(max-width: 840px) {
         width: 90%;
     }
-
+    @media (max-width: 821px) {
+        height: 60vh;
+    }
     @media(max-width: 626px) {
         width: 90%;
         padding-bottom: 13rem;
     }
-
-    @media(max-width: 362px) {
+    @media (max-width: 541px) {
+        padding-bottom: 25rem;
+    }
+    @media(max-width: 415px) {
         width: 90%;
-        padding-bottom: 15rem;
+        padding-bottom: .1rem;
+    }
+    @media (max-width: 413px) {
+        padding-bottom: 20rem;
+    }
+    @media(max-width: 391px) {
+        width: 90%;
+        padding-bottom: 5rem;
+    }
+
+    @media(max-width: 376px) {
+        width: 90%;
+        padding-bottom: 20rem;
+    }
+    @media (max-width: 361px) {
+        padding-bottom: 25rem;
     }
 
     span {

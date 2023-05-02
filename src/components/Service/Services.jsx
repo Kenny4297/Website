@@ -48,6 +48,12 @@ const Container = styled.div`
     @media (max-width: 978px) {
         padding-bottom: 20rem;
     }
+    @media (max-width: 913px) {
+        height: 60vh;
+    }
+    @media (max-width: 821px) {
+        height: 60vh;
+    }
     @media (max-width: 763px) {
         padding-bottom: 25rem;
     }
@@ -63,6 +69,9 @@ const Container = styled.div`
     @media (max-width: 572px) {
         padding-bottom: 40rem;
     }
+    @media (max-width: 541px) {
+        padding-bottom: 50rem;
+    }
     @media (max-width: 506px) {
         padding-bottom: 40rem;
     }
@@ -73,7 +82,19 @@ const Container = styled.div`
         padding-bottom: 45rem;
     }
     @media (max-width: 424px) {
+        padding-bottom: 25rem;
+    }
+    @media (max-width: 413px) {
         padding-bottom: 50rem;
+    }
+    @media (max-width: 394px) {
+        padding-bottom: 35rem;
+    }
+    @media (max-width: 376px) {
+        padding-bottom: 45rem;
+    }
+    @media (max-width: 361px) {
+        padding-bottom: 55rem;
     }
 `;
 const Cards = styled.div`
