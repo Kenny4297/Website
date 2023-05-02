@@ -26,14 +26,12 @@ const Container = styled.div`
     cursor: pointer;
     position: relative;
     overflow: hidden;
-
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         transition: transform 400ms ease-in-out;
     }
-
     .disc{
         position: absolute;
         right: 0;
@@ -46,7 +44,6 @@ const Container = styled.div`
         h1 {
             font-size: 1rem;
         }
-
         p {
             width: 90%;
             font-size: 0.8rem;
@@ -56,13 +53,10 @@ const Container = styled.div`
             }
         }
     }
-
     :hover > img {
         transform: scale(1.3);
     }
-
     :hover > .disc {
         bottom: 0;
     }
-
 `

@@ -102,9 +102,4 @@ const Cards = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 2rem;
     gap: 1rem;
-
-    /* @media (max-width: 762px) {
-        width: 90%;
-        height: 100vh;
-    } */
 `;

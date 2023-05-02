@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes, css } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import ProfNoBack from './assets/ProfNoBack.png'
@@ -49,9 +49,6 @@ const Container = styled.div`
     @media (max-width: 840px) {
         width: 90%;
     }
-    /* @media (max-width: 640px) {
-        flex-direction: column;
-    } */
 `;
 
 const pulse = keyframes`
@@ -69,7 +66,6 @@ const pulse = keyframes`
 const Texts = styled.div`
     flex: 1;
     h4 {
-        /* padding: 1rem 0; */
         font-weight: 400;
         font-size: 1rem;
     }
@@ -78,7 +74,6 @@ const Texts = styled.div`
         letter-spacing: 2px;
         cursor: pointer;
     }
-
     h1 {
         color: #0077b3;
         display: inline-block;
@@ -109,7 +104,6 @@ const Texts = styled.div`
     h3 {
         font-weight: 500;
         font-size: 1.1rem;
-        /* padding-bottom: 1.2rem; */
         text-transform: capitalize;
     }
     p {
@@ -173,7 +167,6 @@ const Social = styled.div`
 const Profile = styled.div`
     img {
         width: 20rem;
-        /* margin-left: 21rem; */
         filter: drop-shadow(0px 10px 10px #0077b3);
         transition: transform 400ms ease-in-out;
         margin-bottom: 5rem;
@@ -186,16 +179,9 @@ const Profile = styled.div`
         @media (max-width: 790px) {
         width: 15rem;
         margin-left: 3rem;
-
         }
-        /* @media (max-width: 661px) {
-        width: 18rem;
-        margin-left: 4rem;
-
-        } */
         @media (max-width: 650px) {
            display: none
-
         }
     }
     :hover img {

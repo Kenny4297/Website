@@ -72,7 +72,6 @@ const Container = styled.div`
                     background-color: #fff;
                     position: absolute;
                 }
-
                 :before {
                     transform: ${(props) =>
                         props.bar ? "rotate(45deg)" : "translateY(10px)"};
@@ -87,13 +86,13 @@ const Container = styled.div`
         }
     }
 `;
+
 const Logo = styled.div`
     display: flex;
     align-items: center;
     gap: 0.5rem;
     span {
         font-size: 1.8rem;
-        color: ;
     }
     h1 {
         font-weight: 600;
@@ -101,6 +100,7 @@ const Logo = styled.div`
         color: white;
     }
 `;
+
 const Nav = styled.div`
     @media (max-width: 640px) {
         position: fixed;

@@ -32,23 +32,17 @@ const Container = styled.div`
     padding: 0.5rem 1rem 1rem 1rem;
     width: 90%;
     margin: 0 1rem;
-    @media (max-width: 626px) {
-        /* margin-bottom: 10rem; */
-    }
 `;
 const Header = styled.div`
-    
     .quote {
         font-size: 3rem;
         color: #0077b3;
         opacity: 0.7;
     }
-
     .stars {
         display: flex;
         justify-content: flex-end;
     }
-
     .star {
         color: #ffcd3c;
         font-size:1.3rem;
@@ -70,19 +64,16 @@ const Footer = styled.div`
         width: 4rem;
         border-radius: 50px;
     }
-
     h1 {
         font-size: 1.2rem;
         font-weight: 700;
         @media(max-width: 580px) {
             font-size: 1rem;
         }
-
         @media(max-width: 538px) {
             font-size: 0.9rem;
         }
     }
-
     p {
         font-size: 0.8rem;
         color: rgba(255,255,255,0.500);

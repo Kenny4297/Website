@@ -130,7 +130,6 @@ const Container = styled.div`
         width: 90%;
         padding-bottom: 5rem;
     }
-
     @media(max-width: 376px) {
         width: 90%;
         padding-bottom: 20rem;
@@ -143,27 +142,22 @@ const Container = styled.div`
         font-weight: 700;
         text-transform: uppercase;
     }
-
     h1 {
         padding-top: 2.5rem;
         text-transform: capitalize;
     }
-
     .slick-list, .slick-slider, .slick-track {
         padding: 0;
         @media (max-width:526px) {
             margin-right: -.9rem;
         }
     }
-
     .slick-dots {
         text-align: left;
     }
-
     .slick-dots li button:before {
         content: " ";
     }
-
     .slick-dots li button {
         width: 9px;
         height: 4px;
@@ -173,22 +167,18 @@ const Container = styled.div`
         transition: all 400ms ease-in-out;
         border-radius: 50px;
     }
-
     .slick-dots li.slick-active button {
         background: #0077b3;
         width: 15px;
     }
-
     .slick-dots li {
     margin: 0;
     }
-
 `
 
 const Testimonials = styled.div`
     margin-top: 2rem;
     position: relative;
-    /* color: pink; */
     font-size: 3rem;
     @media (max-width: 527px) {
         width: 100%;

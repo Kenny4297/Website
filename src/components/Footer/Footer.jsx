@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
@@ -175,7 +174,6 @@ const Container = styled.div`
     @media (max-width: 821px) {
         height: 30vh;
     }
-
     @media (max-width: 650px) {
         flex-direction: column;
         gap: 3rem;
@@ -186,20 +184,20 @@ const Container = styled.div`
     @media (max-width: 500px) {
         marin-right: 0rem;
         padding-right: -1rem;
-        .scroll-up-arrow {
-        display: none;
-    }
+            .scroll-up-arrow {
+            display: none;
+        }
     }
     @media (max-width: 541px) {
         margin-bottom: 25rem;
         .scroll-up-arrow {
         display: none;
+        }
     }
     @media (max-width: 376px) {
         width: 90%;
         margin-bottom: 5rem;
     }
-
 `;
 
 const Profile = styled.div`
@@ -210,7 +208,6 @@ const Profile = styled.div`
         h1 {
             font-size: 1.2rem;
         }
-
         p {
             width: 60%;
             padding-top: 0.5rem;
@@ -219,13 +216,11 @@ const Profile = styled.div`
             }
         }
     }
-
     .links {
         h1 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
         }
-
         div {
             display: flex;
             align-items: center;
@@ -240,18 +235,15 @@ const Profile = styled.div`
             }
         }
     }
-
     .profile {
         flex: 1;
         h1 {
             font-size: 1.2rem;
             padding: 1rem 0;
         }
-
         .icons {
             display: flex;
             align-items: center;
-
             span {
                 display: flex;
                 align-items: center;
@@ -262,7 +254,6 @@ const Profile = styled.div`
                 :hover {
                     background-color: orange;
                 }
-
                 a {
                     margin-top: 0.2rem;
                     color: blue;
@@ -279,7 +270,6 @@ const Form = styled.div`
         font-size: 1.3rem;
         padding-bottom: 0.7rem;
     }
-
     form {
         background-color: #191923;
         padding: 0.8rem;
@@ -293,14 +283,8 @@ const Form = styled.div`
             padding: 0;
             margin: 0 auto;
             margin-right: -10rem;
-            margin-right: 10px;
-
-            /* right: 6.5rem; */
-            /* border: 2px solid red; */
+            margin-right: 10px; 
         }
-        /* @media (max-width: 500px) {
-            width: 70vw;
-        } */
         .name,
         .email,
         .message {
@@ -316,7 +300,6 @@ const Form = styled.div`
                 background-color: transparent;
                 padding: 1rem;
             }
-
             span {
                 background-color: #3e3e3e;
                 width: 3rem;
@@ -329,11 +312,9 @@ const Form = styled.div`
                 padding-top: 0.5rem;
             }
         }
-
         .button-div {
             text-align: center;
         }
-
         button {
             width: 5rem;
             height: 1.8rem;
