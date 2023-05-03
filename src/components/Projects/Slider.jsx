@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import Project from "./Project";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
+import GoogleAnalytics from "../GoogleAnalytics";
+
 
 let data = [
     {
@@ -73,6 +75,7 @@ const SliderComp = () => {
     sliderProject = data.map((item, i) => <Project item={item} key={i} />);
     return (
         <Container>
+            <GoogleAnalytics />
             <Slider ref={arrowRef} {...settings}>
                 {sliderProject}
             </Slider>

@@ -7,6 +7,8 @@ import Clay from '../Banner/assets/Clay.jpeg';
 import Olu from '../Banner/assets/Olu.jpeg';
 import Gary from '../Banner/assets/Gary.jpeg'
 import Max from '../Banner/assets/Max.jpeg';
+import GoogleAnalytics from "../GoogleAnalytics";
+
 
 let clients = [
     {
@@ -80,6 +82,7 @@ const Clients = () => {
     ))
     return (
         <Container id='recommendation'>  
+        <GoogleAnalytics />
             <h1 className='blue'>recommendations</h1> 
             <Testimonials>
                 <Slider ref={arrowRef} {...settings}>

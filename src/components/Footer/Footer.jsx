@@ -5,6 +5,8 @@ import emailjs from "@emailjs/browser";
 import { FiMail} from "react-icons/fi";
 import { FaComment } from 'react-icons/fa'
 import React, { useRef, useState } from "react";
+import GoogleAnalytics from "../GoogleAnalytics";
+
 
 const Footer = () => {
     const scrollUp = () => {
@@ -54,6 +56,7 @@ const Footer = () => {
     };
     return (
         <Container id="footer">
+            <GoogleAnalytics />
             <Profile>
                 <h1 className="blue">Connect</h1>
                 <div className="links">

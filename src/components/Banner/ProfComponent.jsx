@@ -3,10 +3,13 @@ import styled, { keyframes } from 'styled-components';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import ProfNoBack from './assets/ProfNoBack.png'
+import GoogleAnalytics from "../GoogleAnalytics";
+
 
 const ProfComponent = () => {
     return (
             <Container id='home'>
+                <GoogleAnalytics />
                 <Texts>
                     <h3>Hi, I'm</h3>
                     <h1 className="blue">Kedgard Cordero</h1>

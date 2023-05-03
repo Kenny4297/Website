@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 import {IoIosQuote} from "react-icons/io";
 import React from 'react';
+import GoogleAnalytics from "../GoogleAnalytics";
+
 
 const ClientSlider = (props) => {
     const {name, position, img, disc} = props.item;
 
     return (
         <Container>
+            <GoogleAnalytics />
             <Header>
                 <span className="quote"><IoIosQuote/></span>
             </Header>
