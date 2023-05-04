@@ -10,6 +10,7 @@
 - [Features](#features)
 - [Deployment](#Deployment)
 - [Troubleshooting](#troubleshooting)
+- [Testing](#testing)
 
 ## License
 This project is licensed under the MIT license.
