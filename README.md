@@ -43,12 +43,12 @@ Due to this portfolio being a SPA, I have decided to simply use GitPages for the
 ## Troubleshooting
 This was my first time using 'styled-components', and it was difficult to spot errors in the CSS section, due to the styling being a string, and not actual CSS. I resolved this by installing the extension 'vscode-styled-components', an extension that turns the original text into color coordinated CSS styling. This makes it easier for me to spot mistakes and results in cleaner code.
 
-I was using react-awesome-reveal for loading the entire website with the `<Fade/ >` animation. When the page loaded, for a split second you could see the entire DOM how it should look, and *then* the `<Fade />` animation kicked in. I was not able to find anything on Google about this issue, so I decided to ditch it, and create the Fade animation with CSS. This ended up working perfectly, as there was no 'split second DOM' occurring before the Fade animation.
+I was using react-awesome-reveal for loading the entire website with the `<Fade/ >` animation. When the page loaded, for a split second you could see the entire DOM how it should look, and *then* the `<Fade />` animation kicked in. I was unable to find any resources on Google about this issue, so I decided to ditch it, and create the Fade animation with CSS. This ended up working perfectly, as there was no 'split second DOM' occurring before the Fade animation.
 
 ## Testing
 In the root folder, enter 'npm test' to run the tests.
 
-My focus on testing was making sure all the key parts of the website were functional: navigation, UI (such as the spinning react logo and the glowing button), and making sure the users message was successfully send to my email with EmailJS.
+My focus on testing was making sure all the key parts of the website were functional: navigation, UI (such as the spinning react logo and the glowing button), and making sure the users message was successfully send to my email with EmailJS. Overall, the testing process was successful and ensured that all key components of the website were functional.
 
 If you have any suggestions for improvement, please feel free to share them with me! Thanks for viewing this README!
 
