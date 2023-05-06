@@ -1,28 +1,73 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styled, { keyframes } from "styled-components";
 import { FaReact } from "react-icons/fa";
 
 const Header = () => {
     const [bar, setBar] = useState(false);
+    const navRef = useRef(null);
+    // const handleClick = (event) => {
+    //     // Check if the link contains a #
+    //     if (event.target.href.includes('#')) {
+    //         console.log(event.target.href);
+    //       // Hide the navigation screen if it's visible on smaller screens
+    //       const mediaQuery = window.matchMedia('(max-width: 640px)');
+    //       if (mediaQuery.matches && navRef.current.style.height !== '0') {
+    //         console.log("Test for screen size")
+    //         navRef.current.style.height = '0';
+    //         setBar(false);
+    //         console.log(`State of bar is ${bar}`)
+    //       }
+    //     } else {
+    //       console.log("else check")
+    //       if (!bar) {
+    //         navRef.current.style.height = '100vh';
+    //         console.log("Test for no bar")
+    //         setBar(true)
+    //       } else {
+    //         navRef.current.style.height = '0';
+    //         console.log("Test for bar")
+    //         setBar(true)
+    //       }
+    //     }
+    //   };
+
+    const handleClick = (event) => {
+        console.log('handleClick function firing');
+        if (event.target.closest('.bars')) {
+            console.log('Toggle navigation screen');
+            setBar(!bar);
+            navRef.current.style.height = bar ? '0' : '100vh';
+        } else if (event.target.href && event.target.href.includes('#')) {
+            console.log('Clicked a navigation link');
+            const mediaQuery = window.matchMedia('(max-width: 640px)');
+            if (mediaQuery.matches && navRef.current.style.height !== '0') {
+                console.log('Hide navigation screen');
+                navRef.current.style.height = '0';
+                setBar(false);
+            }
+        }
+    }
+
+
     return (
         <Container bar={bar}>
             <Logo>
                 <RotatingReact data-testid="rotating-react" size={30} />
                 <h1>Portfolio</h1>
             </Logo>
-            <Nav bar={bar}>
+            <Nav ref={navRef} bar={bar}>
                 <span>
-                    <a href="#services" data-testid="services-link">Services</a>
+                    <a href="#services" data-testid="services-link" onClick={handleClick}>Services</a>
                 </span>
                 {/* <span><a href="#projects">Projects</a></span> */}
                 <span>
-                    <a href="#recommendation">Recommendations</a>
+                    <a href="#recommendation"  onClick={handleClick}>Recommendations</a>
                 </span>
                 <span>
-                    <a href="#footer">Connect</a>
+                    <a href="#footer"  onClick={handleClick}>Connect</a>
                 </span>
             </Nav>
-            <div onClick={() => setBar(!bar)} className="bars">
+            <div className="bars" onClick={handleClick}>
                 <div className="bar"></div>
             </div>
         </Container>
