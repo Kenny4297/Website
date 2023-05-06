@@ -108,7 +108,7 @@ const Footer = () => {
                             <FaComment/>
                         </span>
                         <input
-                            type="email"
+                            type="text"
                             name="reply_to"
                             data-testid="email-input"
                             value={formData.reply_to}
