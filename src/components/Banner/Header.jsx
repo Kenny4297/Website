@@ -5,32 +5,6 @@ import { FaReact } from "react-icons/fa";
 const Header = () => {
     const [bar, setBar] = useState(false);
     const navRef = useRef(null);
-    // const handleClick = (event) => {
-    //     // Check if the link contains a #
-    //     if (event.target.href.includes('#')) {
-    //         console.log(event.target.href);
-    //       // Hide the navigation screen if it's visible on smaller screens
-    //       const mediaQuery = window.matchMedia('(max-width: 640px)');
-    //       if (mediaQuery.matches && navRef.current.style.height !== '0') {
-    //         console.log("Test for screen size")
-    //         navRef.current.style.height = '0';
-    //         setBar(false);
-    //         console.log(`State of bar is ${bar}`)
-    //       }
-    //     } else {
-    //       console.log("else check")
-    //       if (!bar) {
-    //         navRef.current.style.height = '100vh';
-    //         console.log("Test for no bar")
-    //         setBar(true)
-    //       } else {
-    //         navRef.current.style.height = '0';
-    //         console.log("Test for bar")
-    //         setBar(true)
-    //       }
-    //     }
-    //   };
-
     const handleClick = (event) => {
         console.log('handleClick function firing');
         if (event.target.closest('.bars')) {
@@ -47,7 +21,6 @@ const Header = () => {
             }
         }
     }
-
 
     return (
         <Container bar={bar}>
