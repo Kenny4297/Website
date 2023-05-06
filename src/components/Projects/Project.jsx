@@ -1,12 +1,10 @@
 import styled from 'styled-components';
-import GoogleAnalytics from "../GoogleAnalytics";
 
 
 const Project = (props) => {
     const { img, disc } = props.item;
   return (
     <Container className='project'>
-        <GoogleAnalytics />
         <img src={img} alt="project" />
         <div className="disc">
             <h1>Description</h1>

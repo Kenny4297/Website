@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { FaReact } from "react-icons/fa";
-import GoogleAnalytics from "../GoogleAnalytics";
 
 const Header = () => {
     const [bar, setBar] = useState(false);
     return (
         <Container bar={bar}>
-            <GoogleAnalytics />
             <Logo>
                 <RotatingReact data-testid="rotating-react" size={30} />
                 <h1>Portfolio</h1>

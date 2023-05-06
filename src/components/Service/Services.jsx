@@ -3,13 +3,11 @@ import { FiCodesandbox } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
 import styled from 'styled-components'
 import Card from "./Card";
-import GoogleAnalytics from "../GoogleAnalytics";
 
 
 const Services = () => {
     return (
         <Container id="services">
-            <GoogleAnalytics />
             <h1 className="blue">What I Do</h1>
             <Cards>
                 <Card

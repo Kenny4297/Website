@@ -1,12 +1,10 @@
 import styled from 'styled-components'
 import SliderComp from './Slider';
-import GoogleAnalytics from "../GoogleAnalytics";
 
 
 const Projects = () => {
     return (
         <Container id="projects">
-            <GoogleAnalytics />
             <h1>Featured <span className='blue'>Projects</span></h1>
             <p>My next steps are to recreate the projects I completed in the boot camp, since I have learned much since graduation. </p>
             <Slide>

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import {IoIosQuote} from "react-icons/io";
 import React from 'react';
-import GoogleAnalytics from "../GoogleAnalytics";
 
 
 const ClientSlider = (props) => {
@@ -9,7 +8,6 @@ const ClientSlider = (props) => {
 
     return (
         <Container>
-            <GoogleAnalytics />
             <Header>
                 <span className="quote"><IoIosQuote/></span>
             </Header>
