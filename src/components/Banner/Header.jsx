@@ -28,7 +28,7 @@ const Header = () => {
                 <RotatingReact data-testid="rotating-react" size={30} />
                 <h1>Portfolio</h1>
             </Logo>
-            <Nav ref={navRef} bar={bar}>
+            <Nav ref={navRef} bar={bar} data-testid="nav">
                 <span>
                     <a href="#services" data-testid="services-link" onClick={handleClick}>Services</a>
                 </span>
@@ -40,7 +40,7 @@ const Header = () => {
                     <a href="#footer"  onClick={handleClick}>Connect</a>
                 </span>
             </Nav>
-            <div className="bars" onClick={handleClick}>
+            <div className="bars" data-testid="bars" onClick={handleClick}>
                 <div className="bar"></div>
             </div>
         </Container>

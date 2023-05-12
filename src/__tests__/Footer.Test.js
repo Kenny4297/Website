@@ -33,4 +33,19 @@ describe("Footer", () => {
             process.env.REACT_APP_EMAILJS_USER_ID
         );
     });
+
+    it("calls scrollUp function when the scroll-up-arrow is clicked", () => {
+        const scrollMock = jest.fn();
+        window.scroll = scrollMock;
+
+        render(<Footer />);
+
+        const scrollUpArrow = screen.getByTestId("scroll-up-arrow");
+
+        fireEvent.click(scrollUpArrow);
+
+        expect(scrollMock).toHaveBeenCalledTimes(1);
+        expect(scrollMock).toHaveBeenCalledWith({ top: 0, behavior: "smooth" });
+    });
 });
+

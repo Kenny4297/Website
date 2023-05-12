@@ -11,8 +11,5 @@ module.exports = {
       "Olu\\.jpeg$": "<rootDir>/src/components/Banner/__mocks__/OluMock.js",
       "Max\\.jpeg$": "<rootDir>/src/components/Banner/__mocks__/MaxMock.js",
       "Gary\\.jpeg$": "<rootDir>/src/components/Banner/__mocks__/GaryMock.js",
-
-
-
     },
   };

@@ -8,5 +8,4 @@ test('clicking the buttons should move the card carousel', () => {
     const forwardButton = screen.getByTestId("forward-button");
     fireEvent.click(forwardButton);
     fireEvent.click(backButton);
-
 });

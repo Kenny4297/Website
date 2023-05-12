@@ -53,6 +53,7 @@ const Footer = () => {
         form.current.elements.reply_to.value = "";
         form.current.elements.message.value = "";
     };
+
     return (
         <Container id="footer">
             <Profile>
@@ -83,7 +84,7 @@ const Footer = () => {
                         </span>
                     </div>
                 </div>
-                <ArrowUp className="scroll-up-arrow" onClick={scrollUp}>
+                <ArrowUp className="scroll-up-arrow" onClick={scrollUp} data-testid="scroll-up-arrow">
                     <AiOutlineArrowUp />
                 </ArrowUp>
             </Profile>

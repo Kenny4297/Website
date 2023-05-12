@@ -50,5 +50,21 @@ In the root folder, enter 'npm test' to run the tests.
 
 My focus on testing was making sure all the key parts of the website were functional: navigation, UI (such as the spinning react logo and the glowing button), and making sure the users message was successfully send to my email with EmailJS. Overall, the testing process was successful and ensured that all key components of the website were functional.
 
+Here is the full Jest coverage table:
+
+--------------------|---------|----------|---------|---------|-------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------|---------|----------|---------|---------|-------------------
+All files           |   98.71 |    95.45 |   94.44 |    98.7 |                   
+ Banner             |     100 |       95 |     100 |     100 |                   
+  Header.jsx        |     100 |       95 |     100 |     100 | 14                
+  ProfComponent.jsx |     100 |      100 |     100 |     100 |                   
+ Clients            |     100 |      100 |     100 |     100 |                   
+  ClientSlider.jsx  |     100 |      100 |     100 |     100 | 
+  Clients.jsx       |     100 |      100 |     100 |     100 | 
+ Footer             |      96 |      100 |   83.33 |   95.83 | 
+  Footer.jsx        |      96 |      100 |   83.33 |   95.83 | 48
+--------------------|---------|----------|---------|---------|-------------------
+
 If you have any suggestions for improvement, please feel free to share them with me! Thanks for viewing this README!
 
