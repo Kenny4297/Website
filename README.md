@@ -52,7 +52,6 @@ My focus on testing was making sure all the key parts of the website were functi
 
 Here is the full Jest coverage table:
 
---------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
 All files           |   98.71 |    95.45 |   94.44 |    98.7 |                   
@@ -64,7 +63,7 @@ All files           |   98.71 |    95.45 |   94.44 |    98.7 |
   Clients.jsx       |     100 |      100 |     100 |     100 | 
  Footer             |      96 |      100 |   83.33 |   95.83 | 
   Footer.jsx        |      96 |      100 |   83.33 |   95.83 | 48
---------------------|---------|----------|---------|---------|-------------------
+
 
 If you have any suggestions for improvement, please feel free to share them with me! Thanks for viewing this README!
 
