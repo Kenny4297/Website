@@ -28,23 +28,30 @@ const Header = () => {
                 <RotatingReact data-testid="rotating-react" size={30} />
                 <h1>Portfolio</h1>
             </Logo>
-            <Nav ref={navRef} bar={bar} data-testid="nav">
+            <Nav ref={navRef} bar={bar} data-testid="nav" role="navigation">
                 <span>
-                    <a href="#services" data-testid="services-link" onClick={handleClick}>Services</a>
+                    <a href="#services" data-testid="services-link" onClick={handleClick}>
+                        Services
+                    </a>
                 </span>
                 {/* <span><a href="#projects">Projects</a></span> */}
                 <span>
-                    <a href="#recommendation"  onClick={handleClick}>Recommendations</a>
+                    <a href="#recommendation" onClick={handleClick}>
+                        Recommendations
+                    </a>
                 </span>
                 <span>
-                    <a href="#footer"  onClick={handleClick}>Connect</a>
+                    <a href="#footer" onClick={handleClick}>
+                        Connect
+                    </a>
                 </span>
             </Nav>
-            <div className="bars" data-testid="bars" onClick={handleClick}>
+            <div className="bars" data-testid="bars" onClick={handleClick} role="button" aria-label="Toggle Menu">
                 <div className="bar"></div>
             </div>
         </Container>
     );
+    
 };
 
 export default Header;

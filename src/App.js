@@ -21,13 +21,11 @@ function App() {
                 <ProfComponent />
             </Banner>
             <Services />
-            <LightColor>{/* <Projects /> */}</LightColor>
+            {/* <Projects /> */}
             <LightColor>
                 <Clients />
             </LightColor>
-            {/* <LightColor> */}
             <Footer />
-            {/* </LightColor> */}
         </Container>
     );
 }

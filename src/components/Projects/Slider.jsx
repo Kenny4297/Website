@@ -3,16 +3,21 @@ import Slider from "react-slick";
 import Project from "./Project";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
-
+import BeTethical from "../Banner/assets/BeTethical.png";
+import weather from "../Banner/assets/weather-wizard.png";
 
 let data = [
     {
-        img: "https://res.cloudinary.com/ghazni/image/upload/v1661324124/Yt-portfolio/ui5_mnvdaw.png",
-        disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        img: BeTethical,
+        disc: "A full-stack content management system that allows users to post thoughts and comments about any video game they enjoy.",
+        title: "Be Tethical!",
+        deployment: "https://be-tethical-production.up.railway.app/",
     },
     {
-        img: "https://res.cloudinary.com/ghazni/image/upload/v1661324074/Yt-portfolio/ui4_jku3ol.png",
-        disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        img: weather,
+        disc: "An advanced weather dashboard that displays the current weather, the 5 day forecast, the local time of any city, and saves their home city for better user experience.",
+        title: "Weather-Wizard",
+        deployment: "https://weather-wizard4297.herokuapp.com/",
     },
     {
         img: "https://res.cloudinary.com/ghazni/image/upload/v1661323981/Yt-portfolio/ui2_wtollo.png",
@@ -73,7 +78,7 @@ const SliderComp = () => {
     let sliderProject = "";
     sliderProject = data.map((item, i) => <Project item={item} key={i} />);
     return (
-        <Container>
+        <Container aria-roledescription="slider">
             <Slider ref={arrowRef} {...settings}>
                 {sliderProject}
             </Slider>
@@ -81,12 +86,14 @@ const SliderComp = () => {
                 <button
                     onClick={() => arrowRef.current.slickPrev()}
                     className="back"
+                    aria-label="Previous Slide"
                 >
                     <IoIosArrowBack />
                 </button>
                 <button
                     onClick={() => arrowRef.current.slickNext()}
                     className="next"
+                    aria-label="Next Slide"
                 >
                     <IoIosArrowForward />
                 </button>

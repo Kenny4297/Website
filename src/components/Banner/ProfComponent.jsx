@@ -6,34 +6,44 @@ import ProfNoBack from './assets/ProfNoBack.png'
 
 
 const ProfComponent = () => {
+    const openInNewTab = true;
+
     return (
-            <Container id='home'>
-                <Texts>
-                    <h3>Hi, I'm</h3>
-                    <h1 className="blue">Kedgard Cordero</h1>
-                    <h3>Full Stack Web Developer</h3>
-                    <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. Throwing everything down, I pursued my passion by graduating from the University of Minnesota Coding Boot Camp.</p> 
-                    
-                    <p>This is what I was meant to do, and I love every second of it.</p>
-                    <a href="#footer" data-testid="footer-link">
-                        <button>Let's Create Something</button>
-                    </a>
-                    
-                    <Social>
-                        <p>Check out my</p>
-                        <div className="social-icons">
-                            <span><a href="https://www.linkedin.com/in/kedgard-cordero/" rel="noreferrer" target="_blank" title="LinkedIn"><FaLinkedinIn/></a></span>
-                            <span><a href="https://github.com/Kenny4297" rel="noreferrer" target="_blank" title="GitHub"><FaGithub/></a></span>
-                        </div>
-                    </Social>
-                </Texts>
-                <Profile>
-                    <div className='img-container'>
-                        <img src={ProfNoBack} alt="Kedgard Cordero" />
-                    </div>
-                </Profile>
-            </Container>
-    )
+    <Container id="home">
+        <Texts>
+            <h3>Hi, I'm</h3>
+            <h1 className="blue">Kedgard Cordero</h1>
+            <h3>Full Stack Web Developer</h3>
+            <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. Throwing everything down, I pursued my passion by graduating from the University of Minnesota Coding Boot Camp.</p>
+            <p>This is what I was meant to do, and I love every second of it.</p>
+            <a href="#footer" data-testid="footer-link" aria-label="Contact me">
+                <button>Let's Create Something</button>
+            </a>
+
+            <Social>
+                <p>Check out my</p>
+                <div className="social-icons">
+                    <span>
+                        <a href="https://www.linkedin.com/in/kedgard-cordero/" rel="noreferrer" target={openInNewTab ? "_blank" : undefined} title="LinkedIn" aria-label="LinkedIn">
+                            <FaLinkedinIn />
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://github.com/Kenny4297" rel="noreferrer" target="_blank" title="GitHub" aria-label="GitHub">
+                            <FaGithub />
+                        </a>
+                    </span>
+                </div>
+            </Social>
+        </Texts>
+        <Profile>
+            <div className="img-container">
+                <img src={ProfNoBack} alt="Kedgard Cordero" aria-labelledby="profile-label" />
+            </div>
+        </Profile>
+    </Container>
+);
+
 }
 
 export default ProfComponent;

@@ -9,7 +9,7 @@ const ClientSlider = (props) => {
     return (
         <Container>
             <Header>
-                <span className="quote"><IoIosQuote/></span>
+                <span className="quote" aria-hidden="true"><IoIosQuote /></span>
             </Header>
             <Body>
                 {disc}
@@ -22,7 +22,8 @@ const ClientSlider = (props) => {
                 </div>
             </Footer>
         </Container>
-    )
+    );
+    
 };
 
 export default ClientSlider;

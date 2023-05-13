@@ -80,19 +80,24 @@ const Clients = () => {
         <ClientSlider item={item} key={i} />
     ))
     return (
-        <Container id='recommendation'>  
-            <h1 className='blue'>recommendations</h1> 
+        <Container id="recommendation">
+            <h1 className="blue" aria-label="Recommendations">recommendations</h1>
             <Testimonials>
                 <Slider ref={arrowRef} {...settings}>
                     {clientDisc}
                 </Slider>
                 <Buttons>
-                    <button data-testid="back-button" onClick={() => arrowRef.current.slickPrev()}><IoIosArrowBack/></button>
-                    <button data-testid="forward-button" onClick={() => arrowRef.current.slickNext()}><IoIosArrowForward/></button>
+                    <button data-testid="back-button" onClick={() => arrowRef.current.slickPrev()} aria-label="Previous testimonial">
+                        <IoIosArrowBack />
+                    </button>
+                    <button data-testid="forward-button" onClick={() => arrowRef.current.slickNext()} aria-label="Next testimonial">
+                        <IoIosArrowForward />
+                    </button>
                 </Buttons>
             </Testimonials>
-         </Container>
-    )
+        </Container>
+    );
+    
 }
 
 export default Clients;
