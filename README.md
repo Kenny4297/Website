@@ -19,7 +19,7 @@ This project is licensed under the MIT license.
 Kedgard Cordero's personal website! Learn more about me, and contact me if you wish!
 
 ## Motivation
-I wanted to push myself and create a better personal website, other than the website that was required in the Minnesota Coding Bootcamp. There were many restrictions on that portfolio, and I knew that I could do better! 
+I wanted to push myself and improve upon the website project created in the Minnesota Coding Bootcamp. There were many restrictions on that portfolio, and I knew that I could do better! 
 
 ## Technologies
 Styled-components:
