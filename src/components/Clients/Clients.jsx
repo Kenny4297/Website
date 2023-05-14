@@ -37,6 +37,7 @@ let clients = [
         disc : `Ked is a committed and skilled collaborator who was an absolute pleasure to work with on our group project. His exceptional communication skills and ability to think creatively and problem-solve in innovative ways were instrumental in our success. Ked consistently went above and beyond what was expected of him and showed exceptional dedication and work ethic. I highly recommend him to anyone seeking a skilled and committed team member.`
     },
 ]
+// Setting for the slideshow
 let settings = {
     dots: true,
     infinite: true,
@@ -74,6 +75,7 @@ let settings = {
     ]}
 
 const Clients = () => {
+    // useRef allows direct communication with the slider component
     const arrowRef = useRef(null);
     let clientDisc = "";
     clientDisc = clients.map((item, i) => (
@@ -97,7 +99,6 @@ const Clients = () => {
             </Testimonials>
         </Container>
     );
-    
 }
 
 export default Clients;

@@ -5,17 +5,21 @@ import { FaReact } from "react-icons/fa";
 const Header = () => {
     const [bar, setBar] = useState(false);
     const navRef = useRef(null);
+
+    // Creating my own hamburger
     const handleClick = (event) => {
-        console.log('handleClick function firing');
+
+        //  When the user clicks on an element with the class "bars", the navigation screen visibility is toggled.
         if (event.target.closest('.bars')) {
-            console.log('Toggle navigation screen');
             setBar(!bar);
             navRef.current.style.height = bar ? '0' : '100vh';
+
+            //  When the user clicks on a navigation link that contains a '#' symbol in its href attribute, the code logs a message and creates a media query object that checks if the viewport width is less than or equal to 640 pixels.
         } else if (event.target.href && event.target.href.includes('#')) {
-            console.log('Clicked a navigation link');
             const mediaQuery = window.matchMedia('(max-width: 640px)');
+
+            //  If the media query matches and the navigation screen is currently visible, the code hides the navigation screen by setting its height to '0' and updates the 'bar' state
             if (mediaQuery.matches && navRef.current.style.height !== '0') {
-                console.log('Hide navigation screen');
                 navRef.current.style.height = '0';
                 setBar(false);
             }
@@ -51,7 +55,6 @@ const Header = () => {
             </div>
         </Container>
     );
-    
 };
 
 export default Header;
@@ -86,6 +89,7 @@ const Container = styled.div`
                 position: absolute;
                 width: 100%;
                 height: 2px;
+                /* Change the bar color based on it's props */
                 background-color: ${(props) =>
                     props.bar ? "transparent" : "#fff"};
                 transition: all 400ms ease-in-out;

@@ -54,112 +54,111 @@ const Footer = () => {
         form.current.elements.message.value = "";
     };
 
- return (
-    <Container id="footer">
-        <Profile>
-            <h1 className="blue">Connect</h1>
-            <div className="links">
-                <h1>Based in </h1>
-                <div>
-                    <p>Minneapolis, Minnesota</p>
-                </div>
-                <div className="profiles">
-                    <span className="icons">
-                        <a
-                            href="https://github.com/Kenny4297"
-                            rel="noreferrer"
-                            target="_blank"
-                            aria-label="GitHub"
-                        >
-                            <AiFillGithub size={50} />
-                        </a>
-                    </span>
-                    <span className="icons">
-                        <a
-                            href="https://www.linkedin.com/in/kedgard-cordero/"
-                            rel="noreferrer"
-                            target="_blank"
-                            aria-label="LinkedIn"
-                        >
-                            <AiFillLinkedin size={50} />
-                        </a>
-                    </span>
-                </div>
-            </div>
-            <ArrowUp className="scroll-up-arrow" onClick={scrollUp} data-testid="scroll-up-arrow">
-                <AiOutlineArrowUp />
-            </ArrowUp>
-        </Profile>
-        <Form>
-            <form onSubmit={onSubmit} ref={form}>
-                <div className="name">
-                    <span>
-                        <CgProfile />
-                    </span>
-                    <input
-                        type="text"
-                        id="name-input"
-                        name="from_name"
-                        value={formData.from_name}
-                        data-testid="name-input"
-                        onChange={handleChange}
-                        placeholder="Fullname..."
-                    />
-                </div>
-
-                <div className="email">
-                    <span>
-                        <FaComment/>
-                    </span>
-                    <input
-                        type="text"
-                        id="email-input"
-                        name="reply_to"
-                        data-testid="email-input"
-                        value={formData.reply_to}
-                        onChange={handleChange}
-                        placeholder="Email or Phone..."
-                    />
-                </div>
-
-                <div className="message">
-                    <span className="messageIcon">
-                        <FiMail />
-                    </span>
-                    <textarea
-                        id="message-input"
-                        name="message"
-                        cols="30"
-                        data-testid="message-input"
-                        value={formData.message}
-                        onChange={handleChange}
-                        rows="10"
-                        placeholder="Message..."
-                    />
-                </div>
-                {showConfirmation ? (
-                    <div className="button-div">
-                        <p className="blue">
-                            Thanks for reaching out! You'll hear back as
-                            soon as possible!
-                        </p>
+    return (
+        <Container id="footer">
+            <Profile>
+                <h1 className="blue">Connect</h1>
+                <div className="links">
+                    <h1>Based in </h1>
+                    <div>
+                        <p>Minneapolis, Minnesota</p>
                     </div>
-                ) : (
-                    <div className="button-div">
-                        <button
-                            type="submit"
-                            data-testid="submit-button"
-                            aria-label="Submit"
-                        >
-                            Submit
-                        </button>
+                    <div className="profiles">
+                        <span className="icons">
+                            <a
+                                href="https://github.com/Kenny4297"
+                                rel="noreferrer"
+                                target="_blank"
+                                aria-label="GitHub"
+                            >
+                                <AiFillGithub size={50} />
+                            </a>
+                        </span>
+                        <span className="icons">
+                            <a
+                                href="https://www.linkedin.com/in/kedgard-cordero/"
+                                rel="noreferrer"
+                                target="_blank"
+                                aria-label="LinkedIn"
+                            >
+                                <AiFillLinkedin size={50} />
+                            </a>
+                        </span>
                     </div>
-                )}
-            </form>
-        </Form>
-    </Container>
-);
+                </div>
+                <ArrowUp className="scroll-up-arrow" onClick={scrollUp} data-testid="scroll-up-arrow">
+                    <AiOutlineArrowUp />
+                </ArrowUp>
+            </Profile>
+            <Form>
+                <form onSubmit={onSubmit} ref={form}>
+                    <div className="name">
+                        <span>
+                            <CgProfile />
+                        </span>
+                        <input
+                            type="text"
+                            id="name-input"
+                            name="from_name"
+                            value={formData.from_name}
+                            data-testid="name-input"
+                            onChange={handleChange}
+                            placeholder="Fullname..."
+                        />
+                    </div>
 
+                    <div className="email">
+                        <span>
+                            <FaComment/>
+                        </span>
+                        <input
+                            type="text"
+                            id="email-input"
+                            name="reply_to"
+                            data-testid="email-input"
+                            value={formData.reply_to}
+                            onChange={handleChange}
+                            placeholder="Email or Phone..."
+                        />
+                    </div>
+
+                    <div className="message">
+                        <span className="messageIcon">
+                            <FiMail />
+                        </span>
+                        <textarea
+                            id="message-input"
+                            name="message"
+                            cols="30"
+                            data-testid="message-input"
+                            value={formData.message}
+                            onChange={handleChange}
+                            rows="10"
+                            placeholder="Message..."
+                        />
+                    </div>
+                    {showConfirmation ? (
+                        <div className="button-div">
+                            <p className="blue">
+                                Thanks for reaching out! You'll hear back as
+                                soon as possible!
+                            </p>
+                        </div>
+                    ) : (
+                        <div className="button-div">
+                            <button
+                                type="submit"
+                                data-testid="submit-button"
+                                aria-label="Submit"
+                            >
+                                Submit
+                            </button>
+                        </div>
+                    )}
+                </form>
+            </Form>
+        </Container>
+    );
 };
 
 export default Footer;

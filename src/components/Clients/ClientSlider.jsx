@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import {IoIosQuote} from "react-icons/io";
 import React from 'react';
 
-
 const ClientSlider = (props) => {
     const {name, position, img, disc} = props.item;
 
@@ -23,7 +22,6 @@ const ClientSlider = (props) => {
             </Footer>
         </Container>
     );
-    
 };
 
 export default ClientSlider;

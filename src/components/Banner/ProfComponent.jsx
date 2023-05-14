@@ -6,6 +6,8 @@ import ProfNoBack from './assets/ProfNoBack.png'
 
 
 const ProfComponent = () => {
+
+    // React needs this state to successfully allow "target='_blank'""
     const openInNewTab = true;
 
     return (
