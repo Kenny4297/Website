@@ -1,6 +1,6 @@
-import { MdDesignServices } from "react-icons/md";
-import { FiCodesandbox } from "react-icons/fi";
-import { CgWebsite } from "react-icons/cg";
+import { SiJest } from "react-icons/si";
+import { RiSpeedFill } from "react-icons/ri";
+import { BiMobile } from "react-icons/bi";
 import styled from "styled-components";
 import Card from "./Card";
 
@@ -10,7 +10,7 @@ const Services = () => {
             <h1 className="blue">What I Can Do</h1>
             <Cards>
                 <Card
-                    Icon={MdDesignServices}
+                    Icon={BiMobile}
                     title={"Responsive Design"}
                     disc={
                         "With the increasing diversity of devices and screen sizes, responsive web design has become more crucial than ever. I enjoy creating layouts that provide an optimal viewing and interaction experience across a wide range of devices. By using fluid layouts, flexible images, and CSS media queries, I ensure that the websites I develop are accessible and user-friendly, regardless of whether they're being viewed on a desktop, tablet, or mobile device."
@@ -19,16 +19,16 @@ const Services = () => {
                 />
 
                 <Card
-                    Icon={FiCodesandbox}
+                    Icon={RiSpeedFill}
                     title={"Performance Optimization"}
                     disc={
                         "In the era of instant gratification, speed and performance are paramount to any web application's success. I place a high emphasis on performance optimization to ensure websites load and run as quickly as possible. This involves a variety of techniques such as Chrome Lighthouse, React Profiler, optimizing images, leveraging browser caching, and more. Through continuous optimizations, I strive to enhance user satisfaction and improve SEO rankings."
                     }
-                    aria-label="Performance Optimization card"
+                    aria-label="Performance card"
                 />
 
                 <Card
-                    Icon={CgWebsite}
+                    Icon={SiJest}
                     title={"Testing"}
                     disc={
                         "As a dedicated front end developer, I understand the critical importance of rigorous testing in the software development process. To ensure the delivery of high-quality, reliable products, I integrate testing into all stages of development. I employ a variety of testing methodologies, including unit tests, integration tests, and end-to-end tests, to verify functionality and identify any bugs or issues."

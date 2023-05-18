@@ -5,7 +5,7 @@ const Card = (props) => {
     return (
         <Container>
             <span className="blue" aria-hidden="true">
-                <Icon />
+                <Icon size={50} />
             </span>
             <h1>{title}</h1>
             <p>{disc}</p>
