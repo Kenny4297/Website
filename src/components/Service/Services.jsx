@@ -24,7 +24,7 @@ const Services = () => {
                     disc={
                         "In the era of instant gratification, speed and performance are paramount to any web application's success. I place a high emphasis on performance optimization to ensure websites load and run as quickly as possible. This involves a variety of techniques such as Chrome Lighthouse, React Profiler, optimizing images, leveraging browser caching, and more. Through continuous optimizations, I strive to enhance user satisfaction and improve SEO rankings."
                     }
-                    aria-label="UX/UI designer card"
+                    aria-label="Performance Optimization card"
                 />
 
                 <Card
@@ -33,7 +33,7 @@ const Services = () => {
                     disc={
                         "As a dedicated front end developer, I understand the critical importance of rigorous testing in the software development process. To ensure the delivery of high-quality, reliable products, I integrate testing into all stages of development. I employ a variety of testing methodologies, including unit tests, integration tests, and end-to-end tests, to verify functionality and identify any bugs or issues."
                     }
-                    aria-label="Backend Developer card"
+                    aria-label="Testing card"
                 />
             </Cards>
         </Container>
