@@ -7,31 +7,31 @@ import Card from "./Card";
 const Services = () => {
     return (
         <Container id="services">
-            <h1 className="blue">What I Do</h1>
+            <h1 className="blue">What I Can Do</h1>
             <Cards>
                 <Card
                     Icon={MdDesignServices}
-                    title={"Full Stack React developer"}
+                    title={"Responsive Design"}
                     disc={
-                        "I thoroughly enjoy the development process, building scalable and user-friendly web applications. My expertise in React, HTML, CSS, and JavaScript enables me to create intuitive applications that are easy to maintain and update."
+                        "With the increasing diversity of devices and screen sizes, responsive web design has become more crucial than ever. I enjoy creating layouts that provide an optimal viewing and interaction experience across a wide range of devices. By using fluid layouts, flexible images, and CSS media queries, I ensure that the websites I develop are accessible and user-friendly, regardless of whether they're being viewed on a desktop, tablet, or mobile device."
                     }
-                    aria-label="Full Stack React developer card"
+                    aria-label="Responsive Design card"
                 />
 
                 <Card
                     Icon={FiCodesandbox}
-                    title={"UX/UI designer"}
+                    title={"Performance Optimization"}
                     disc={
-                        "I am passionate about creating visually appealing and user-centered designs. I enjoy leveraging my knowledge of user psychology to develop interfaces that are engaging and intuitive. Information architecture, usability testing, and visual design are key to bringing ideas to life."
+                        "In the era of instant gratification, speed and performance are paramount to any web application's success. I place a high emphasis on performance optimization to ensure websites load and run as quickly as possible. This involves a variety of techniques such as Chrome Lighthouse, React Profiler, optimizing images, leveraging browser caching, and more. Through continuous optimizations, I strive to enhance user satisfaction and improve SEO rankings."
                     }
                     aria-label="UX/UI designer card"
                 />
 
                 <Card
                     Icon={CgWebsite}
-                    title={"Backend Developer"}
+                    title={"Testing"}
                     disc={
-                        "I enjoy building scalable and secure web applications that can handle high traffic and user demand. I enjoy staying up-to-date with the latest trends in backend development, and you'll find me continuously optimizing and troubleshooting to ensure the backend runs smoothly and efficiently."
+                        "As a dedicated front end developer, I understand the critical importance of rigorous testing in the software development process. To ensure the delivery of high-quality, reliable products, I integrate testing into all stages of development. I employ a variety of testing methodologies, including unit tests, integration tests, and end-to-end tests, to verify functionality and identify any bugs or issues."
                     }
                     aria-label="Backend Developer card"
                 />
@@ -47,12 +47,12 @@ const Container = styled.div`
     height: 100vh;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 0rem 0;
     @media (max-width: 840px) {
         width: 90%;
     }
     h1 {
-        padding-top: 1rem;
+        padding-top: 0rem;
     }
     @media (max-width: 978px) {
         padding-bottom: 20rem;
