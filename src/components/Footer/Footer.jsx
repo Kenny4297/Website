@@ -168,27 +168,32 @@ const Container = styled.div`
     position: relative;
     padding: 5rem 0;
     width: 80%;
-    height: 74vh;
+    /* height: 74vh; */
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    @media (max-width: 913px) {
-        height: 30vh;
+    @media (min-width: 995px) {
+        padding-bottom: 10rem;
     }
     @media (max-width: 840px) {
         width: 90%;
+        height: 30rem;
     }
     @media (max-width: 821px) {
-        height: 30vh;
+        height: 25rem;
     }
-    @media (max-width: 650px) {
+    /* @media (max-width: 764px) {
+        height: 4rem;
+    } */
+    @media (max-width: 651px) {
         flex-direction: column;
         gap: 3rem;
         align-items: center;
         margin-right: 0rem;
         padding-right: 4rem;
-        height: 40rem;
+        padding-bottom: 10rem;
+        height: 35rem;
     }
     @media (max-width: 541px) {
         margin-bottom: 5rem;
