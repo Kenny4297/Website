@@ -69,33 +69,38 @@ export default Services;
 
 const Container = styled.div`
     width: 80%;
-    height: 100vh;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0rem 0;
+    height: 45rem;
+    h1 {
+        padding-top: 2rem;
+    }
+    @media (max-width: 1000px) {
+        padding-bottom: 5rem;
+    }
+    @media (max-width: 978px) {
+        padding-bottom: 15rem;
+        height: 57.5rem;
+    }
+    @media (max-width: 913px) {
+        height: 57.5rem;
+    }
     @media (max-width: 840px) {
         width: 90%;
     }
-    h1 {
-        padding-top: 0rem;
-    }
-    @media (max-width: 978px) {
-        padding-bottom: 20rem;
-    }
-    @media (max-width: 913px) {
-        height: 50rem;
-    }
     @media (max-width: 821px) {
-        height: 50rem;
+        height: 60rem;
+        padding-top: 1.5rem;
     }
-    @media (max-width: 763px) {
-        padding-bottom: 25rem;
+    @media (max-width: 728px) {
+        height: 62.5rem;
     }
-    @media (max-width: 680px) {
-        padding-bottom: 25rem;
+    @media (max-width: 686px) {
+        padding-bottom: 22.5rem;
     }
     @media (max-width: 650px) {
-        padding-bottom: 40rem;
+        height: 65rem;
     }
     @media (max-width: 596px) {
         padding-bottom: 30rem;
@@ -104,7 +109,7 @@ const Container = styled.div`
         padding-bottom: 40rem;
     }
     @media (max-width: 541px) {
-        padding-bottom: 55rem;
+        height: 57.5rem;
     }
     @media (max-width: 506px) {
         padding-bottom: 40rem;
@@ -119,7 +124,7 @@ const Container = styled.div`
         padding-bottom: 43rem;
     }
     @media (max-width: 413px) {
-        padding-bottom: 67rem;
+        height: 65rem;
     }
     @media (max-width: 394px) {
         padding-bottom: 40rem;
@@ -131,8 +136,7 @@ const Container = styled.div`
         padding-bottom: 45rem;
     }
     @media (max-width: 361px) {
-        padding-bottom: 55rem;
-        height: 50rem;
+        height: 65rem;
     }
 `;
 const Cards = styled.div`

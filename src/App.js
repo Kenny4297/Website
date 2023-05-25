@@ -6,6 +6,7 @@ import Services from "./components/Service/Services";
 import Projects from "./components/Projects/Projects";
 import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
+import Skills from "./components/Skills/Skills"
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -20,12 +21,15 @@ function App() {
                 <Header />
                 <ProfComponent />
             </Banner>
-            <Services />
-            {/* <Projects /> */}
+            <Skills />
             <LightColor>
-                <Clients />
+                <Services />
             </LightColor>
-            <Footer />
+            {/* <Projects /> */}
+            <Clients />
+            <LightColor>
+                <Footer />
+            </LightColor>
         </Container>
     );
 }
@@ -42,7 +46,7 @@ const Banner = styled.div`
         rgb(45, 45, 58) 0%,
         rgb(43, 43, 53) 100%
     );
-    height: 100vh;
+    /* height: 100vh; */
     @media (max-width: 1100px) {
         height: 50rem;
     }

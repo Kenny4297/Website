@@ -280,7 +280,7 @@ const Form = styled.div`
         padding-bottom: 0.7rem;
     }
     form {
-        background-color: #191923;
+        /* background-color: #191923; */
         padding: 0.8rem;
         margin-top: 1.2rem;
         position: relative;
@@ -298,7 +298,7 @@ const Form = styled.div`
         .email,
         .message {
             display: flex;
-            border: 1px solid gray;
+            border: 1px solid white;
             margin-bottom: 0.5rem;
             input,
             textarea {

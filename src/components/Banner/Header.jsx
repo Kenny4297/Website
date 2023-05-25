@@ -34,6 +34,11 @@ const Header = () => {
             </Logo>
             <Nav ref={navRef} bar={bar} data-testid="nav" role="navigation">
                 <span>
+                    <a href="#skills" data-testid="skills-link" onClick={handleClick}>
+                        Skills
+                    </a>
+                </span>
+                <span>
                     <a href="#services" data-testid="services-link" onClick={handleClick}>
                         Services
                     </a>

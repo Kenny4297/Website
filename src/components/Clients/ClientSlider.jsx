@@ -27,8 +27,8 @@ const ClientSlider = (props) => {
 export default ClientSlider;
 
 const Container = styled.div`
-    /* background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%); */
-    background: #191923;
+    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+    /* background: #191923; */
     padding: 0.5rem 1rem 1rem 1rem;
     width: 90%;
     margin: 0 1rem;
