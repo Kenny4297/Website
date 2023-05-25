@@ -44,40 +44,32 @@ const Banner = styled.div`
     );
     height: 100vh;
     @media (max-width: 1100px) {
-        height: 115vh;
-    }
-    @media (max-width: 1006px) {
-        height: 115vh;
-    }
-    @media (max-width: 913px) {
-        height: 60vh;
-    }
-    @media (max-width: 868px) {
-        height: 125vh;
-    }
-    @media (max-width: 850px) {
-        height: 130vh;
+        height: 50rem;
     }
     @media (max-width: 821px) {
-        height: 60vh;
-    }
-    @media (max-width: 769px) {
-        height: 70vh;
+        height: 45rem;
     }
     @media (max-width: 650px) {
-        height: 110vh;
+        height: 40rem;
         padding-bottom: 1rem;
     }
     @media (max-width: 482px) {
-        height: 80vh;
+        height: 85vh;
         padding-bottom: 1rem; 
     } 
+    @media (max-width: 437px) {
+        height: 85vh;
+        padding-bottom: 5rem; 
+    } 
+    @media (max-width: 413px) {
+        height: 45rem;
+    }
     @media (max-width: 376px) {
         height: 100vh;
         padding-bottom: 1rem; 
     } 
     @media (max-width: 330px) {
-        height: 120vh;
+        height: 50rem;
         padding-bottom: 1rem;
     }
 `;

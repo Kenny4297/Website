@@ -111,24 +111,26 @@ const Container = styled.div`
     height: 100vh;
 
     @media (max-width: 913px) {
-        height: 60vh;
+        height: 40rem;
     }
     @media(max-width: 840px) {
         width: 90%;
     }
     @media (max-width: 821px) {
-        height: 60vh;
+        height: 45rem;
     }
     @media(max-width: 626px) {
         width: 90%;
         padding-bottom: 13rem;
     }
     @media (max-width: 541px) {
-        padding-bottom: 25rem;
+        padding-bottom: 20rem;
+        height: 35rem;
     }
-    @media(max-width: 415px) {
+    @media(max-width: 414px) {
         width: 90%;
-        padding-bottom: .1rem;
+        padding-bottom: 5rem;
+        height: 45rem;
     }
     @media (max-width: 413px) {
         padding-bottom: 20rem;
@@ -143,6 +145,8 @@ const Container = styled.div`
     }
     @media (max-width: 361px) {
         padding-bottom: 25rem;
+        height: 30rem;
+        /* padding-left: 2rem; */
     }
 
     span {

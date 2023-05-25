@@ -9,32 +9,57 @@ const Services = () => {
         <Container id="services">
             <h1 className="blue">What I Can Do</h1>
             <Cards>
-                <Card
-                    Icon={BiMobile}
-                    title={"Responsive Design"}
-                    disc={
-                        "With the increasing diversity of devices and screen sizes, responsive web design has become more crucial than ever. I enjoy creating layouts that provide an optimal viewing and interaction experience across a wide range of devices. By using fluid layouts, flexible images, and CSS media queries, I ensure that the websites I develop are accessible and user-friendly, regardless of whether they're being viewed on a desktop, tablet, or mobile device."
+            <Card
+                Icon={BiMobile}
+                title="Responsive Design"
+                disc={[
+                    {
+                    text: "Prioritize responsive design to suit the increasing diversity of devices and screen sizes."
+                    },
+                    {
+                    text: "Implement fluid layouts, flexible images, and CSS media queries for optimal viewing and interaction."
+                    },
+                    {
+                    text: "Create websites that are accessible and user-friendly, whether viewed on desktop, tablet, or mobile devices."
                     }
-                    aria-label="Responsive Design card"
+                ]}
+                aria-label="Responsive Design card"
                 />
 
                 <Card
-                    Icon={RiSpeedFill}
-                    title={"Performance Optimization"}
-                    disc={
-                        "In the era of instant gratification, speed and performance are paramount to any web application's success. I place a high emphasis on performance optimization to ensure websites load and run as quickly as possible. This involves a variety of techniques such as Chrome Lighthouse, React Profiler, optimizing images, leveraging browser caching, and more. Through continuous optimizations, I strive to enhance user satisfaction and improve SEO rankings."
+                Icon={RiSpeedFill}
+                title="Performance Optimization"
+                disc={[
+                    {
+                    text: "Prioritize speed and performance in all web applications."
+                    },
+                    {
+                    text: "Optimize performance to ensure fast loading and smooth running of websites."
+                    },
+                    {
+                    text: "Leverage Chrome Lighthouse, React Profiler, image optimization, and browser caching techniques."
                     }
-                    aria-label="Performance card"
+                ]}
+                aria-label="Performance card"
                 />
 
                 <Card
-                    Icon={SiJest}
-                    title={"Testing"}
-                    disc={
-                        "As a dedicated front end developer, I understand the critical importance of rigorous testing in the software development process. To ensure the delivery of high-quality, reliable products, I integrate testing into all stages of development. I employ a variety of testing methodologies, including unit tests, integration tests, and end-to-end tests, to verify functionality and identify any bugs or issues."
+                Icon={SiJest}
+                title="Testing"
+                disc={[
+                    {
+                    text: "Adhere to rigorous testing standards in all stages of software development."
+                    },
+                    {
+                    text: "Incorporate testing into every stage of development for consistent high quality and reliability."
+                    },
+                    {
+                    text: "Apply a variety of testing methodologies, including unit tests, integration tests, and end-to-end tests, to ensure functionality and identify issues."
                     }
-                    aria-label="Testing card"
+                ]}
+                aria-label="Testing card"
                 />
+
             </Cards>
         </Container>
     );
@@ -58,10 +83,10 @@ const Container = styled.div`
         padding-bottom: 20rem;
     }
     @media (max-width: 913px) {
-        height: 60vh;
+        height: 50rem;
     }
     @media (max-width: 821px) {
-        height: 60vh;
+        height: 50rem;
     }
     @media (max-width: 763px) {
         padding-bottom: 25rem;
@@ -70,7 +95,7 @@ const Container = styled.div`
         padding-bottom: 25rem;
     }
     @media (max-width: 650px) {
-        padding-bottom: 30rem;
+        padding-bottom: 40rem;
     }
     @media (max-width: 596px) {
         padding-bottom: 30rem;
@@ -79,7 +104,7 @@ const Container = styled.div`
         padding-bottom: 40rem;
     }
     @media (max-width: 541px) {
-        padding-bottom: 50rem;
+        padding-bottom: 55rem;
     }
     @media (max-width: 506px) {
         padding-bottom: 40rem;
@@ -91,19 +116,23 @@ const Container = styled.div`
         padding-bottom: 45rem;
     }
     @media (max-width: 424px) {
-        padding-bottom: 25rem;
+        padding-bottom: 43rem;
     }
     @media (max-width: 413px) {
-        padding-bottom: 50rem;
+        padding-bottom: 67rem;
     }
     @media (max-width: 394px) {
-        padding-bottom: 35rem;
+        padding-bottom: 40rem;
+    }
+    @media (max-width: 390px) {
+        padding-bottom: 45rem;
     }
     @media (max-width: 376px) {
         padding-bottom: 45rem;
     }
     @media (max-width: 361px) {
         padding-bottom: 55rem;
+        height: 50rem;
     }
 `;
 const Cards = styled.div`

@@ -187,7 +187,14 @@ const Container = styled.div`
         gap: 3rem;
         align-items: center;
         margin-right: 0rem;
-        padding-right: 2rem;
+        padding-right: 4rem;
+        height: 40rem;
+    }
+    @media (max-width: 541px) {
+        margin-bottom: 5rem;
+        .scroll-up-arrow {
+        display: none;
+        }
     }
     @media (max-width: 500px) {
         marin-right: 0rem;
@@ -196,14 +203,8 @@ const Container = styled.div`
             display: none;
         }
     }
-    @media (max-width: 541px) {
-        margin-bottom: 25rem;
-        .scroll-up-arrow {
-        display: none;
-        }
-    }
     @media (max-width: 376px) {
-        width: 90%;
+        width: 100%;
         margin-bottom: 5rem;
     }
 `;

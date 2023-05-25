@@ -6,7 +6,6 @@ import ProfNoBack from './assets/ProfNoBack.png'
 
 
 const ProfComponent = () => {
-
     // React needs this state to successfully allow "target='_blank'""
     const openInNewTab = true;
 
@@ -15,7 +14,7 @@ const ProfComponent = () => {
         <Texts>
             <h3>Hi, I'm</h3>
             <h1 className="blue">Kedgard Cordero</h1>
-            <h3>Front-end Web Developer</h3>
+            <h3>Full Stack Web Developer</h3>
             <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. Throwing everything down, I pursued my passion by graduating from the University of Minnesota Coding Boot Camp.</p>
             <p>This is what I was meant to do, and I love every second of it.</p>
             <a href="#footer" data-testid="footer-link" aria-label="Contact me">
@@ -55,7 +54,6 @@ const Container = styled.div`
     gap: 2rem;
     padding-top: 1rem;
     width: 80%;
-    height: 1000px;
     max-width: 1280px;
     margin: 0 auto;
     z-index: 1;
@@ -139,6 +137,7 @@ const Texts = styled.div`
             filter: drop-shadow(0px 10px 10px #01be9570);
         }
     }
+
 `
 
 const Social = styled.div`

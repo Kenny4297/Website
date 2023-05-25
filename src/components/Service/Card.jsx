@@ -6,9 +6,14 @@ const Card = (props) => {
         <Container>
             <span className="blue" aria-hidden="true">
                 <Icon size={50} />
-            </span>
-            <h1>{title}</h1>
-            <p>{disc}</p>
+                    </span>
+                    <h1>{title}</h1>
+                    {disc.map((item, index) => (
+                        <p key={index}>
+                        {item.icon}
+                        {item.text}
+                        </p>
+                    ))}
         </Container>
     );
 };
@@ -33,6 +38,8 @@ const Container = styled.div`
     }
     p {
         font-size: 1.1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         color: #c7d8e6;
     }
     @media (max-width: 400px) {
