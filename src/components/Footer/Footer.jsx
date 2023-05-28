@@ -168,7 +168,6 @@ const Container = styled.div`
     position: relative;
     padding: 5rem 0;
     width: 80%;
-    /* height: 74vh; */
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
@@ -183,9 +182,6 @@ const Container = styled.div`
     @media (max-width: 821px) {
         height: 25rem;
     }
-    /* @media (max-width: 764px) {
-        height: 4rem;
-    } */
     @media (max-width: 651px) {
         flex-direction: column;
         gap: 3rem;

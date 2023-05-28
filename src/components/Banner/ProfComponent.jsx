@@ -15,7 +15,7 @@ const ProfComponent = () => {
             <h3>Hi, I'm</h3>
             <h1 className="blue">Kedgard Cordero</h1>
             <h3>Full Stack Web Developer</h3>
-            <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. Throwing everything down, I pursued my passion by graduating from the University of Minnesota Coding Boot Camp.</p>
+            <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. Throwing everything down, I pursued my passion by graduating from the University of Minnesota Coding Boot Camp and became a Freelance Web Developer.</p>
             <p>This is what I was meant to do, and I love every second of it.</p>
             <a href="#footer" data-testid="footer-link" aria-label="Contact me">
                 <button>Let's Create Something</button>
@@ -57,6 +57,8 @@ const Container = styled.div`
     max-width: 1280px;
     margin: 0 auto;
     z-index: 1;
+    height: 100vh;
+    font-size: 1rem;
     @media (max-width: 840px) {
         width: 90%;
     }
@@ -81,7 +83,7 @@ const Texts = styled.div`
         font-size: 1rem;
     }
     h1 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         letter-spacing: 2px;
         cursor: pointer;
     }
@@ -114,8 +116,9 @@ const Texts = styled.div`
     }
     h3 {
         font-weight: 500;
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-transform: capitalize;
+        line-height: .5rem;
     }
     p {
         font-weight: 300;
@@ -178,7 +181,7 @@ const Social = styled.div`
 
 const Profile = styled.div`
     img {
-        width: 20rem;
+        width: 18rem;
         filter: drop-shadow(0px 10px 10px #0077b3);
         transition: transform 400ms ease-in-out;
         margin-bottom: 5rem;

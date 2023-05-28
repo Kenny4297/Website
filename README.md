@@ -54,15 +54,17 @@ Here is the full Jest coverage table:
 
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |   98.71 |    95.45 |   94.44 |    98.7 |                   
- Banner             |     100 |       95 |     100 |     100 |                   
-  Header.jsx        |     100 |       95 |     100 |     100 | 14                
-  ProfComponent.jsx |     100 |      100 |     100 |     100 |                   
+All files           |   98.73 |    91.66 |   94.73 |   98.71 |                   
+ Banner             |     100 |     90.9 |     100 |     100 |                   
+  Header.jsx        |     100 |       95 |     100 |     100 | 18                
+  ProfComponent.jsx |     100 |       50 |     100 |     100 | 28                
  Clients            |     100 |      100 |     100 |     100 |                   
-  ClientSlider.jsx  |     100 |      100 |     100 |     100 | 
-  Clients.jsx       |     100 |      100 |     100 |     100 | 
- Footer             |      96 |      100 |   83.33 |   95.83 | 
-  Footer.jsx        |      96 |      100 |   83.33 |   95.83 | 48
+  ClientSlider.jsx  |     100 |      100 |     100 |     100 |                   
+  Clients.jsx       |     100 |      100 |     100 |     100 |                   
+ Footer             |      96 |      100 |   83.33 |   95.83 |                   
+  Footer.jsx        |      96 |      100 |   83.33 |   95.83 | 48                
+ Projects           |     100 |      100 |     100 |     100 |                   
+  Projects.jsx      |     100 |      100 |     100 |     100 |                   
 
 
 If you have any suggestions for improvement, please feel free to share them with me! Thanks for viewing this README!

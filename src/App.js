@@ -25,11 +25,12 @@ function App() {
             <LightColor>
                 <Services />
             </LightColor>
-            {/* <Projects /> */}
-            <Clients />
+            <Projects />
+
             <LightColor>
-                <Footer />
+                <Clients />
             </LightColor>
+            <Footer />
         </Container>
     );
 }
@@ -46,9 +47,9 @@ const Banner = styled.div`
         rgb(45, 45, 58) 0%,
         rgb(43, 43, 53) 100%
     );
-    /* height: 100vh; */
+    height: 100vh;
     @media (max-width: 1100px) {
-        height: 50rem;
+        height: 40rem;
     }
     @media (max-width: 821px) {
         height: 45rem;
@@ -58,22 +59,22 @@ const Banner = styled.div`
         padding-bottom: 1rem;
     }
     @media (max-width: 482px) {
-        height: 85vh;
+        height: 40rem;
         padding-bottom: 1rem; 
     } 
     @media (max-width: 437px) {
-        height: 85vh;
+        height: 35rem;
         padding-bottom: 5rem; 
     } 
     @media (max-width: 413px) {
-        height: 45rem;
+        height: 35rem;
     }
     @media (max-width: 376px) {
-        height: 100vh;
+        height: 40rem;
         padding-bottom: 1rem; 
     } 
     @media (max-width: 330px) {
-        height: 50rem;
+        height: 42.5rem;
         padding-bottom: 1rem;
     }
 `;

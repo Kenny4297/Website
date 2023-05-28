@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import React from 'react';
 
 const Project = (props) => {
     const { img, disc, title, deployment } = props.item;

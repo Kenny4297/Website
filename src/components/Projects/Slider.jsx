@@ -3,33 +3,28 @@ import Slider from "react-slick";
 import Project from "./Project";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
-import BeTethical from "../Banner/assets/BeTethical.png";
-import weather from "../Banner/assets/weather-wizard.png";
+import BeTethical from "../Banner/assets/BeTethicalCrop.png";
+import weather from "../Banner/assets/weather-wizardCrop.png";
+import quiz from '../Banner/assets/quizCrop.png'
 
 let data = [
     {
         img: BeTethical,
-        disc: "A full-stack content management system that allows users to post thoughts and comments about any video game they enjoy.",
+        disc: "A full-stack forum that allows users to post thoughts and comments about any video game they enjoy.",
         title: "Be Tethical!",
         deployment: "https://be-tethical-production.up.railway.app/",
     },
     {
         img: weather,
-        disc: "An advanced weather dashboard that displays the current weather, the 5 day forecast, the local time of any city, and saves their home city for better user experience.",
+        disc: "An advanced weather dashboard that displays the current weather, the 5 day forecast, the local time of any city, and saves their previously searched city for better user experience.",
         title: "Weather-Wizard",
         deployment: "https://weather-wizard4297.herokuapp.com/",
     },
     {
-        img: "https://res.cloudinary.com/ghazni/image/upload/v1661323981/Yt-portfolio/ui2_wtollo.png",
-        disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
-    },
-    {
-        img: "https://res.cloudinary.com/ghazni/image/upload/v1661323980/Yt-portfolio/ui3_akynn4.png",
-        disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
-    },
-    {
-        img: "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-        disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        img: quiz,
+        disc: "Take on this riveting JavaScript quiz, testing your skills with five questions in 60 seconds, where each wrong answer deducts 10 seconds, yet high scorers earn the honor of landing on our high scores board.",
+        title: "JavaScript Quiz",
+        deployment: "https://kenny4297.github.io/JavaScript-Quiz/",
     },
 ];
 
@@ -39,7 +34,7 @@ let settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
@@ -47,7 +42,7 @@ let settings = {
         {
             breakpoint: 990,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false,
@@ -78,7 +73,7 @@ const SliderComp = () => {
     let sliderProject = "";
     sliderProject = data.map((item, i) => <Project item={item} key={i} />);
     return (
-        <Container aria-roledescription="slider">
+        <Container aria-roledescription="slider" data-testid="slider-comp">
             <Slider ref={arrowRef} {...settings}>
                 {sliderProject}
             </Slider>
@@ -87,6 +82,7 @@ const SliderComp = () => {
                     onClick={() => arrowRef.current.slickPrev()}
                     className="back"
                     aria-label="Previous Slide"
+                    data-testid="back-button"
                 >
                     <IoIosArrowBack />
                 </button>
@@ -94,6 +90,7 @@ const SliderComp = () => {
                     onClick={() => arrowRef.current.slickNext()}
                     className="next"
                     aria-label="Next Slide"
+                    data-testid="forward-button"
                 >
                     <IoIosArrowForward />
                 </button>

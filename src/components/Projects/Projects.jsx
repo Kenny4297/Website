@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import SliderComp from "./Slider";
+import React from 'react';
 
 const Projects = () => {
     return (

@@ -43,7 +43,11 @@ const Header = () => {
                         Services
                     </a>
                 </span>
-                {/* <span><a href="#projects">Projects</a></span> */}
+                <span>
+                    <a href="#projects" data-testid="projects-link" onClick={handleClick}>
+                        Projects
+                    </a>
+                </span>
                 <span>
                     <a href="#recommendation" onClick={handleClick}>
                         Recommendations
@@ -71,7 +75,7 @@ const Container = styled.div`
     max-width: 1280px;
     width: 80%;
     margin: 0 auto;
-    padding: 1.5rem 0;
+    padding: .5rem 0;
     position: relative;
     animation: header 500ms ease-in-out;
     @media (max-width: 763px) {
