@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled, { keyframes, css} from "styled-components";
 import { CgProfile } from "react-icons/cg";
+import { useInView } from 'react-intersection-observer';
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
 import { FiMail} from "react-icons/fi";
@@ -54,8 +55,12 @@ const Footer = () => {
         form.current.elements.message.value = "";
     };
 
+    const { ref, inView } = useInView({
+        triggerOnce: true, // This ensures animation only occurs once
+    });
+
     return (
-        <Container id="footer">
+        <Container id="footer" ref={ref} animate={inView}>
             <Profile>
                 <h1 className="blue">Connect</h1>
                 <div className="links">
@@ -163,7 +168,19 @@ const Footer = () => {
 
 export default Footer;
 
+const slideInFromRight = keyframes`
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
+
 const Container = styled.div`
+    animation: ${props => props.animate ? css`${slideInFromRight} 1s forwards` : 'none'};
     margin-top: 2rem;
     position: relative;
     padding: 5rem 0;

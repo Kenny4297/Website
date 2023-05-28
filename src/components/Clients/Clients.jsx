@@ -1,6 +1,8 @@
-import styled from 'styled-components';
+import styled, { keyframes, css} from 'styled-components';
 import React, { useRef } from 'react';
-import Slider from 'react-slick'
+import Slider from 'react-slick';
+import { useInView } from 'react-intersection-observer';
+
 import ClientSlider from './ClientSlider';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Clay from '../Banner/assets/Clay.jpeg';
@@ -81,8 +83,13 @@ const Clients = () => {
     clientDisc = clients.map((item, i) => (
         <ClientSlider item={item} key={i} />
     ))
+
+    const { ref, inView } = useInView({
+        triggerOnce: true, // This ensures animation only occurs once
+    });
+
     return (
-        <Container id="recommendation">
+        <Container id="recommendation" ref={ref} animate={inView}>
             <h1 className="blue" aria-label="Recommendations">recommendations</h1>
             <Testimonials>
                 <Slider ref={arrowRef} {...settings}>
@@ -103,7 +110,20 @@ const Clients = () => {
 
 export default Clients;
 
+const slideInFromRight = keyframes`
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
+
+
 const Container = styled.div`
+    animation: ${props => props.animate ? css`${slideInFromRight} 1s forwards` : 'none'};
     width: 80%;
     max-width: 1270px;
     margin: 0 auto;
