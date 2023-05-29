@@ -85,7 +85,7 @@ const Clients = () => {
     ))
 
     const { ref, inView } = useInView({
-        triggerOnce: true, // This ensures animation only occurs once
+        triggerOnce: false,
     });
 
     return (

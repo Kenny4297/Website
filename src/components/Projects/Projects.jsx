@@ -6,7 +6,7 @@ import React from 'react';
 
 const Projects = () => {
     const { ref, inView } = useInView({
-        triggerOnce: true, 
+        triggerOnce: false, 
     });
     return (
         <Container id="projects" ref={ref} animate={inView}>

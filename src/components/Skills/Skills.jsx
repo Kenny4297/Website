@@ -4,7 +4,7 @@ import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Cs
 
 const Skills = () => {
     const { ref, inView } = useInView({
-        triggerOnce: true, // This ensures animation only occurs once
+        triggerOnce: false,
     });
     return (
         <Container id="skills" ref={ref} animate={inView}>
