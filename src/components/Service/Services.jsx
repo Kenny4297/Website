@@ -1,8 +1,8 @@
 import { SiJest } from "react-icons/si";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 import { RiSpeedFill } from "react-icons/ri";
 import { BiMobile } from "react-icons/bi";
-import styled, { keyframes, css} from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import Card from "./Card";
 
 const Services = () => {
@@ -13,57 +13,56 @@ const Services = () => {
         <Container id="services" ref={ref} animate={inView}>
             <h1 className="blue">What I Can Do</h1>
             <Cards>
-            <Card
-                Icon={BiMobile}
-                title="Responsive Design"
-                disc={[
-                    {
-                    text: "Prioritize responsive design to suit the increasing diversity of devices and screen sizes."
-                    },
-                    {
-                    text: "Implement fluid layouts, flexible images, and CSS media queries for optimal viewing and interaction."
-                    },
-                    {
-                    text: "Create websites that are accessible and user-friendly, whether viewed on desktop, tablet, or mobile devices."
-                    }
-                ]}
-                aria-label="Responsive Design card"
+                <Card
+                    Icon={BiMobile}
+                    title="Responsive Design"
+                    disc={[
+                        {
+                            text: "Prioritize responsive design to suit the increasing diversity of devices and screen sizes.",
+                        },
+                        {
+                            text: "Implement fluid layouts, flexible images, and CSS media queries for optimal viewing and interaction.",
+                        },
+                        {
+                            text: "Create websites that are accessible and user-friendly, whether viewed on desktop, tablet, or mobile devices.",
+                        },
+                    ]}
+                    aria-label="Responsive Design card"
                 />
 
                 <Card
-                Icon={RiSpeedFill}
-                title="Performance Optimization"
-                disc={[
-                    {
-                    text: "Prioritize speed and performance in all web applications."
-                    },
-                    {
-                    text: "Optimize performance to ensure fast loading and smooth running of websites."
-                    },
-                    {
-                    text: "Leverage Chrome Lighthouse, React Profiler, image optimization, and browser caching techniques."
-                    }
-                ]}
-                aria-label="Performance card"
+                    Icon={RiSpeedFill}
+                    title="Performance Optimization"
+                    disc={[
+                        {
+                            text: "Prioritize speed and performance in all web applications.",
+                        },
+                        {
+                            text: "Optimize performance to ensure fast loading and smooth running of websites.",
+                        },
+                        {
+                            text: "Leverage Chrome Lighthouse, React Profiler, image optimization, and browser caching techniques.",
+                        },
+                    ]}
+                    aria-label="Performance card"
                 />
 
                 <Card
-                Icon={SiJest}
-                title="Testing"
-                disc={[
-                    {
-                    text: "Adhere to rigorous testing standards in all stages of software development."
-                    },
-                    {
-                    text: "Incorporate testing into every stage of development for consistent high quality and reliability."
-                    },
-                    {
-                    text: "Apply a variety of testing methodologies, including unit tests, integration tests, and end-to-end tests, to ensure functionality and identify issues."
-                    }
-                ]}
-                aria-label="Testing card"
+                    Icon={SiJest}
+                    title="Testing"
+                    disc={[
+                        {
+                            text: "Adhere to rigorous testing standards in all stages of software development.",
+                        },
+                        {
+                            text: "Incorporate testing into every stage of development for consistent high quality and reliability.",
+                        },
+                        {
+                            text: "Apply a variety of testing methodologies, including unit tests, integration tests, and end-to-end tests, to ensure functionality and identify issues.",
+                        },
+                    ]}
+                    aria-label="Testing card"
                 />
-
             </Cards>
         </Container>
     );
@@ -72,19 +71,23 @@ const Services = () => {
 export default Services;
 
 const slideInFromRight = keyframes`
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 `;
 
-
 const Container = styled.div`
-    animation: ${props => props.animate ? css`${slideInFromRight} 1s forwards` : 'none'};
+    animation: ${(props) =>
+        props.animate
+            ? css`
+                  ${slideInFromRight} 1s forwards
+              `
+            : "none"};
     width: 80%;
     max-width: 1280px;
     margin: 0 auto;
