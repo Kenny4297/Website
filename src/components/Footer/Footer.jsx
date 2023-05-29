@@ -168,9 +168,9 @@ const Footer = () => {
 
 export default Footer;
 
-const slideInFromRight = keyframes`
+const slideInFromLeft = keyframes`
   0% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
     opacity: 0;
   }
   100% {
@@ -180,7 +180,7 @@ const slideInFromRight = keyframes`
 `;
 
 const Container = styled.div`
-    animation: ${props => props.animate ? css`${slideInFromRight} 1s forwards` : 'none'};
+    animation: ${props => props.animate ? css`${slideInFromLeft} 1s forwards` : 'none'};
     margin-top: 2rem;
     position: relative;
     padding: 5rem 0;

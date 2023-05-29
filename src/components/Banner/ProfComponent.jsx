@@ -57,7 +57,7 @@ const Container = styled.div`
     max-width: 1280px;
     margin: 0 auto;
     z-index: 1;
-    height: 100vh;
+    /* height: 100vh; */
     font-size: 1rem;
     @media (max-width: 840px) {
         width: 90%;

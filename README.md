@@ -34,6 +34,9 @@ React-Slick is a popular carousel component for React that allows you to easily 
 EmailJS:
 EmailJS is a cloud-based email delivery service that allows developers to send emails directly from their web applications using JavaScript. With EmailJS, developers can easily integrate email functionality into their applications without the need for a server-side email infrastructure. EmailJS supports a variety of email providers, including Gmail, Yahoo, and Outlook, and offers a range of features, such as email templates, attachments, and custom data variables.
 
+react-intersection-observer:
+This library uses the Intersection Observer API to track an element's visibility within a viewport in React applications. This facilitates creating scroll-based animations, image lazy loading, and infinite scrolling by triggering actions as elements become visible or invisible. It simplifies handling multiple observers with diverse options, enabling developers to focus on functionality.
+
 ## Features
 Users can learn about me, what I offer, view recommendations, and contact me through email. 
 

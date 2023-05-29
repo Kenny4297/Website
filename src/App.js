@@ -47,12 +47,14 @@ const Banner = styled.div`
         rgb(45, 45, 58) 0%,
         rgb(43, 43, 53) 100%
     );
-    height: 100vh;
+    @media (min-width: 1101px) {
+        height: 35rem;
+    }
     @media (max-width: 1100px) {
         height: 40rem;
     }
     @media (max-width: 821px) {
-        height: 45rem;
+        height: 40rem;
     }
     @media (max-width: 650px) {
         height: 40rem;
