@@ -52,7 +52,7 @@ const Banner = styled.div`
         height: 70rem !important;
     }
 
-    @media (max-width: 480px) and (max-height: 1080px) {
+    @media (max-width: 500px) and (max-height: 1080px) {
         height: 70rem !important;
     }
 
@@ -74,10 +74,10 @@ const Banner = styled.div`
         /* height: 40rem; */
         padding-bottom: 1rem;
     }
-    @media (max-width: 482px) {
-        height: 40rem;
+    /* @media (max-width: 500px) {
+        height: 40rem !important;
         padding-bottom: 1rem; 
-    } 
+    }  */
     @media (max-width: 437px) {
         height: 35rem;
         padding-bottom: 5rem; 
