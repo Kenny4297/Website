@@ -47,43 +47,31 @@ const Banner = styled.div`
         rgb(45, 45, 58) 0%,
         rgb(43, 43, 53) 100%
     );
-    height: 100vh;
-    @media (min-width: 665px) and (min-height: 880px) {
-        height: 70rem !important;
-    }
-
-    @media (max-width: 500px) and (max-height: 1080px) {
-        height: 70rem !important;
-    }
-
     @media (min-width: 1101px) {
-        /* height: 35rem; */
-        height: 100vh;
+        height: 50rem;
+        line-height: 1.5rem;
     }
     @media (max-width: 1100px) {
-        /* height: 40rem; */
-        height: 100vh;
+        height: 40rem;
 
     }
     @media (max-width: 821px) {
-        /* height: 40rem; */
-        height: 100vh;
+        height: 40rem;
 
     }
     @media (max-width: 650px) {
-        /* height: 40rem; */
         padding-bottom: 1rem;
     }
-    /* @media (max-width: 500px) {
-        height: 40rem !important;
+    @media (max-width: 500px) {
+        height: 40rem;
         padding-bottom: 1rem; 
-    }  */
+    } 
     @media (max-width: 437px) {
         height: 35rem;
         padding-bottom: 5rem; 
     } 
     @media (max-width: 413px) {
-        height: 35rem;
+        height: 40rem;
     }
     @media (max-width: 376px) {
         height: 40rem;

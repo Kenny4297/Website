@@ -58,14 +58,6 @@ const Container = styled.div`
     margin: 0 auto;
     z-index: 1;
     /* font-size: 1rem; */
-    @media (min-height: 650px) {
-        /* color: green; */
-        font-size: 1.25rem;
-    }
-    @media (min-height: 700px) {
-        /* color: green; */
-        font-size: 1.5rem;
-    }
     @media (max-width: 840px) {
         width: 90%;
     }
@@ -88,11 +80,8 @@ const Texts = styled.div`
     h4 {
         font-weight: 400;
         font-size: 1rem;
-        @media (min-height: 650px) {
-            font-size: 1.5rem;
-        }
-        @media (min-height: 800px) {
-            font-size: 2rem;
+        @media (min-width: 1101px) {
+            font-size: 3rem !important;
         }
     }
     h1 {
@@ -104,14 +93,8 @@ const Texts = styled.div`
         font-size: 1.5rem;
         letter-spacing: 2px;
         cursor: pointer;
-        @media (min-height: 650px) {
-            font-size: 2.5rem;
-        }
-        @media (min-height: 700px) {
-            font-size: 2.5rem !important;
-        }
-        @media (min-height: 800px) {
-            font-size: 2.75rem !important;
+        @media (min-width: 1101px) {
+            font-size: 3rem;
         }
         :before{
             content: "";
@@ -133,27 +116,23 @@ const Texts = styled.div`
             cursor: pointer;
             color: white;
         }
-        @media (min-height: 650px) {
-            /* color: green; */
-            font-size: 1.5rem;
-        }
-        @media (min-height: 800px) {
-            font-size: 2rem;
-        }
     }
     h3 {
         font-weight: 500;
         font-size: 1rem;
         text-transform: capitalize;
         line-height: .5rem;
-        @media (min-height: 650px) {
-        /* color: green; */
-        font-size: 1.5rem;
-    }
+        @media (min-width: 1101px) {
+            font-size: 2rem !important;
+        }
     }
 
     p {
         font-weight: 300;
+        @media (min-width: 1101px) {
+            font-size: 1.5rem !important;
+            line-height: 2rem;
+        }
     }
     button {
         padding: 0.7rem 2rem;
@@ -219,13 +198,13 @@ const Profile = styled.div`
         margin-bottom: 5rem;
         position: relative;
         top:5rem;
-        @media (max-width: 1250px) and (max-height: 1080px) {
+        /* @media (max-width: 1250px) and (max-height: 1080px) {
             width: 15rem !important;
-        }
+        } */
 
-        @media (max-width: 1000px) and (max-height: 1080px) {
+        /* @media (max-width: 1000px) and (max-height: 1080px) {
             display: none;
-        }
+        } */
 
         @media (max-width: 1100px) {
             margin-left: 10rem;
@@ -240,11 +219,11 @@ const Profile = styled.div`
         @media (max-width: 664px) {
            display: none
         }
-        @media (min-height: 1000px) {
+        /* @media (min-height: 1000px) {
             width: 25rem;
             position: relative;
             top: 5rem;
-        }
+        } */
     }
     :hover img {
         transform: translateY(-10px);
