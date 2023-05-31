@@ -217,6 +217,16 @@ const Profile = styled.div`
         filter: drop-shadow(0px 10px 10px #0077b3);
         transition: transform 400ms ease-in-out;
         margin-bottom: 5rem;
+        position: relative;
+        top:5rem;
+        @media (max-width: 1250px) and (max-height: 1080px) {
+            width: 15rem !important;
+        }
+
+        @media (max-width: 1000px) and (max-height: 1080px) {
+            display: none;
+        }
+
         @media (max-width: 1100px) {
             margin-left: 10rem;
         }
@@ -224,13 +234,13 @@ const Profile = styled.div`
             margin-left: 5rem;
         }
         @media (max-width: 790px) {
-        width: 15rem;
-        margin-left: 3rem;
+            width: 15rem;
+            margin-left: 3rem;
         }
         @media (max-width: 664px) {
            display: none
         }
-        @media (min-height: 800px) {
+        @media (min-height: 1000px) {
             width: 25rem;
             position: relative;
             top: 5rem;
