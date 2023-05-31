@@ -14,7 +14,7 @@ const ProfComponent = () => {
         <Texts>
             <h3>Hi, I'm</h3>
             <h1 className="blue">Kedgard Cordero</h1>
-            <h3>Freelance Full Stack Web Developer</h3>
+            <h3>Full Stack Web Developer</h3>
             <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. Throwing everything down, I pursued my passion by graduating from the University of Minnesota Coding Boot Camp and became a Freelance Web Developer.</p>
             <p>This is what I was meant to do, and I love every second of it.</p>
             <a href="#footer" data-testid="footer-link" aria-label="Contact me">
@@ -227,8 +227,13 @@ const Profile = styled.div`
         width: 15rem;
         margin-left: 3rem;
         }
-        @media (max-width: 650px) {
+        @media (max-width: 664px) {
            display: none
+        }
+        @media (min-height: 800px) {
+            width: 25rem;
+            position: relative;
+            top: 5rem;
         }
     }
     :hover img {
