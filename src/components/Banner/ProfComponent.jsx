@@ -57,7 +57,15 @@ const Container = styled.div`
     max-width: 1280px;
     margin: 0 auto;
     z-index: 1;
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    @media (min-height: 650px) {
+        /* color: green; */
+        font-size: 1.25rem;
+    }
+    @media (min-height: 700px) {
+        /* color: green; */
+        font-size: 1.5rem;
+    }
     @media (max-width: 840px) {
         width: 90%;
     }
@@ -80,11 +88,12 @@ const Texts = styled.div`
     h4 {
         font-weight: 400;
         font-size: 1rem;
-    }
-    h1 {
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-        cursor: pointer;
+        @media (min-height: 650px) {
+            font-size: 1.5rem;
+        }
+        @media (min-height: 800px) {
+            font-size: 2rem;
+        }
     }
     h1 {
         color: #0077b3;
@@ -92,6 +101,18 @@ const Texts = styled.div`
         text-decoration: none;
         font-weight: bold;
         position: relative;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        cursor: pointer;
+        @media (min-height: 650px) {
+            font-size: 2.5rem;
+        }
+        @media (min-height: 700px) {
+            font-size: 2.5rem !important;
+        }
+        @media (min-height: 800px) {
+            font-size: 2.75rem !important;
+        }
         :before{
             content: "";
             position: absolute;
@@ -112,13 +133,25 @@ const Texts = styled.div`
             cursor: pointer;
             color: white;
         }
+        @media (min-height: 650px) {
+            /* color: green; */
+            font-size: 1.5rem;
+        }
+        @media (min-height: 800px) {
+            font-size: 2rem;
+        }
     }
     h3 {
         font-weight: 500;
         font-size: 1rem;
         text-transform: capitalize;
         line-height: .5rem;
+        @media (min-height: 650px) {
+        /* color: green; */
+        font-size: 1.5rem;
     }
+    }
+
     p {
         font-weight: 300;
     }

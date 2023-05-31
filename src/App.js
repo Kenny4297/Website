@@ -47,17 +47,28 @@ const Banner = styled.div`
         rgb(45, 45, 58) 0%,
         rgb(43, 43, 53) 100%
     );
+    height: 100vh;
+    /* @media (min-height: 650px ) {
+        height
+    } */
+
+
     @media (min-width: 1101px) {
-        height: 35rem;
+        /* height: 35rem; */
+        height: 100vh;
     }
     @media (max-width: 1100px) {
-        height: 40rem;
+        /* height: 40rem; */
+        height: 100vh;
+
     }
     @media (max-width: 821px) {
-        height: 40rem;
+        /* height: 40rem; */
+        height: 100vh;
+
     }
     @media (max-width: 650px) {
-        height: 40rem;
+        /* height: 40rem; */
         padding-bottom: 1rem;
     }
     @media (max-width: 482px) {
