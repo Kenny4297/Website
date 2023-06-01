@@ -77,13 +77,6 @@ const pulse = keyframes`
 
 const Texts = styled.div`
     flex: 1;
-    h4 {
-        font-weight: 400;
-        font-size: 1rem;
-        @media (min-width: 1101px) {
-            font-size: 3rem !important;
-        }
-    }
     h1 {
         color: #0077b3;
         display: inline-block;
@@ -94,14 +87,14 @@ const Texts = styled.div`
         letter-spacing: 2px;
         cursor: pointer;
         @media (min-width: 1101px) {
-            font-size: 3rem;
+            font-size: 2rem;
         }
         :before{
             content: "";
             position: absolute;
             left: 0;
             right: 0;
-            bottom: -5px;
+            bottom: -15px;
             height: 2px;
             background-color: #0077b3;
             transform: scale(0);
@@ -123,14 +116,14 @@ const Texts = styled.div`
         text-transform: capitalize;
         line-height: .5rem;
         @media (min-width: 1101px) {
-            font-size: 2rem !important;
+            font-size: 1.5rem;
         }
     }
 
     p {
         font-weight: 300;
         @media (min-width: 1101px) {
-            font-size: 1.5rem !important;
+            font-size: 1.2rem;
             line-height: 2rem;
         }
     }
