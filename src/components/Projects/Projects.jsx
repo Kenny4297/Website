@@ -1,7 +1,7 @@
 import styled, { keyframes, css } from "styled-components";
 import { useInView } from "react-intersection-observer";
-import SliderComp from "./Slider";
 import React from "react";
+import Project from './Project'
 
 const Projects = () => {
     const { ref, inView } = useInView({
@@ -12,14 +12,32 @@ const Projects = () => {
             <h1>
                 Featured <span className="blue">Projects</span>
             </h1>
-            <Slide aria-roledescription="slider">
+            {/* <Slide aria-roledescription="slider">
                 <SliderComp />
-            </Slide>
+            </Slide> */}
+            {/* <IndividualProject>
+                <ProjectImage>
+
+                </ProjectImage>
+
+                <ProjectDescription>
+
+                </ProjectDescription>
+
+            </IndividualProject> */}
+            <Project />
+
         </Container>
     );
 };
 
 export default Projects;
+
+const IndividualProject = styled.div`
+
+`
+
+const ProjectImage = styled.div``;
 
 const slideInFromLeft = keyframes`
     0% {
@@ -61,4 +79,3 @@ const Container = styled.div`
     }
 `;
 
-const Slide = styled.div``;
