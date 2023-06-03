@@ -117,8 +117,6 @@ const Container = styled.div`
     }
 `
 
-const Title = styled.div``;
-
 const SkillsSection = styled.div`
     display: flex;
     justify-content: space-evenly;
