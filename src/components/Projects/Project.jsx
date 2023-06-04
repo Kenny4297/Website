@@ -7,7 +7,7 @@ import quiz from '../Banner/assets/quizSuperCrop.png'
 let data = [
     {
         img: weather,
-        disc: "About Explore the Weather Wizard, an intuitive app designed to keep you updated on the weather. Offering current conditions and a five-day forecast for any city worldwide, it also provides local time information. Tailored to provide an engaging user experience, it automatically runs the data for the last city you checked upon your return.",
+        disc: "Explore the Weather Wizard, an intuitive app designed to keep you updated on the weather. Offering current conditions and a five-day forecast for any city worldwide, it also provides local time information. Tailored to provide an engaging user experience, it automatically runs the data for the last city you checked upon your return.",
         title: "Weather-Wizard",
         deployment: "https://weather-wizard4297.herokuapp.com/",
     },
