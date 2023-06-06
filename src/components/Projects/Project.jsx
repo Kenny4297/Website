@@ -139,7 +139,9 @@ const DescContainer = styled.div`
         font-size: 1.75rem;
     }
     p {
-        width: 90%;
+        /* width: 90%; */
+        padding-left: .75rem;
+        padding-right: .75rem;
         font-size: 1rem;
         @media (max-width: 570px) {
             width: 90%;
