@@ -137,7 +137,6 @@ const DescContainer = styled.div`
     max-width: 35rem;
     h3 {
         font-size: 1.75rem;
-        /* padding-top: .5rem; */
     }
     p {
         width: 90%;
