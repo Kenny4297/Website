@@ -68,10 +68,10 @@ const Project = () => {
 
                         <DescContainer >
                             <h3>{item.title}</h3>
-                            <p>
+                            <p style={{width:'90%'}}>
                                 {item.disc}
                             </p>
-                            <IconSection style={{paddingTop:'1rem'}}>
+                            <IconSection style={{paddingTop:'1rem', fontSize:'1rem'}}>
                                 {logos[index]?.map((logo, i) => {
                                     const LogoComponent = logo.component;
                                     return <LogoComponent key={i} color={logo.color} size={32.5} />
@@ -133,16 +133,18 @@ const DescContainer = styled.div`
     height: 100%;
     background-color: #4e5156;
     margin-left: 1rem;
-    width: 90%;
+    /* width: 90%; */
     max-width: 35rem;
     h3 {
         font-size: 1.75rem;
     }
     p {
         /* width: 90%; */
-        padding-left: .75rem;
-        padding-right: .75rem;
-        font-size: 1rem;
+        /* border: 2px solid green; */
+        /* padding-left: 2rem; */
+        /* padding-right: 3rem; */
+        /* font-size: 1rem; */
+        /* color: red; */
         @media (max-width: 570px) {
             width: 90%;
         }
