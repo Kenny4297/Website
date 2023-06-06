@@ -133,7 +133,7 @@ const DescContainer = styled.div`
     height: 100%;
     background-color: #4e5156;
     margin-left: 1rem;
-    width: 100%;
+    width: 90%;
     max-width: 35rem;
     h3 {
         font-size: 1.75rem;
