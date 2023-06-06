@@ -152,7 +152,7 @@ const DescContainer = styled.div`
         color: #70CFFF;
         font-weight: bold;
         height: 40rem;
-        border: 2px solid green;
+        /* border: 2px solid green; */
         @media (max-width: 405px) {
             padding-bottom: 2rem;
         }
@@ -179,7 +179,7 @@ const Container = styled.div`
     gap: 2rem;
     @media (max-width: 1174px) { 
         height: 40rem;
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
     }
     @media (max-width: 570px) {
         height: 20rem;
