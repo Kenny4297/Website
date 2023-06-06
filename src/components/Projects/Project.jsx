@@ -3,7 +3,7 @@ import React from 'react';
 import BeTethical from "../Banner/assets/BeTethicalUpdated.png";
 import weather from "../Banner/assets/weather-wizard.png";
 import LearnC from '../Banner/assets/LearnC++.png'
-import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginal, ExpressOriginal, MysqlOriginal }  from 'devicons-react';
+import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginal, ExpressOriginal, MysqlOriginal, JestPlain }  from 'devicons-react';
 
 let data = [
 
@@ -47,7 +47,8 @@ const Project = () => {
         2: [{component: ReactOriginal, color: "#007ACC"}, 
             {component: TypescriptPlain, color: "#007ACC"},
             {component: Html5PlainWordmark, color: "#E34F26"}, 
-            {component: Css3OriginalWordmark}],
+            {component: Css3OriginalWordmark},
+            {component: JestPlain}],
     };
     return (
         <>
