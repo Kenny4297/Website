@@ -57,7 +57,6 @@ const Container = styled.div`
     max-width: 1280px;
     margin: 0 auto;
     z-index: 1;
-    /* font-size: 1rem; */
     @media (max-width: 840px) {
         width: 90%;
     }
@@ -191,14 +190,6 @@ const Profile = styled.div`
         margin-bottom: 5rem;
         position: relative;
         top:5rem;
-        /* @media (max-width: 1250px) and (max-height: 1080px) {
-            width: 15rem !important;
-        } */
-
-        /* @media (max-width: 1000px) and (max-height: 1080px) {
-            display: none;
-        } */
-
         @media (max-width: 1100px) {
             margin-left: 10rem;
         }
@@ -212,11 +203,6 @@ const Profile = styled.div`
         @media (max-width: 664px) {
            display: none
         }
-        /* @media (min-height: 1000px) {
-            width: 25rem;
-            position: relative;
-            top: 5rem;
-        } */
     }
     :hover img {
         transform: translateY(-10px);

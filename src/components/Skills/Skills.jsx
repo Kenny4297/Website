@@ -123,7 +123,6 @@ const SkillsSection = styled.div`
     flex-wrap: wrap;
 `;
 
-
 const Card = styled.div`
     display: flex;
     justify-content: center;
@@ -136,5 +135,4 @@ const Card = styled.div`
     :hover {
         transform: scale(1.1);
     }
-
 `;

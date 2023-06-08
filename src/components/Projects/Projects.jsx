@@ -12,19 +12,6 @@ const Projects = () => {
             <h1>
                 Featured <span className="blue">Projects</span>
             </h1>
-            {/* <Slide aria-roledescription="slider">
-                <SliderComp />
-            </Slide> */}
-            {/* <IndividualProject>
-                <ProjectImage>
-
-                </ProjectImage>
-
-                <ProjectDescription>
-
-                </ProjectDescription>
-
-            </IndividualProject> */}
             <Project />
 
         </Container>
@@ -32,12 +19,6 @@ const Projects = () => {
 };
 
 export default Projects;
-
-const IndividualProject = styled.div`
-
-`
-
-const ProjectImage = styled.div``;
 
 const slideInFromLeft = keyframes`
     0% {

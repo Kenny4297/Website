@@ -9,7 +9,7 @@ let data = [
 
     {
         img: LearnC,
-        disc: `"Learn C++" is an innovative, hands-on learning platform that focuses on practicality, commencing with real-world projects and dissecting them to teach users the fundamentals of C++. The platform engages users through a combination of interactive lessons, quizzes, and challenges, effectively fostering a deep understanding of C++ basics.`,
+        disc: `"Learn C++" is an innovative, hands-on learning platform that focuses on practicality, beginning with real-world projects and dissecting them to teach users the fundamentals of C++. The platform engages users through a combination of interactive lessons, quizzes, and challenges, effectively fostering a deep understanding of C++ basics.`,
         title: "Learn C++",
         deployment: "https://learn-c-plus-plus.netlify.app/",
     },
@@ -56,19 +56,20 @@ const Project = () => {
                 <Container className="project" key={index}>
                     <ContentContainer>
                         <ImgContainer isFirst={index === 0} isSecond={index === 1} isThird={index === 2}>
+                            <img src={item.img} alt="project" />
+                            
+                            
+                        </ImgContainer>
+
+                        <DescContainer >
                             <a
                                 href={item.deployment}
                                 target={openInNewTab ? "_blank" : "_self"}
                                 rel="noreferrer"
                                 aria-label="Live Site"
                             >
-                                <img src={item.img} alt="project" />
-                            </a>
-                            
-                        </ImgContainer>
-
-                        <DescContainer >
                             <h3>{item.title}</h3>
+                            </a>
                             <p style={{width:'90%'}}>
                                 {item.disc}
                             </p>
@@ -111,9 +112,7 @@ const ImgContainer = styled.div`
     /* border: 2px solid green; */
     img {
         width: 30rem;
-        /* width: 70%; */
         height: 17.2rem;
-        /* height: 100%; */
         outline: 3px solid #4e5156;
         position: relative;
         top:.105rem;
@@ -134,18 +133,11 @@ const DescContainer = styled.div`
     height: 100%;
     background-color: #4e5156;
     margin-left: 1rem;
-    /* width: 90%; */
     max-width: 35rem;
     h3 {
         font-size: 1.75rem;
     }
     p {
-        /* width: 90%; */
-        /* border: 2px solid green; */
-        /* padding-left: 2rem; */
-        /* padding-right: 3rem; */
-        /* font-size: 1rem; */
-        /* color: red; */
         @media (max-width: 570px) {
             width: 90%;
         }

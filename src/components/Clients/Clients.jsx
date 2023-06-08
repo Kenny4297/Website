@@ -176,9 +176,7 @@ const Container = styled.div`
     @media (max-width: 361px) {
         padding-bottom: 25rem;
         height: 30rem;
-        /* padding-left: 2rem; */
     }
-
     span {
         font-weight: 700;
         text-transform: uppercase;
