@@ -1,6 +1,6 @@
 # Kedgard Cordero's Website
 
-![Screenshot](./src/components/Banner/assets/websiteSnapshot.png)
+![Screenshot](./src/components/Banner/assets/WebsiteScreenShot.png)
 
 ## Table of Contents
 - [License](#license)
