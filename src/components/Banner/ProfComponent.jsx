@@ -18,7 +18,7 @@ const ProfComponent = () => {
             <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. Throwing everything down, I pursued my passion and became a Freelance Web Developer.</p>
             <p>This is what I was meant to do, and I love every second of it.</p>
             <a href="#footer" data-testid="footer-link" aria-label="Contact me">
-                <button>Let's Create Something</button>
+                <button>Hire me</button>
             </a>
 
             <Social>
@@ -128,6 +128,7 @@ const Texts = styled.div`
     }
     button {
         padding: 0.7rem 2rem;
+        font-size: 1.25rem;
         margin-top: 1rem;
         cursor: pointer;
         background-color: #0077b3;

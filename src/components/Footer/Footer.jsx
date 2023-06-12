@@ -68,6 +68,11 @@ const Footer = () => {
                     <div>
                         <p>Minneapolis, Minnesota</p>
                     </div>
+
+                    <HireMeDescription><p>Self-taught full stack web developer with experience in building websites for individuals, small businesses, sole proprietorships, and start-ups. I enjoy helping others achieve their dreams by creating the best possible content for all my clients.</p> 
+                    
+                    <p>$30 - $50 an hour</p></HireMeDescription>
+
                     <div className="profiles">
                         <span className="icons">
                             <a
@@ -226,6 +231,14 @@ const Container = styled.div`
         margin-bottom: 5rem;
     }
 `;
+
+const HireMeDescription = styled.p`
+    margin-right: 2rem;
+    line-height: 1.5rem;
+    p {
+        color: #A9A9A9;
+    }
+`
 
 const Profile = styled.div`
     width: 50%;
