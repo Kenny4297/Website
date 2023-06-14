@@ -1,9 +1,9 @@
-import { SiJest } from "react-icons/si";
 import { useInView } from "react-intersection-observer";
-import { RiSpeedFill } from "react-icons/ri";
-import { BiMobile } from "react-icons/bi";
 import styled, { keyframes, css } from "styled-components";
 import Card from "./Card";
+import { AiFillTool } from 'react-icons/ai';
+import { DiDatabase} from 'react-icons/di';
+import { FaDesktop } from 'react-icons/fa'; 
 
 const Services = () => {
     const { ref, inView } = useInView({
@@ -14,51 +14,51 @@ const Services = () => {
             <h1 className="blue">What I Can Do</h1>
             <Cards>
                 <Card
-                    Icon={BiMobile}
-                    title="Responsive Design"
+                    Icon={FaDesktop}
+                    title="Front End"
                     disc={[
                         {
-                            text: "Prioritize responsive design to suit the increasing diversity of devices and screen sizes.",
+                            text: "Craft visually appealing and intuitive user interfaces using modern front-end technologies.",
                         },
                         {
-                            text: "Implement fluid layouts, flexible images, and CSS media queries for optimal viewing and interaction.",
+                            text: "Optimize website performance by leveraging best practices in front-end development.",
                         },
                         {
-                            text: "Create websites that are accessible and user-friendly, whether viewed on desktop, tablet, or mobile devices.",
+                            text: "Stay up-to-date with the latest front-end trends and technologies to deliver cutting-edge web experiences.",
                         },
                     ]}
                     aria-label="Responsive Design card"
                 />
 
                 <Card
-                    Icon={RiSpeedFill}
-                    title="Performance Optimization"
+                    Icon={DiDatabase}
+                    title="Back end"
                     disc={[
                         {
-                            text: "Prioritize speed and performance in all web applications.",
+                            text: "Develop scalable and efficient server-side applications to handle complex business logic and data processing.",
                         },
                         {
-                            text: "Optimize performance to ensure fast loading and smooth running of websites.",
+                            text: "Implement secure authentication and authorization mechanisms to protect sensitive user data.",
                         },
                         {
-                            text: "Leverage Chrome Lighthouse, React Profiler, image optimization, and browser caching techniques.",
+                            text: "Integrate with databases and external APIs to seamlessly retrieve and manipulate data as required.",
                         },
                     ]}
                     aria-label="Performance card"
                 />
 
                 <Card
-                    Icon={SiJest}
-                    title="Testing"
+                    Icon={AiFillTool}
+                    title="Maintenance Services"
                     disc={[
                         {
-                            text: "Adhere to rigorous testing standards in all stages of software development.",
+                            text: "Offer ongoing website maintenance to ensure smooth performance, security updates, and bug fixes.",
                         },
                         {
-                            text: "Incorporate testing into every stage of development for consistent high quality and reliability.",
+                            text: "Offer timely content updates, feature enhancements, and technical support to meet evolving client needs.",
                         },
                         {
-                            text: "Apply a variety of testing methodologies, including unit tests, integration tests, and end-to-end tests, to ensure functionality and identify issues.",
+                            text: "Implement search engine optimization (SEO) strategies to improve the website's visibility in search engine rankings.",
                         },
                     ]}
                     aria-label="Testing card"
