@@ -69,9 +69,13 @@ const Footer = () => {
                         <p>Minneapolis, Minnesota</p>
                     </div>
 
-                    <HireMeDescription><p>Self-taught full stack web developer with experience in building websites for individuals, small businesses, sole proprietorships, and start-ups. I enjoy helping others achieve their dreams by creating the best possible content for all my clients.</p> 
-                    
-                    <p>$30 - $50 an hour</p></HireMeDescription>
+                    <HireMeDescription>
+                        <div>
+                            <p>Self-taught full stack web developer with experience in building websites for individuals, small businesses, sole proprietorships, and start-ups. I enjoy helping others achieve their dreams by creating the best possible content for all my clients.</p> 
+                            
+                            <RateParagraph>$30 - $50 an hour</RateParagraph>
+                        </div>
+                    </HireMeDescription>
 
                     <div className="profiles">
                         <span className="icons">
@@ -232,12 +236,30 @@ const Container = styled.div`
     }
 `;
 
-const HireMeDescription = styled.p`
+const HireMeDescription = styled.div`
     margin-right: 2rem;
     line-height: 1.5rem;
+    /* border: 2px solid red; */
+
+    div {
+      width: 100%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+    }
+
     p {
         color: #A9A9A9;
+        /* border: 2px solid green; */
+        width: 100%;
     }
+`
+
+const RateParagraph = styled.p`
+    margin-bottom: 1.5rem;
+    /* border: 2px solid blue; */
+    margin-top: -.5rem;
 `
 
 const Profile = styled.div`
