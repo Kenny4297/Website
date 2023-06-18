@@ -9,7 +9,7 @@ let data = [
 
     {
         img: LearnC,
-        disc: `"Learn C++" is an innovative, hands-on learning platform that focuses on practicality, beginning with real-world projects and dissecting them to teach users the fundamentals of C++. The platform engages users through a combination of interactive lessons, quizzes, and challenges, effectively fostering a deep understanding of C++ basics.`,
+        disc: `"Learn C++" is an innovative, hands-on learning platform that focuses on practicality, beginning with real-world projects and dissecting them to teach users the fundamentals of C++. The platform engages users through a combination of interactive lessons, quizzes, and challenges, effectively creating a deep understanding of C++ basics.`,
         title: "Learn C++",
         deployment: "https://learn-c-plus-plus.netlify.app/",
     },
@@ -34,7 +34,8 @@ const Project = () => {
         0: [{component: ReactOriginal }, 
             {component: TypescriptPlain, color: "#007ACC"}, 
             {component: Html5PlainWordmark, color: "#E34F26"}, 
-            {component: Css3OriginalWordmark}],
+            {component: Css3OriginalWordmark},
+            {component: JestPlain}],
 
         1: [{component: JavascriptPlain, color: "#F7DF1E"},
             {component: Html5PlainWordmark, color: "#E34F26"},

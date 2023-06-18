@@ -1,6 +1,6 @@
 import styled, { keyframes, css } from 'styled-components';
 import { useInView } from 'react-intersection-observer';
-import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginalWordmark, ExpressOriginal, MysqlOriginal, MongodbOriginal }  from 'devicons-react';
+import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginalWordmark, ExpressOriginal, MysqlOriginal, MongodbOriginal, JestPlain, PythonOriginal, JqueryOriginal }  from 'devicons-react';
 
 const Skills = () => {
     const { ref, inView } = useInView({
@@ -11,30 +11,42 @@ const Skills = () => {
                 <h1 className="blue" >Skills</h1>
                 <h2 className="blue" style={{textAlign: 'center'}}>Front-end</h2>
                 <SkillsSection>
-                    <Card>
-                        <ReactOriginal size={100} />
-                        <h3>React</h3>
-                    </Card>
+                    <SkillsTopRow>
+                        <Card>
+                            <ReactOriginal size={100} />
+                            <h3>React</h3>
+                        </Card>
 
-                    <Card>
-                        <JavascriptPlain color="#F7DF1E" size={100} />
-                        <h3>JavaScript</h3>
-                    </Card>
+                        <Card>
+                            <JavascriptPlain color="#F7DF1E" size={100} />
+                            <h3>JavaScript</h3>
+                        </Card>
 
-                    <Card>
-                        <TypescriptPlain color="#007ACC" size={100} />
-                        <h3>TypeScript</h3>
-                    </Card>
+                        <Card>
+                            <TypescriptPlain color="#007ACC" size={100} />
+                            <h3>TypeScript</h3>
+                        </Card>
 
-                    <Card>
-                        <Html5PlainWordmark color="#E34F26" size={100} />
-                        <h3>HTML5</h3>
-                    </Card>
+                        <Card>
+                            <Html5PlainWordmark color="#E34F26" size={100} />
+                            <h3>HTML5</h3>
+                        </Card>
 
-                    <Card>
-                        <Css3OriginalWordmark size={100} />
-                        <h3>CSS3</h3>
-                    </Card>
+                        <Card>
+                            <Css3OriginalWordmark size={100} />
+                            <h3>CSS3</h3>
+                        </Card>
+
+                        <Card>
+                            <JqueryOriginal size={100} />
+                            <h3>jQuery</h3>
+                        </Card>
+
+                        <Card>
+                            <JestPlain size={100} />
+                            <h3>Jest</h3>
+                        </Card>
+                    </SkillsTopRow>
                 </SkillsSection>
                 <h2 className="blue" style={{textAlign: 'center'}}>Back-end</h2>
                 <SkillsSection>
@@ -56,6 +68,11 @@ const Skills = () => {
                     <Card>
                         <MongodbOriginal size={100} />
                         <h2>MongoDB</h2>
+                    </Card>
+
+                    <Card>
+                        <PythonOriginal  size={100} />
+                        <h2>Python</h2>
                     </Card>
 
                 </SkillsSection>
@@ -91,34 +108,44 @@ const Container = styled.div`
             margin: 0 auto;
         }
     }
-    @media (max-width: 1400px) {
-        height: 40rem;
-    }
-    @media (max-width: 1120px) {
-        height: 40rem;
-    }
-    @media (max-width: 1000px) {
-        height: 52.5rem;
-    }
-    @media (max-width: 840px) {
+    /* @media (max-width: 1400px) {
         height: 55rem;
+    } */
+    /* @media (max-width: 1120px) {
+        height: 50rem;
+    } */
+    @media (max-width: 1000px) {
+        height: 65rem;
     }
-    @media (max-width: 800px) {
+    /* @media (max-width: 840px) {
+        height: 65rem;
+    } */
+    @media (max-width: 820px) {
         height: 67.5rem;
     }
-    @media (max-width: 599px) {
+    @media (max-width: 800px) {
         height: 80rem;
+    }
+    @media (max-width: 600px) {
+        height: 105rem;
     }
     @media (max-width: 560px) {
-        height: 80rem;
+        height: 110rem;
     }
     @media (max-width: 400px) {
-        height: 135rem;
+        height: 172.5rem;
     }
 `
 
 const SkillsSection = styled.div`
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+`;
+
+const SkillsTopRow = styled.div`
+    display: flex;
+    /* gap: 3rem; */
     justify-content: space-evenly;
     flex-wrap: wrap;
 `;

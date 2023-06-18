@@ -30,6 +30,8 @@ const Container = styled.div`
     background-color: var(---background);
     text-align: center;
     padding-top: 2rem;
+    /* height: 100%; */
+    padding-bottom: 2rem;
     span {
         font-size: 4rem;
     }

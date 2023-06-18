@@ -98,6 +98,7 @@ const Container = styled.div`
     }
     @media (max-width: 1000px) {
         padding-bottom: 5rem;
+
     }
     @media (max-width: 978px) {
         padding-bottom: 15rem;

@@ -64,6 +64,7 @@ const Banner = styled.div`
     @media (max-width: 500px) {
         height: 40rem;
         padding-bottom: 1rem; 
+        margin: 0 auto;
     } 
     @media (max-width: 437px) {
         height: 35rem;

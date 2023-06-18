@@ -208,6 +208,10 @@ const Container = styled.div`
     @media (max-width: 821px) {
         height: 25rem;
     }
+    @media (max-width: 810px) {
+        margin-bottom: 10rem;
+        height: 25rem;
+    }
     @media (max-width: 651px) {
         flex-direction: column;
         gap: 3rem;
@@ -229,10 +233,11 @@ const Container = styled.div`
             .scroll-up-arrow {
             display: none;
         }
+        
     }
     @media (max-width: 376px) {
         width: 100%;
-        margin-bottom: 5rem;
+        margin-bottom: 6rem;
     }
 `;
 
@@ -346,6 +351,7 @@ const Form = styled.div`
             margin: 0 auto;
             margin-right: -10rem;
             margin-right: 10px; 
+            margin-bottom: 5rem;
         }
         .name,
         .email,
@@ -399,9 +405,13 @@ const ArrowUp = styled.div`
     font-size: 1.3rem;
     font-weight: 700;
     margin-top: 2rem;
+    @media (max-width: 810px) {
+        margin-bottom: 10rem;
+    }
     @media (max-width: 650px) {
         position: absolute;
         right: 3rem;
         top: 16rem;
+        margin-bottom: 5rem;
     }
 `;
