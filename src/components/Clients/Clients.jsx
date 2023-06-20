@@ -11,10 +11,10 @@ import Max from "../Banner/assets/Max.jpeg";
 
 let clients = [
     {
-        name: "Olu Akinyemi",
-        position: "Web Developer",
-        img: Olu,
-        disc: `Ked is an exceptional programmer because he cares about learning and is always striving to get better. Ked's technical acumen, flexibility, and team spirit shone throughout our time together in the same cohort. Ked's eagerness to help others, facility with articulating intricate ideas, and commitment to development make him an invaluable team member. His leadership skills, which include planning ahead, prioritizing tasks, and actively listening, have helped him succeed in a wide range of team contexts. Ked is a rare find and an asset to any entity looking to hire a committed, skilled, and adaptable programmer. I have no doubt that he will keep growing to new heights.`,
+        name: "Jay Padrnos",
+        position: 'Client',
+        email: "Axon284053@gmail.com",
+        disc: `I had the pleasure of hiring Ked to build me a learning platform to teach me C++, and it exceeded my expectations. The platform's seamless structure and flow allowed me to progress through the fundamentals of C++ effortlessly. It not only taught me syntax and language features but also instilled problem-solving skills and a logical approach to programming. The lessons, quizzes, challenges, along with the code examples and detailed explanations enhanced my learning experience and I was able to grasp these concepts quickly. Thanks to "Learn C++," I gained a solid foundation in C++ and the confidence to tackle new concepts and challenges independently. I recommend Ked to anyone looking for a talented and experienced developer who can build exceptional websites that meet their specific needs and exceed their expectations. With Ked's expertise in web development, attention to detail, and commitment to delivering high-quality results, clients can trust that their website will be thoughtfully designed, visually appealing, and user-friendly.`,
     },
     {
         name: "Gary Ahlmes",
@@ -167,7 +167,7 @@ const Container = styled.div`
     }
     @media (max-width: 391px) {
         width: 90%;
-        padding-bottom: 5rem;
+        padding-bottom: 15rem;
     }
     @media (max-width: 376px) {
         width: 90%;
@@ -175,7 +175,7 @@ const Container = styled.div`
     }
     @media (max-width: 361px) {
         padding-bottom: 25rem;
-        height: 30rem;
+        height: 40rem;
     }
     span {
         font-weight: 700;

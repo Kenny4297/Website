@@ -3,7 +3,7 @@ import {IoIosQuote} from "react-icons/io";
 import React from 'react';
 
 const ClientSlider = (props) => {
-    const {name, position, img, disc} = props.item;
+    const {name, position, email, img, disc} = props.item;
 
     return (
         <Container>
@@ -14,10 +14,11 @@ const ClientSlider = (props) => {
                 {disc}
             </Body>
             <Footer>
-                <img src={img} alt={name} />
+                {img && <img src={img} alt={name} />}
                 <div className="details">
                     <h1>{name}</h1>
                     <p>{position}</p>
+                    <p>{email}</p>
                 </div>
             </Footer>
         </Container>
