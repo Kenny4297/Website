@@ -5,7 +5,6 @@ import { useInView } from "react-intersection-observer";
 import ClientSlider from "./ClientSlider";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Clay from "../Banner/assets/Clay.jpeg";
-import Olu from "../Banner/assets/Olu.jpeg";
 import Gary from "../Banner/assets/Gary.jpeg";
 import Max from "../Banner/assets/Max.jpeg";
 
@@ -13,7 +12,6 @@ let clients = [
     {
         name: "Jay Padrnos",
         position: 'Client',
-        email: "Axon284053@gmail.com",
         disc: `I had the pleasure of hiring Ked to build me a learning platform to teach me C++, and it exceeded my expectations. The platform's seamless structure and flow allowed me to progress through the fundamentals of C++ effortlessly. It not only taught me syntax and language features but also instilled problem-solving skills and a logical approach to programming. The lessons, quizzes, challenges, along with the code examples and detailed explanations enhanced my learning experience and I was able to grasp these concepts quickly. Thanks to "Learn C++," I gained a solid foundation in C++ and the confidence to tackle new concepts and challenges independently. I recommend Ked to anyone looking for a talented and experienced developer who can build exceptional websites that meet their specific needs and exceed their expectations. With Ked's expertise in web development, attention to detail, and commitment to delivering high-quality results, clients can trust that their website will be thoughtfully designed, visually appealing, and user-friendly.`,
     },
     {
@@ -37,6 +35,7 @@ let clients = [
         disc: `Ked is a committed and skilled collaborator who was an absolute pleasure to work with on our group project. His exceptional communication skills and ability to think creatively and problem-solve in innovative ways were instrumental in our success. Ked consistently went above and beyond what was expected of him and showed exceptional dedication and work ethic. I highly recommend him to anyone seeking a skilled and committed team member.`,
     },
 ];
+
 // Setting for the slideshow
 let settings = {
     dots: true,

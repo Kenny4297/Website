@@ -1,11 +1,24 @@
 import styled from "styled-components";
 import React from 'react';
-import BeTethical from "../Banner/assets/BeTethicalUpdated.png";
+import Nile from "../Banner/assets/NileWebsite.png";
 import weather from "../Banner/assets/weather-wizard.png";
 import LearnC from '../Banner/assets/LearnC++.png'
-import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginal, ExpressOriginal, MysqlOriginal, JestPlain }  from 'devicons-react';
+import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginal, ExpressOriginal, MysqlOriginal, JestPlain, MongodbOriginal   }  from 'devicons-react';
 
 let data = [
+    {
+        img: Nile,
+        disc: "Nile is an immersive, simulated e-commerce platform specializing in book sales. It offers a realistic user experience, including the ability to conduct mock credit card transactions. Users can also explore their purchase history, allowing them to revisit previous orders with ease.",
+        title: "Nile",
+        deployment: "https://nile-e-commerce-72580838be73.herokuapp.com/",
+    },
+
+    {
+        img: weather,
+        disc: "Explore the Weather Wizard, an intuitive app designed to keep you updated on the weather. Offering current conditions and a five-day forecast for any city worldwide, it also provides local time information. Tailored to provide an engaging user experience, it automatically runs the data for the last city you checked upon your return.",
+        title: "Weather-Wizard",
+        deployment: "https://weather-wizard4297.herokuapp.com/",
+    },
 
     {
         img: LearnC,
@@ -13,40 +26,31 @@ let data = [
         title: "Learn C++",
         deployment: "https://learn-c-plus-plus.netlify.app/",
     },
-    {
-        img: BeTethical,
-        disc: "Dive into our dynamic full-stack forum that elevates your gaming experiences into vibrant discussions across all genres. This isn't just a gaming forum, it's a secure community fortified with bcrypt and robust password security. Join today, share your gaming insights confidently, and transform solo adventures into shared triumphs with gamers worldwide.",
-        title: "Be Tethical!",
-        deployment: "https://be-tethical-production.up.railway.app/",
-    },
-    {
-        img: weather,
-        disc: "Explore the Weather Wizard, an intuitive app designed to keep you updated on the weather. Offering current conditions and a five-day forecast for any city worldwide, it also provides local time information. Tailored to provide an engaging user experience, it automatically runs the data for the last city you checked upon your return.",
-        title: "Weather-Wizard",
-        deployment: "https://weather-wizard4297.herokuapp.com/",
-    },
 ];
 
 const Project = () => {
     const openInNewTab = true;
 
     const logos = {
-        0: [{component: ReactOriginal }, 
-            {component: TypescriptPlain, color: "#007ACC"}, 
-            {component: Html5PlainWordmark, color: "#E34F26"}, 
-            {component: Css3OriginalWordmark},
-            {component: JestPlain}],
-
-        1: [{component: JavascriptPlain, color: "#F7DF1E"},
+        // Nile
+        0: [{component: JavascriptPlain, color: "#F7DF1E"},
             {component: Html5PlainWordmark, color: "#E34F26"},
             {component: Css3OriginalWordmark},
             {component: NodejsOriginal},
             {component: ExpressOriginal, color: "red"},
-            {component: MysqlOriginal, color: "#000"}],
+            {component: MongodbOriginal }
+        ],
 
 
-        2: [{component: ReactOriginal, color: "#007ACC"}, 
+        1: [{component: ReactOriginal, color: "#007ACC"}, 
             {component: TypescriptPlain, color: "#007ACC"},
+            {component: Html5PlainWordmark, color: "#E34F26"}, 
+            {component: Css3OriginalWordmark},
+            {component: JestPlain}],
+
+            //  Learn C++
+        2: [{component: ReactOriginal }, 
+            {component: TypescriptPlain, color: "#007ACC"}, 
             {component: Html5PlainWordmark, color: "#E34F26"}, 
             {component: Css3OriginalWordmark},
             {component: JestPlain}],
@@ -113,10 +117,11 @@ const ImgContainer = styled.div`
     /* border: 2px solid green; */
     img {
         width: 30rem;
-        height: 17.2rem;
+        height: 17.18rem;
         outline: 3px solid #4e5156;
-        position: relative;
-        top:.105rem;
+        /* position: relative; */
+        /* top:.105rem; */
+        /* top: 0rem; */
         &:hover {
             transform: scale(1.05);
         }
