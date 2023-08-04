@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Website/static/css/main.135540ea.css",
-    "main.js": "/Website/static/js/main.9ea60e86.js",
+    "main.js": "/Website/static/js/main.01364431.js",
     "static/media/NileWebsite.png": "/Website/static/media/NileWebsite.63f76a15a3bdc03fa8f5.png",
     "static/media/JoystickJunctionWebsite.png": "/Website/static/media/JoystickJunctionWebsite.500370aeaca3217d0530.png",
     "static/media/LearnC++.png": "/Website/static/media/LearnC++.eeb733ab53161ee6c80f.png",
     "static/media/ProfNoBack.png": "/Website/static/media/ProfNoBack.dc4006dc1fec437fa0a8.png",
     "index.html": "/Website/index.html",
     "main.135540ea.css.map": "/Website/static/css/main.135540ea.css.map",
-    "main.9ea60e86.js.map": "/Website/static/js/main.9ea60e86.js.map"
+    "main.01364431.js.map": "/Website/static/js/main.01364431.js.map"
   },
   "entrypoints": [
     "static/css/main.135540ea.css",
-    "static/js/main.9ea60e86.js"
+    "static/js/main.01364431.js"
   ]
 }
