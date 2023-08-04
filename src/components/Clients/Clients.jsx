@@ -4,9 +4,6 @@ import Slider from "react-slick";
 import { useInView } from "react-intersection-observer";
 import ClientSlider from "./ClientSlider";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import Clay from "../Banner/assets/Clay.jpeg";
-import Gary from "../Banner/assets/Gary.jpeg";
-import Max from "../Banner/assets/Max.jpeg";
 
 let clients = [
     {
@@ -15,25 +12,28 @@ let clients = [
         disc: `I had the pleasure of hiring Ked to build me a learning platform to teach me C++, and it exceeded my expectations. The platform's seamless structure and flow allowed me to progress through the fundamentals of C++ effortlessly. It not only taught me syntax and language features but also instilled problem-solving skills and a logical approach to programming. The lessons, quizzes, challenges, along with the code examples and detailed explanations enhanced my learning experience and I was able to grasp these concepts quickly. Thanks to "Learn C++," I gained a solid foundation in C++ and the confidence to tackle new concepts and challenges independently. I recommend Ked to anyone looking for a talented and experienced developer who can build exceptional websites that meet their specific needs and exceed their expectations. With Ked's expertise in web development, attention to detail, and commitment to delivering high-quality results, clients can trust that their website will be thoughtfully designed, visually appealing, and user-friendly.`,
     },
     {
+        name: "Jenna Richardson",
+        position: "Client",
+        disc: `I can't speak highly enough of Ked. My site initially was slow to load and failed to meet guidelines for color accessibility, but Ked went above and beyond to improve these issues. I don’t quite understand what he did when he told me, but the changes he made to the site's architecture led to a noticeable improvement in loading times.
+
+        Despite our challenges to balance the guidelines and to keep the original color scheme, Ked professionally let me know that we had to modify the colors in order to meet website color guidelines. 
+        
+        His patience with me, technical skills, and dedication to customer satisfaction were extraordinary. I would highly recommend him to anyone in need of a web developer who doesn't just "do" the job but does it exceptionally well.
+        `,
+    },
+    {
         name: "Gary Ahlmes",
         position: "University of Minnesota Boot Camp Instructor",
-        img: Gary,
         disc: `I had the pleasure of being Ked's instructor for an intensive 12-week MERN stack bootcamp taught through the University of Minnesota. The course was full-time, and required 5+ hours per day of in-class time, plus a great deal of evening and weekend work. Lessons were fast-paced and students had to be able to learn at a brisk pace and adapt quickly.
 
         Ked is one of the brightest students I've ever taught, and he had no trouble absorbing most of the material at a very fast pace. When he had questions, they were insightful and showed an active mind. He also went above and beyond during the group project work, showing skills far beyond most developers at this stage. He's also an outstanding group member, and was always ready to help other students. He would be a fantastic addition to any dev team.`,
     },
     {
-        name: "Clay Andemar",
-        position: "Web Developer",
-        img: Clay,
-        disc: `During my time at the University of Minnesota Coding Boot Camp, I was very fortunate to work with Ked. We were assigned into the same group for our second project. Ked was willing to step up and be the voice of our group. He kept the group organized and set an attainable goal for our app. Our group members were all at different levels of skill. Ked was able to get his own work done on time while helping other members with their tasks. Overall, Ked is an amazing teammate and I'm proud to say that I learned a lot from him in our short time of working together!`,
+        name: "Samuel Jacobson",
+        position: "Client",
+        disc: `Our photography website was suffering from poor image resizing and slow load times after our previous developer left. Upon reaching out, Ked quickly identified and remedied these issues. He also identified the large image files as the culprits behind our slow website, optimizing them to improve loading speed. His proficiency, methodical approach, and clear communication were commendable. I highly recommend him for his skills in web development and his dedication to clear client communication.`,
     },
-    {
-        name: "Maxwell Walters",
-        position: "Web Developer",
-        img: Max,
-        disc: `Ked is a committed and skilled collaborator who was an absolute pleasure to work with on our group project. His exceptional communication skills and ability to think creatively and problem-solve in innovative ways were instrumental in our success. Ked consistently went above and beyond what was expected of him and showed exceptional dedication and work ethic. I highly recommend him to anyone seeking a skilled and committed team member.`,
-    },
+    
 ];
 
 // Setting for the slideshow
@@ -85,9 +85,9 @@ const Clients = () => {
     });
 
     return (
-        <Container id="recommendation" ref={ref} animate={inView}>
-            <h1 className="blue" aria-label="Recommendations">
-                recommendations
+        <Container id="testimonials" ref={ref} animate={inView}>
+            <h1 className="blue" aria-label="Testimonials">
+                testimonials
             </h1>
             <Testimonials>
                 <Slider ref={arrowRef} {...settings}>

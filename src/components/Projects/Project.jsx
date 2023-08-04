@@ -1,22 +1,22 @@
 import styled from "styled-components";
 import React from 'react';
 import Nile from "../Banner/assets/NileWebsite.png";
-import weather from "../Banner/assets/weather-wizard.png";
+import JoystickJunction from '../Banner/assets/JoystickJunctionWebsite.png'
 import LearnC from '../Banner/assets/LearnC++.png'
-import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginal, ExpressOriginal, MysqlOriginal, JestPlain, MongodbOriginal   }  from 'devicons-react';
+import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginal, ExpressOriginal, MysqlOriginal  , JestPlain, MongodbOriginal   }  from 'devicons-react';
 
 let data = [
     {
         img: Nile,
-        disc: "Nile is an immersive, simulated e-commerce platform specializing in book sales. It offers a realistic user experience, including the ability to conduct mock credit card transactions. Users can also explore their purchase history, allowing them to revisit previous orders with ease.",
+        disc: "Nile is an immersive, simulated full stack e-commerce platform specializing in book retail. It offers a realistic user experience, including the ability to conduct mock credit card transactions using Stripe. Users can also explore their purchase history, allowing them to revisit previous orders with ease, and sift through books using a classic search feature or by book categories. ",
         title: "Nile",
         deployment: "https://nile-e-commerce-72580838be73.herokuapp.com/",
     },
 
     {
-        img: weather,
-        disc: "Explore the Weather Wizard, an intuitive app designed to keep you updated on the weather. Offering current conditions and a five-day forecast for any city worldwide, it also provides local time information. Tailored to provide an engaging user experience, it automatically runs the data for the last city you checked upon your return.",
-        title: "Weather-Wizard",
+        img: JoystickJunction,
+        disc: "Joystick Junction is a full stack interactive video game blog and community hub where users can post, comment, and engage in discussions with other users. The platform stands out with an advanced search feature employing debouncing, a unique game type filter, and simulated users that help facilitate a seamless user experience.",
+        title: "Joystick Junction",
         deployment: "https://weather-wizard4297.herokuapp.com/",
     },
 
@@ -33,7 +33,8 @@ const Project = () => {
 
     const logos = {
         // Nile
-        0: [{component: JavascriptPlain, color: "#F7DF1E"},
+        0: [{component: ReactOriginal, color: "#007ACC"},
+            {component: JavascriptPlain, color: "#F7DF1E"},
             {component: Html5PlainWordmark, color: "#E34F26"},
             {component: Css3OriginalWordmark},
             {component: NodejsOriginal},
@@ -41,12 +42,16 @@ const Project = () => {
             {component: MongodbOriginal }
         ],
 
-
-        1: [{component: ReactOriginal, color: "#007ACC"}, 
-            {component: TypescriptPlain, color: "#007ACC"},
+        // Joystick Junction
+        1: [{component: ReactOriginal, color: "#007ACC"},
+            {component: JavascriptPlain, color: "#F7DF1E"},
             {component: Html5PlainWordmark, color: "#E34F26"}, 
             {component: Css3OriginalWordmark},
-            {component: JestPlain}],
+            {component: NodejsOriginal},
+            {component: ExpressOriginal, color: "red"},
+            {component: MysqlOriginal , color: "#000000"},
+
+        ],
 
             //  Learn C++
         2: [{component: ReactOriginal }, 
@@ -122,9 +127,9 @@ const ImgContainer = styled.div`
         /* position: relative; */
         /* top:.105rem; */
         /* top: 0rem; */
-        &:hover {
+        /* &:hover {
             transform: scale(1.05);
-        }
+        } */
         @media (max-width: 570px) { 
             display: none;
             height: 0%;
@@ -142,6 +147,9 @@ const DescContainer = styled.div`
     max-width: 35rem;
     h3 {
         font-size: 1.75rem;
+        /* outline: 2px solid blue; */
+        display: inline-block;
+        text-decoration: underline;
     }
     p {
         @media (max-width: 570px) {
@@ -155,7 +163,6 @@ const DescContainer = styled.div`
         color: #70CFFF;
         font-weight: bold;
         height: 40rem;
-        /* border: 2px solid green; */
         @media (max-width: 405px) {
             padding-bottom: 2rem;
         }

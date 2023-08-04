@@ -17,9 +17,9 @@ describe("Header component", () => {
         fireEvent.click(servicesLink);
         expect(servicesLink.getAttribute('href')).toEqual('#services');
     
-        const recommendationsLink = screen.getByText('Recommendations');
-        fireEvent.click(recommendationsLink);
-        expect(recommendationsLink.getAttribute('href')).toEqual('#recommendation');
+        const testimonialsLink = screen.getByText('Testimonials');
+        fireEvent.click(testimonialsLink);
+        expect(testimonialsLink.getAttribute('href')).toEqual('#recommendation');
     
         const connectLink = screen.getByText('Connect');
         fireEvent.click(connectLink);

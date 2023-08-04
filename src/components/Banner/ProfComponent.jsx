@@ -14,8 +14,8 @@ const ProfComponent = () => {
         <Texts>
             <h3>Hi, I'm</h3>
             <h1 className="blue">Kedgard Cordero</h1>
-            <h3 style={{color: '#A9A9A9'}}>Freelance Web Developer</h3>
-            <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. Throwing everything down, I pursued my passion and became a Freelance Web Developer, specializing in start up, individual, and small business. </p>
+            <h3 style={{color: '#A9A9A9'}}>Full Stack Web Developer</h3>
+            <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. Throwing everything down, I pursued my passion and became a freelance web developer, specializing in start up, individual, and small business. </p>
             <p>This is what I was meant to do, and I love every second of it.</p>
             <a href="#footer" data-testid="footer-link" aria-label="Contact me">
                 <button>Hire me</button>

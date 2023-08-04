@@ -38,7 +38,7 @@ react-intersection-observer:
 This library uses the Intersection Observer API to track an element's visibility within a viewport in React applications. This facilitates creating scroll-based animations, image lazy loading, and infinite scrolling by triggering actions as elements become visible or invisible. It simplifies handling multiple observers with diverse options, enabling developers to focus on functionality.
 
 ## Features
-Users can learn about me, what I offer, view recommendations, and contact me through email. 
+Users can learn about me, what I offer, view testimonials, and contact me through email. 
 
 ## Deployment
 Due to this portfolio being a SPA, I have decided to simply use GitPages for the deployment. You can view the site [here](https://kenny4297.github.io/Website/).

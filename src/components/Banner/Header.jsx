@@ -49,8 +49,8 @@ const Header = () => {
                     </a>
                 </span>
                 <span>
-                    <a href="#recommendation" onClick={handleClick}>
-                        Recommendations
+                    <a href="#testimonials" onClick={handleClick}>
+                        Testimonials
                     </a>
                 </span>
                 <span>
