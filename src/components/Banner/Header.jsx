@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
-import styled, { keyframes } from "styled-components";
-import { FaReact } from "react-icons/fa";
+import styled from "styled-components";
 
 const Header = () => {
     const [bar, setBar] = useState(false);
@@ -29,8 +28,8 @@ const Header = () => {
     return (
         <Container bar={bar}>
             <Logo>
-                <RotatingReact data-testid="rotating-react" size={30} />
-                <h1>Portfolio</h1>
+                {/* <RotatingReact data-testid="rotating-react" size={30} /> */}
+                <h1 className="blue">Portfolio</h1>
             </Logo>
             <Nav ref={navRef} bar={bar} data-testid="nav" role="navigation">
                 <span>
@@ -135,7 +134,6 @@ const Logo = styled.div`
     h1 {
         font-weight: 600;
         font-size: 1.8rem;
-        color: white;
     }
 `;
 
@@ -183,37 +181,5 @@ const Nav = styled.div`
                 opacity: 0.7;
             }
         }
-    }
-`;
-
-const colorPulse = keyframes`
-    0% {
-        fill: white;
-    }
-    50% {
-        fill: #0077b3;
-    }
-    100% {
-        fill: white;
-    }
-`;
-
-const RotatingReact = styled(FaReact)`
-    animation: 3s linear infinite, spin 10s linear infinite;
-    &.react-icons-spin {
-        display: inline-block;
-        animation: 3s linear infinite, spin 3s linear infinite;
-    }
-    @keyframes spin {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
-    & path:nth-of-type(1) {
-        stroke: white;
-        animation: ${colorPulse} 8s linear infinite;
     }
 `;
