@@ -2,7 +2,8 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kenny4297.github.io/Website/",
+  "homepage": ".",
+
   "dependencies": {
     "@babel/preset-react": "^7.18.6",
     "@emailjs/browser": "^3.11.0",

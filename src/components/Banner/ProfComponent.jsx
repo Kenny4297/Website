@@ -15,7 +15,7 @@ const ProfComponent = () => {
             <h3>Hi, I'm</h3>
             <h1 className="blue">Kedgard Cordero</h1>
             <h3 style={{color: '#A9A9A9'}}>Full Stack Web Developer</h3>
-            <p>My journey into web development started when a close friend introduced me to the field, and I immediately knew this was my calling. Throwing everything down, I pursued my passion and became a freelance web developer, specializing in start up, individual, and small business. </p>
+            <p>I'm a freelance web developer who loves helping individuals, small businesses, and startups bring their ideas to life online. Whether you're looking to showcase a personal project or launch your new business site, I've got your back. </p>
             <p>This is what I was meant to do, and I love every second of it.</p>
             <a href="#footer" data-testid="footer-link" aria-label="Contact me">
                 <button>Hire me</button>
