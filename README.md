@@ -49,7 +49,7 @@ This library uses the Intersection Observer API to track an element's visibility
 Users can learn about me, what I offer, view testimonials, and contact me through email. 
 
 ## Deployment
-Due to this portfolio being a SPA, I have decided to simply use GitPages for the deployment. You can view the site [here](https://kenny4297.github.io/Website/).
+[Deployment Link](https://kedgard-cordero.netlify.app/).
 
 ## Troubleshooting
 This was my first time using 'styled-components', and it was difficult to spot errors in the CSS section, due to the styling being a string, and not actual CSS. I resolved this by installing the extension 'vscode-styled-components', an extension that turns the original text into color coordinated CSS styling. This makes it easier for me to spot mistakes and results in cleaner code.
