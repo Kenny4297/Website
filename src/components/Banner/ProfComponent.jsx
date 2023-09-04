@@ -74,6 +74,15 @@ const pulse = keyframes`
     }
 `;
 
+const fadeIn = keyframes`
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+`;
+
 const Texts = styled.div`
     flex: 1;
     h1 {
@@ -184,27 +193,36 @@ const Social = styled.div`
 `;
 
 const Profile = styled.div`
+    .img-container {
+        animation: ${fadeIn} 1s ease-in forwards;
+    }
+
     img {
         width: 18rem;
         filter: drop-shadow(0px 10px 10px #0077b3);
         transition: transform 400ms ease-in-out;
         margin-bottom: 5rem;
         position: relative;
-        top:5rem;
+        top: 5rem;
+        
         @media (max-width: 1100px) {
             margin-left: 10rem;
         }
+        
         @media(max-width: 970px) {
             margin-left: 5rem;
         }
+        
         @media (max-width: 790px) {
             width: 15rem;
             margin-left: 3rem;
         }
+        
         @media (max-width: 664px) {
-           display: none
+            display: none;
         }
     }
+    
     :hover img {
         transform: translateY(-10px);
     }
