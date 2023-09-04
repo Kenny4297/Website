@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled, { keyframes } from 'styled-components';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
@@ -8,6 +8,8 @@ import ProfNoBack from './assets/ProfNoBack.webp'
 const ProfComponent = () => {
     // React needs this state to successfully allow "target='_blank'""
     const openInNewTab = true;
+
+    const [isImageLoaded, setIsImageLoaded] = useState(false);
 
     return (
     <Container id="home">
@@ -39,7 +41,8 @@ const ProfComponent = () => {
         </Texts>
         <Profile>
             <div className="img-container">
-                <img src={ProfNoBack} alt="Kedgard Cordero" aria-labelledby="profile-label" style={{position:'relative', top:'0rem'}} />
+                <img src={ProfNoBack} alt="Kedgard Cordero" aria-labelledby="profile-label" style={{position:'relative', top:'0rem'}} onLoad={() => setIsImageLoaded(true)}
+                    className={isImageLoaded ? "loaded" : ""} />
             </div>
         </Profile>
     </Container>
@@ -204,6 +207,10 @@ const Profile = styled.div`
         margin-bottom: 5rem;
         position: relative;
         top: 5rem;
+        opacity: 0;
+        &.loaded {
+            animation: ${fadeIn} 1s ease-in forwards;
+        }
         
         @media (max-width: 1100px) {
             margin-left: 10rem;
