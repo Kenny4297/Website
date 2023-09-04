@@ -1,4 +1,4 @@
-import styled, { keyframes, css} from "styled-components";
+import styled from "styled-components";
 import { CgProfile } from "react-icons/cg";
 import { useInView } from 'react-intersection-observer';
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
@@ -177,19 +177,7 @@ const Footer = () => {
 
 export default Footer;
 
-const slideInFromLeft = keyframes`
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-`;
-
 const Container = styled.div`
-    animation: ${props => props.animate ? css`${slideInFromLeft} 1s forwards` : 'none'};
     margin-top: 2rem;
     position: relative;
     padding: 5rem 0;

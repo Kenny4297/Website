@@ -77,13 +77,18 @@ const Container = styled.div`
     padding: .5rem 0;
     position: relative;
     animation: header 500ms ease-in-out;
+    /* border: 2px solid red; */
     @media (max-width: 763px) {
         width: 90%;
     }
     .bars {
         display: none;
+    /* border: 2px solid red; */
+
     }
     @media (max-width: 640px) {
+    /* border: 2px solid red; */
+
         .bars {
             width: 40px;
             height: 40px;
@@ -93,8 +98,11 @@ const Container = styled.div`
             justify-content: center;
             padding: 0.5rem;
             z-index: 100;
+            /* border: 2px solid red; */
+
             .bar {
                 position: absolute;
+                /* border: 2px solid red; */
                 width: 100%;
                 height: 2px;
                 /* Change the bar color based on it's props */
@@ -128,17 +136,22 @@ const Logo = styled.div`
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    /* border: 2px solid red; */
     span {
         font-size: 1.8rem;
+        /* border: 2px solid red; */
     }
     h1 {
         font-weight: 600;
         font-size: 1.8rem;
+        /* border: 2px solid red; */
     }
 `;
 
 const Nav = styled.div`
+    /* border: 2px solid red; */
     @media (max-width: 640px) {
+        border: 2px solid green;
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -148,6 +161,8 @@ const Nav = styled.div`
         align-items: center;
         font-size: 2rem;
         gap: 2rem;
+        width: 90%;
+        /* height: 5rem; */
         font-weight: 700;
         height: ${(props) => (props.bar ? "100vh" : 0)};
         transition: height 400ms ease-in-out;
@@ -156,11 +171,13 @@ const Nav = styled.div`
     }
     span {
         margin-left: 1rem;
+        border: 2px solid red;
         a {
             color: #fff;
             text-decoration: none;
             font-weight: 400;
             position: relative;
+            /* border: 2px solid red; */
             :before {
                 content: "";
                 position: absolute;

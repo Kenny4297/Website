@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from "styled-components";
+import styled from "styled-components";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import { useInView } from "react-intersection-observer";
@@ -116,24 +116,7 @@ const Clients = () => {
 
 export default Clients;
 
-const slideInFromRight = keyframes`
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-`;
-
 const Container = styled.div`
-    animation: ${(props) =>
-        props.animate
-            ? css`
-                  ${slideInFromRight} 1s forwards
-              `
-            : "none"};
     width: 80%;
     max-width: 1270px;
     margin: 0 auto;
