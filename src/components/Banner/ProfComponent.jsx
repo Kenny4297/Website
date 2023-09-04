@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
-import ProfNoBack from './assets/ProfNoBack.png'
+import ProfNoBack from './assets/ProfNoBack.webp'
 
 
 const ProfComponent = () => {
