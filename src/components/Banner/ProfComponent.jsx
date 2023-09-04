@@ -39,7 +39,7 @@ const ProfComponent = () => {
         </Texts>
         <Profile>
             <div className="img-container">
-                <img src={ProfNoBack} alt="Kedgard Cordero" aria-labelledby="profile-label" />
+                <img src={ProfNoBack} alt="Kedgard Cordero" aria-labelledby="profile-label" style={{position:'relative', top:'0rem'}} />
             </div>
         </Profile>
     </Container>
