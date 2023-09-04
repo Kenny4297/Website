@@ -193,11 +193,12 @@ const Container = styled.div`
     margin-top: 2rem;
     position: relative;
     padding: 5rem 0;
-    width: 80%;
-    max-width: 1280px;
+    width: 70%;
+    /* max-width: 1280px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    /* border: 2px solid green; */
     @media (min-width: 995px) {
         padding-bottom: 10rem;
     }
@@ -214,12 +215,16 @@ const Container = styled.div`
     }
     @media (max-width: 651px) {
         flex-direction: column;
+        /* margin: 0 auto; */
+        /* justify-content: center; */
         gap: 3rem;
         align-items: center;
-        margin-right: 0rem;
-        padding-right: 4rem;
+        /* margin-right: 3.5rem; */
+        /* padding-right: 4rem; */
         padding-bottom: 10rem;
-        height: 35rem;
+        width: 70%;
+        height: 55rem;
+        /* border: 2px solid yellow; */
     }
     @media (max-width: 541px) {
         margin-bottom: 5rem;
@@ -244,14 +249,17 @@ const Container = styled.div`
 const HireMeDescription = styled.div`
     margin-right: 2rem;
     line-height: 1.5rem;
-    /* border: 2px solid red; */
-
+    /* border: 2px solid blue; */
+    @media (max-width: 651px) {
+        margin-right: 0rem;
+    }
     div {
       width: 100%;
       text-align: left;
       display: flex;
       flex-direction: column;
       align-items: left;
+      /* border: 2px solid red; */
     }
 
     p {
@@ -269,7 +277,8 @@ const RateParagraph = styled.p`
 
 const Profile = styled.div`
     width: 50%;
-    margin-left: 15px;
+    /* margin-left: 15px; */
+    /* border: 2px solid green; */
     .address {
         padding: 1rem 0;
         h1 {
@@ -328,11 +337,21 @@ const Profile = styled.div`
             }
         }
     }
+    @media (max-width: 651px) {
+        /* border: 2px solid orange; */
+        width: 100%;
+        margin-right: 0rem;
+    }
 `;
 
 const Form = styled.div`
     width: 50%;
     flex: 1;
+    /* border: 2px solid red; */
+    padding-top: 2.75rem;
+    @media (max-width: 651px) {
+        width: 100%;
+    }
     h1 {
         font-size: 1.3rem;
         padding-bottom: 0.7rem;
@@ -344,6 +363,7 @@ const Form = styled.div`
         position: relative;
         right: 0.9rem;
         border-radius: 5px;
+        width: 100%;
         @media (max-width: 650px) {
             width: 60vw;
             text-align: left;
@@ -413,5 +433,6 @@ const ArrowUp = styled.div`
         right: 3rem;
         top: 16rem;
         margin-bottom: 5rem;
+        display: none;
     }
 `;
