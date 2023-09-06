@@ -151,7 +151,7 @@ const Logo = styled.div`
 const Nav = styled.div`
     /* border: 2px solid red; */
     @media (max-width: 640px) {
-        border: 2px solid green;
+        /* border: 2px solid green; */
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -171,7 +171,7 @@ const Nav = styled.div`
     }
     span {
         margin-left: 1rem;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         a {
             color: #fff;
             text-decoration: none;
