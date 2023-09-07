@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useInView } from 'react-intersection-observer';
-import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginalWordmark, ExpressOriginal, MysqlOriginal, MongodbOriginal, JestPlain, PythonOriginal, JqueryOriginal }  from 'devicons-react';
+import { ReactOriginal, JavascriptPlain, TailwindcssPlain, TypescriptPlain, NextjsOriginalWordmark, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginalWordmark, ExpressOriginal, MysqlOriginal, MongodbOriginal, JestPlain, PythonOriginal, JqueryOriginal }  from 'devicons-react';
 
 const Skills = () => {
     const { ref, inView } = useInView({
@@ -15,6 +15,11 @@ const Skills = () => {
                         <Card>
                             <ReactOriginal size={100} />
                             <h3>React</h3>
+                        </Card>
+
+                        <Card>
+                            <NextjsOriginalWordmark size={100} />
+                            <h3>Next.js</h3>
                         </Card>
 
                         <Card>
@@ -35,6 +40,11 @@ const Skills = () => {
                         <Card>
                             <Css3OriginalWordmark size={100} />
                             <h3>CSS3</h3>
+                        </Card>
+
+                        <Card>
+                            <TailwindcssPlain size={100} />
+                            <h3>Tailwind CSS</h3>
                         </Card>
 
                         <Card>
@@ -103,25 +113,25 @@ const Container = styled.div`
         height: 50rem;
     } */
     @media (max-width: 1000px) {
-        height: 65rem;
+        height: 80rem;
     }
     /* @media (max-width: 840px) {
         height: 65rem;
     } */
     @media (max-width: 820px) {
-        height: 67.5rem;
-    }
-    @media (max-width: 800px) {
         height: 80rem;
     }
+    @media (max-width: 800px) {
+        height: 85rem;
+    }
     @media (max-width: 600px) {
-        height: 105rem;
+        height: 120rem;
     }
     @media (max-width: 560px) {
-        height: 110rem;
+        height: 120rem;
     }
     @media (max-width: 400px) {
-        height: 172.5rem;
+        height: 200rem;
     }
 `
 
