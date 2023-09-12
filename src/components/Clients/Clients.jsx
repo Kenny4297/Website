@@ -33,6 +33,11 @@ let clients = [
         position: "Client",
         disc: `Our photography website was suffering from poor image resizing and slow load times after our previous developer left. Upon reaching out, Ked quickly identified and remedied these issues. He also identified the large image files as the culprits behind our slow website, optimizing them to improve loading speed. His proficiency, methodical approach, and clear communication were commendable. I highly recommend him for his skills in web development and his dedication to clear client communication.`,
     },
+    {
+        name: "Sarah Sater",
+        position: "Client",
+        disc: `Ked is a talented developer with a passion for consumer experience. I was fortunate enough to hire him to create a website portfolio. His dedication to clear communication and quality work resulted in a beautiful site that looks clean, elegant, and user-friendly. I'm looking forward to using Ked's expertise again!`,
+    },
     
 ];
 
