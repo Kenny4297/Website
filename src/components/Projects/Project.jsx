@@ -3,9 +3,24 @@ import React from 'react';
 import Nile from "../Banner/assets/NileWebsite.png";
 import JoystickJunction from '../Banner/assets/JoystickJunctionWebsite.png'
 import LearnC from '../Banner/assets/LearnC++.png'
-import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginal, ExpressOriginal, MysqlOriginal  , JestPlain, MongodbOriginal   }  from 'devicons-react';
+import Olivier from '../Banner/assets/OlivierWebsiteScreenshotEdited2.png'
+import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginal, ExpressOriginal, MysqlOriginal, JestPlain, MongodbOriginal, NextjsOriginalWordmark, TailwindcssPlain  }  from 'devicons-react';
 
 let data = [
+    {
+        img: Olivier,
+        disc: `A fully responsive website for my real estate client Olivier Chabin. Experience seamless navigation by exploring his journey, services, and effortlessly get in touch. All this in a responsive, user-friendly application.`,
+        title: "Olivier Chabin, Edina Realty",
+        deployment: "https://olivier-chabin.vercel.app/",
+    },
+    
+    {
+        img: LearnC,
+        disc: `"Learn C++" is an innovative, hands-on learning platform that focuses on practicality, beginning with real-world projects and dissecting them to teach users the fundamentals of C++. Built for my client Jay Padrnos, this platform engages users through a combination of interactive lessons, quizzes, and challenges, effectively creating a deep understanding of C++ basics.`,
+        title: "Learn C++",
+        deployment: "https://learn-c-plus-plus.netlify.app/",
+    },
+
     {
         img: Nile,
         disc: "Nile is an immersive, simulated full stack e-commerce platform specializing in book retail. It offers a realistic user experience, including the ability to conduct mock credit card transactions using Stripe. Users can also explore their purchase history, allowing them to revisit previous orders with ease, and sift through books using a classic search feature or by book categories. ",
@@ -19,21 +34,27 @@ let data = [
         title: "Joystick Junction",
         deployment: "https://weather-wizard4297.herokuapp.com/",
     },
-
-    {
-        img: LearnC,
-        disc: `"Learn C++" is an innovative, hands-on learning platform that focuses on practicality, beginning with real-world projects and dissecting them to teach users the fundamentals of C++. The platform engages users through a combination of interactive lessons, quizzes, and challenges, effectively creating a deep understanding of C++ basics.`,
-        title: "Learn C++",
-        deployment: "https://learn-c-plus-plus.netlify.app/",
-    },
 ];
 
 const Project = () => {
     const openInNewTab = true;
 
     const logos = {
+        // Olivier Chabin
+        0: [{component: ReactOriginal }, 
+            {component: NextjsOriginalWordmark}, 
+            {component: Html5PlainWordmark, color: "#E34F26"}, 
+            {component: TailwindcssPlain}],
+        
+        //  Learn C++
+        1: [{component: ReactOriginal }, 
+            {component: TypescriptPlain, color: "#007ACC"}, 
+            {component: Html5PlainWordmark, color: "#E34F26"}, 
+            {component: Css3OriginalWordmark},
+            {component: JestPlain}],
+
         // Nile
-        0: [{component: ReactOriginal, color: "#007ACC"},
+        2: [{component: ReactOriginal, color: "#007ACC"},
             {component: JavascriptPlain, color: "#F7DF1E"},
             {component: Html5PlainWordmark, color: "#E34F26"},
             {component: Css3OriginalWordmark},
@@ -43,22 +64,15 @@ const Project = () => {
         ],
 
         // Joystick Junction
-        1: [{component: ReactOriginal, color: "#007ACC"},
+        3: [{component: ReactOriginal, color: "#007ACC"},
             {component: JavascriptPlain, color: "#F7DF1E"},
             {component: Html5PlainWordmark, color: "#E34F26"}, 
             {component: Css3OriginalWordmark},
             {component: NodejsOriginal},
             {component: ExpressOriginal, color: "red"},
             {component: MysqlOriginal , color: "#000000"},
-
         ],
-
-            //  Learn C++
-        2: [{component: ReactOriginal }, 
-            {component: TypescriptPlain, color: "#007ACC"}, 
-            {component: Html5PlainWordmark, color: "#E34F26"}, 
-            {component: Css3OriginalWordmark},
-            {component: JestPlain}],
+        
     };
     return (
         <>
