@@ -18,7 +18,7 @@ let data = [
         img: LearnC,
         disc: `"Learn C++" is an innovative, hands-on learning platform that focuses on practicality, beginning with real-world projects and dissecting them to teach users the fundamentals of C++. Built for my client Jay Padrnos, this platform engages users through a combination of interactive lessons, quizzes, and challenges, effectively creating a deep understanding of C++ basics.`,
         title: "Learn C++",
-        deployment: "https://learn-c-plus-plus.netlify.app/",
+        deployment: "https://github.com/Kenny4297/Learn-C-Plus-Plus-README",
     },
 
     {
@@ -32,7 +32,7 @@ let data = [
         img: JoystickJunction,
         disc: "Joystick Junction is a full stack interactive video game blog and community hub where users can post, comment, and engage in discussions with other users. The platform stands out with an advanced search feature employing debouncing, a unique game type filter, and simulated users that help facilitate a seamless user experience.",
         title: "Joystick Junction",
-        deployment: "https://weather-wizard4297.herokuapp.com/",
+        deployment: "https://joystick-junction-production.up.railway.app/",
     },
 ];
 
