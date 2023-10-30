@@ -4,6 +4,7 @@ import Nile from "../Banner/assets/NileWebsite.png";
 import JoystickJunction from '../Banner/assets/JoystickJunctionWebsite.png'
 import LearnC from '../Banner/assets/LearnC++.png'
 import Olivier from '../Banner/assets/OlivierWebsiteScreenshotEdited2.png'
+import IdeaGenerator from '../Banner/assets/IdeaGeneratorDashboard.png'
 import { ReactOriginal, JavascriptPlain, TypescriptPlain, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginal, ExpressOriginal, MysqlOriginal, JestPlain, MongodbOriginal, NextjsOriginalWordmark, TailwindcssPlain  }  from 'devicons-react';
 
 let data = [
@@ -12,6 +13,13 @@ let data = [
         disc: `A fully responsive website for my real estate client Olivier Chabin. Experience seamless navigation by exploring his journey, services, and effortlessly get in touch. All this in a responsive, user-friendly application.`,
         title: "Olivier Chabin, Edina Realty",
         deployment: "https://olivier-chabin.vercel.app/",
+    },
+
+    {
+        img: IdeaGenerator,
+        disc: `Experience a cutting-edge full-stack application powered by OpenAI API. Expertly designed to generate text, images, sound, and video content, this platform harnesses the capabilities of advanced AI to produce top-notch multimedia creations.`,
+        title: "Idea Generator",
+        deployment: "https://kedgards-idea-generator.vercel.app/",
     },
     
     {
@@ -43,18 +51,27 @@ const Project = () => {
         // Olivier Chabin
         0: [{component: ReactOriginal }, 
             {component: NextjsOriginalWordmark}, 
+            {component: JavascriptPlain, color: "#F7DF1E"},
             {component: Html5PlainWordmark, color: "#E34F26"}, 
             {component: TailwindcssPlain}],
+
+        // Idea Generator
+        1: [{component: ReactOriginal }, 
+            {component: NextjsOriginalWordmark}, 
+            {component: TypescriptPlain, color: "#007ACC"},
+            {component: Html5PlainWordmark, color: "#E34F26"}, 
+            {component: TailwindcssPlain},
+            {component: MysqlOriginal , color: "#000000"}],
         
         //  Learn C++
-        1: [{component: ReactOriginal }, 
+        2: [{component: ReactOriginal }, 
             {component: TypescriptPlain, color: "#007ACC"}, 
             {component: Html5PlainWordmark, color: "#E34F26"}, 
             {component: Css3OriginalWordmark},
             {component: JestPlain}],
 
         // Nile
-        2: [{component: ReactOriginal, color: "#007ACC"},
+        3: [{component: ReactOriginal, color: "#007ACC"},
             {component: JavascriptPlain, color: "#F7DF1E"},
             {component: Html5PlainWordmark, color: "#E34F26"},
             {component: Css3OriginalWordmark},
@@ -64,7 +81,7 @@ const Project = () => {
         ],
 
         // Joystick Junction
-        3: [{component: ReactOriginal, color: "#007ACC"},
+        4: [{component: ReactOriginal, color: "#007ACC"},
             {component: JavascriptPlain, color: "#F7DF1E"},
             {component: Html5PlainWordmark, color: "#E34F26"}, 
             {component: Css3OriginalWordmark},
@@ -115,6 +132,11 @@ export default Project;
 
 const IconSection = styled.div`
     padding-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
 `
 
 const ContentContainer = styled.div`

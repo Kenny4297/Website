@@ -32,7 +32,7 @@ const Services = () => {
 
                 <Card
                     Icon={DiDatabase}
-                    title="Back end"
+                    title="Back End"
                     disc={[
                         {
                             text: "Develop scalable and efficient server-side applications to handle complex business logic and data processing.",
