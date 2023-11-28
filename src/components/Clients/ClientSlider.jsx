@@ -1,18 +1,18 @@
-import styled from 'styled-components';
-import {IoIosQuote} from "react-icons/io";
-import React from 'react';
+import styled from "styled-components";
+import { IoIosQuote } from "react-icons/io";
+import React from "react";
 
 const ClientSlider = (props) => {
-    const {name, position, email, img, disc} = props.item;
+    const { name, position, email, img, disc } = props.item;
 
     return (
         <Container>
             <Header>
-                <span className="quote" aria-hidden="true"><IoIosQuote /></span>
+                <span className="quote" aria-hidden="true">
+                    <IoIosQuote />
+                </span>
             </Header>
-            <Body>
-                {disc}
-            </Body>
+            <Body>{disc}</Body>
             <Footer>
                 {img && <img src={img} alt={name} />}
                 <div className="details">
@@ -46,7 +46,7 @@ const Header = styled.div`
     }
     .star {
         color: #ffcd3c;
-        font-size:1.3rem;
+        font-size: 1.3rem;
         display: flex;
         justify-content: flex-end;
     }
@@ -68,18 +68,18 @@ const Footer = styled.div`
     h1 {
         font-size: 1.2rem;
         font-weight: 700;
-        @media(max-width: 580px) {
+        @media (max-width: 580px) {
             font-size: 1rem;
         }
-        @media(max-width: 538px) {
+        @media (max-width: 538px) {
             font-size: 0.9rem;
         }
     }
     p {
         font-size: 0.8rem;
-        color: rgba(255,255,255,0.500);
-        @media(max-width: 538px) {
+        color: rgba(255, 255, 255, 0.5);
+        @media (max-width: 538px) {
             font-size: 0.6rem;
         }
     }
-`
+`;

@@ -1,6 +1,7 @@
-import styled from 'styled-components';
-import { useInView } from 'react-intersection-observer';
-import { ReactOriginal, JavascriptPlain, TailwindcssPlain, TypescriptPlain, NextjsOriginalWordmark, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginalWordmark, ExpressOriginal, MysqlOriginal, MongodbOriginal, JestPlain, PythonOriginal, JqueryOriginal }  from 'devicons-react';
+import styled from "styled-components";
+import { useInView } from "react-intersection-observer";
+import { ReactOriginal, JavascriptPlain, TailwindcssPlain, TypescriptPlain, NextjsOriginalWordmark, Html5PlainWordmark, Css3OriginalWordmark, NodejsOriginalWordmark, ExpressOriginal, MysqlOriginal, MongodbOriginal, JestPlain, PythonOriginal, JqueryOriginal } from "devicons-react";
+import OpenAILogo from "../Banner/assets/OpenAILogo.png";
 
 const Skills = () => {
     const { ref, inView } = useInView({
@@ -8,87 +9,89 @@ const Skills = () => {
     });
     return (
         <Container id="skills" ref={ref} animate={inView}>
-                <h1 className="blue" >Skills</h1>
-                <h2 className="blue" style={{textAlign: 'center'}}>Front-end</h2>
-                <SkillsSection>
-                    <SkillsTopRow>
-                        <Card>
-                            <ReactOriginal size={100} />
-                            <h3>React</h3>
-                        </Card>
-
-                        <Card>
-                            <NextjsOriginalWordmark size={100} />
-                            <h3>Next.js</h3>
-                        </Card>
-
-                        <Card>
-                            <JavascriptPlain color="#F7DF1E" size={100} />
-                            <h3>JavaScript</h3>
-                        </Card>
-
-                        <Card>
-                            <TypescriptPlain color="#007ACC" size={100} />
-                            <h3>TypeScript</h3>
-                        </Card>
-
-                        <Card>
-                            <Html5PlainWordmark color="#E34F26" size={100} />
-                            <h3>HTML5</h3>
-                        </Card>
-
-                        <Card>
-                            <Css3OriginalWordmark size={100} />
-                            <h3>CSS3</h3>
-                        </Card>
-
-                        <Card>
-                            <TailwindcssPlain size={100} />
-                            <h3>Tailwind CSS</h3>
-                        </Card>
-
-                        <Card>
-                            <JqueryOriginal size={100} />
-                            <h3>jQuery</h3>
-                        </Card>
-
-                        <Card>
-                            <JestPlain size={100} />
-                            <h3>Jest</h3>
-                        </Card>
-                    </SkillsTopRow>
-                </SkillsSection>
-                <h2 className="blue" style={{textAlign: 'center'}}>Back-end</h2>
-                <SkillsSection>
+            <h1 className="blue">Skills</h1>
+            <h2 className="blue" style={{ textAlign: "center" }}>
+                Front-end
+            </h2>
+            <SkillsSection>
+                <SkillsTopRow>
                     <Card>
-                        <NodejsOriginalWordmark size={100} />
-                        <h2>Node.js</h2>
+                        <ReactOriginal size={100} />
+                        <h3>React</h3>
+                    </Card>
+                    <Card>
+                        <NextjsOriginalWordmark size={100} />
+                        <h3>Next.js</h3>
                     </Card>
 
                     <Card>
-                        <ExpressOriginal color="red" size={100} />
-                        <h2>Express</h2>
+                        <img src={OpenAILogo} alt="open ai logo" style={{ height: "6rem", width: "6rem", marginBottom: "2.5rem", position: "relative", top: "1.2rem" }} />
+                        <div>
+                            <h3 style={{ position: "relative", bottom: "1.25rem" }}>OpenAI</h3>
+                        </div>
                     </Card>
-
                     <Card>
-                        <MysqlOriginal size={100} />
-                        <h2>MySQL</h2>
+                        <JavascriptPlain color="#F7DF1E" size={100} />
+                        <h3>JavaScript</h3>
                     </Card>
-
                     <Card>
-                        <MongodbOriginal size={100} />
-                        <h2>MongoDB</h2>
+                        <TypescriptPlain color="#007ACC" size={100} />
+                        <h3>TypeScript</h3>
                     </Card>
-
                     <Card>
-                        <PythonOriginal  size={100} />
-                        <h2>Python</h2>
+                        <Html5PlainWordmark color="#E34F26" size={100} />
+                        <h3>HTML5</h3>
                     </Card>
+                    <Card>
+                        <Css3OriginalWordmark size={100} />
+                        <h3>CSS3</h3>
+                    </Card>
+                    <Card>
+                        <TailwindcssPlain size={100} />
+                        <h3>Tailwind CSS</h3>
+                    </Card>
+                    <Card>
+                        <JqueryOriginal size={100} />
+                        <h3>jQuery</h3>
+                    </Card>
+                    <Card>
+                        <JestPlain size={100} />
+                        <h3>Jest</h3>
+                    </Card>
+                </SkillsTopRow>
+            </SkillsSection>
+            <h2 className="blue" style={{ textAlign: "center" }}>
+                Back-end
+            </h2>
+            <SkillsSection>
+                <Card>
+                    <NodejsOriginalWordmark size={100} />
+                    <h2>Node.js</h2>
+                </Card>
 
-                </SkillsSection>
+                <Card>
+                    <ExpressOriginal color="red" size={100} />
+                    <h2>Express</h2>
+                </Card>
+
+                <Card>
+                    <MysqlOriginal size={100} />
+                    <h2>MySQL</h2>
+                </Card>
+
+                <Card>
+                    <MongodbOriginal size={100} />
+                    <h2>MongoDB</h2>
+                </Card>
+
+                <Card>
+                    <PythonOriginal size={100} />
+                    <h2>Python</h2>
+                </Card>
+            </SkillsSection>
         </Container>
-    )
-}
+    );
+};
 
 export default Skills;
 
@@ -133,7 +136,7 @@ const Container = styled.div`
     @media (max-width: 400px) {
         height: 200rem;
     }
-`
+`;
 
 const SkillsSection = styled.div`
     display: flex;
