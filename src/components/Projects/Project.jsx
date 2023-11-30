@@ -106,7 +106,7 @@ const Project = () => {
                                 })}
                             </IconSection>
                             <a href={item.github} target={openInNewTab ? "_blank" : "_self"} rel="noreferrer" aria-label="Live Site">
-                                <p>Github</p>
+                                <p>GitHub</p>
                             </a>
                         </DescContainer>
                     </ContentContainer>
